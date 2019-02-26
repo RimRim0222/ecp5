@@ -1,0 +1,493 @@
+<header id="header" class="header">
+    <nav id="gnb">
+        <div class="hl-group">
+            <div class="hl-group__area">
+                <div class="hl-group__box">
+                    <ul class="hl-group__items">
+                        <li class="hl-group__item"><a [routerLink]="['/clubhouse']" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick')"><i class="icon icon-back"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hr-group">
+            <div class="hr-group__area">
+                <div class="hr-group__box">
+                    <ul class="hr-group__items">
+                        <li class="hr-group__item">
+                            <!--
+                                Guide
+
+                                <i class="icon icon-bgm"></i> - bgn on
+                                <i class="icon icon-bgm_mute"></i> - bgn off
+                            -->
+                            <button type="button" class="btn btn-bgm" (click)="dataManagerService.bgmToggle('/clubhouse')">
+                                <i class="icon icon-bgm{{bgmIconClass}}"></i>
+                            </button>
+                        </li>
+                        <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'singAlong'})"><i class="icon icon-help"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Content area(S)-->
+<section id="container">
+    <div id="content">
+        <div class="content-wrap">
+            <div class="content-wrap__outer">
+                <!--Content real area(S)-->
+                <div class="content-wrap__inner">
+                    <div class="clubhouse-sing-along">
+                        <div class="clubhouse-sing-along__area">
+                            <div class="clubhouse-sing-along__box">
+                                <!--Songs area(S)-->
+                                <aside class="function">
+                                    <div class="function__area">
+                                        <div class="function__box">
+                                            <ul class="function__items">
+                                                <li class="function__item" appHover hoverDefaultClass="default" hoverActiveClass="active"><button type="button" class="btn btn-theme" (click)="selectedModalSongs(1)"><i class="icon icon-theme"></i></button></li>
+                                                <li class="function__item" appHover hoverDefaultClass="default" hoverActiveClass="active"><button type="button" class="btn btn-phonics" (click)="selectedModalSongs(2)"><i class="icon icon-phonics"></i></button></li>
+                                                <!-- <li class="function__item" appHover hoverDefaultClass="default" hoverActiveClass="active"><button type="button" class="btn btn-holiday" (click)="selectedModalSongs(3)"><i class="icon icon-holiday"></i></button></li> -->
+                                                <li *ngIf="dataManagerService['sessionData'] && dataManagerService['sessionData']['semesterGbn'] === '02'" class="function__item" appHover hoverDefaultClass="default" hoverActiveClass="active"><button type="button" class="btn btn-holiday" (click)="selectedModalSongs(3)"><i class="icon icon-holiday"></i></button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </aside>
+                                <!--Songs area(E)-->
+                                <!--Swiper area(S)-->
+                                <div class="swiper">
+                                    <!--Loop area-->
+                                    <swiper [index]="clubhouseService.currentPage" [config]="config" (indexChange)="_sndMgr.playEventSound('common', 'pageMove')">
+                                        <div class="swiper-slide" *ngFor="let item of clubhouseService.pageList | keyvalue">
+                                            <div class="clubhouse-sing-along__items length{{item.value.weekList.length}}">
+                                                <div *ngFor="let week of item.value.weekList; let idx = index" class="clubhouse-sing-along__item {{week.activityClass}} {{week.bgClassName}}" appHover hoverDefaultClass="default" hoverActiveClass="active">
+                                                    <button type="button" class="btn btn-item0{{idx+1}}" (click)="openContentFrame(week)">
+                                                        <h2 class="tit-week">Week {{week.weekId}}</h2>
+                                                        <figure class="img">
+															<img src="{{week.filePathThumbnail}}" alt="">
+														</figure>
+                                                        <div class="txt-box" [style.display]="week.weekId <= dataManagerService.weekData.thisWeek ?'':'none'" >
+															<p class="txt-info">{{week.title}}</p>
+														</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </swiper>
+                                    <!--swiper paging-->
+                                    <div class="swiper-pagination-wrapper swiper-pagination"></div>
+                                    <!--swiper controller-->
+                                    <div class="swiper-controller">
+                                        <button type="button" class="btn btn-swiper-prev"></button>
+                                        <button type="button" class="btn btn-swiper-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Swiper area(E)-->
+
+                </div>
+                <!--Content real area(E)-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Content area(E)-->
+
+<!--Popup area(S) - Theme-->
+<section class="modal" id="singAlong01" style="display: none;">
+    <div class="modal__outer">
+        <div class="modal__inner">
+            <button type="button" class="modal__dim"></button>
+            <article class="modal__content">
+                <!--main reward-->
+                <div class="sing-along01">
+                    <!--tab area-->
+                    <div class="tab">
+                        <ul class="tab__items">
+                            <!--
+							  Guide
+
+							  EX)
+							  let select = default, active
+							  <li class="theme__thumbnail__item ${select}">
+
+							  List)
+							  <li class="theme__thumbnail__item default"> - 선택 전
+							  <li class="theme__thumbnail__item active"> - 선택
+							-->
+                            <li class="tab__item default"><button type="button" class="btn btn-theme" (click)="tabModalSongs(1)"><i class="icon icon-theme"></i></button></li>
+                            <li class="tab__item default"><button type="button" class="btn btn-phonics" (click)="tabModalSongs(2)"><i class="icon icon-phonics"></i></button></li>
+                            <li *ngIf="dataManagerService['sessionData'] && dataManagerService['sessionData']['semesterGbn'] === '02'" class="tab__item default"><button type="button" class="btn btn-holiday" (click)="tabModalSongs(3)"><i class="icon icon-holiday"></i></button></li>
+                        </ul>
+                    </div>
+                    <!--theme area-->
+                    <div class="theme">
+                        <div class="theme__area">
+                            <div class="theme__box">
+                                <h2 class="tit"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/tit_theme_songs01.png" alt="Theme Songs"></h2>
+                                <!--상단 베너 영역-->
+                                <div class="spot-area">
+                                    <!--
+									  Guide
+
+									  EX)
+									  let select = default, active
+									  <a class="btn btn-link ${select}">
+
+									  List)
+									  <a class="btn btn-link default"> - 선택 전
+									  <a class="btn btn-link active"> - 선택
+                                    -->
+                                    <span class="img">
+                                        <img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/img_spot01.png" alt="">
+                                    </span>
+                                    <button class="btn btn-link default" (click)="openTabContentFrame('theme', 1)">
+										<span class="play"><i class="icon icon-play"></i>{{(tabSongs!=null?tabSongs['theme'][0]['contentTitle'] : null)}}</span>
+									</button>
+                                </div>
+
+                                <div class="theme__content">
+                                    <!--썸네일 영역-->
+                                    <div class="theme__thumbnail">
+                                        <ul class="theme__thumbnail__items">
+                                            <!--
+											  Guide
+
+											  EX)
+											  let select = default, active
+											  <li class="theme__thumbnail__item ${select}">
+
+											  List)
+											  <li class="theme__thumbnail__item default"> - 선택 전
+											  <li class="theme__thumbnail__item active"> - 선택
+											-->
+                                            <li class="theme__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 1)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/img_thumbnail01.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][1]['contentTitle']: null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 2)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/img_thumbnail02.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][2]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 3)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/img_thumbnail03.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][3]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 4)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/theme/img_thumbnail04.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][4]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <!--일반 영역-->
+                                    <div class="theme__normal">
+                                        <ul class="theme__normal__items">
+                                            <!--
+											  Guide
+
+											  EX)
+											  let select = default, active
+											  <li class="theme__normal__item ${select}">
+
+											  List)
+											  <li class="theme__normal__item default"> - 선택 전
+											  <li class="theme__normal__item active"> - 선택
+											-->
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 5)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][5]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 6)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][6]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 7)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][7]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 8)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][8]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 9)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][9]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 10)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][10]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 11)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][11]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="theme__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('theme', 12)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['theme'][12]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--phonics-->
+                    <div class="phonics">
+                        <div class="phonics__area">
+                            <div class="phonics__box">
+                                <h2 class="tit"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/tit_phonics_songs01.png" alt="phonics Songs"></h2>
+                                <!--상단 베너 영역-->
+                                <div class="phonics__spot">
+                                    <!--
+									  Guide
+
+									  EX)
+									  let select = default, active
+									  <a class="btn btn-link ${select}">
+
+									  List)
+									  <a class="btn btn-link default"> - 선택 전
+									  <a class="btn btn-link active"> - 선택
+									-->
+                                    <a class="btn btn-link default" (click)="openTabContentFrame('phonics', 0)">
+                                        <span class="img">
+											<img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_spot01.png" alt="">
+										</span>
+                                        <span class="play"><i class="icon icon-play"></i>{{(tabSongs!=null?tabSongs['phonics'][0]['contentTitle']:null)}}</span>
+                                    </a>
+                                    <a class="btn btn-link default" (click)="openTabContentFrame('phonics', 1)">
+                                        <span class="img">
+											<img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_spot02.png" alt="">
+										</span>
+                                        <span class="play"><i class="icon icon-play"></i>{{(tabSongs!=null?tabSongs['phonics'][1]['contentTitle']:null)}}</span>
+                                    </a>
+                                </div>
+
+                                <div class="phonics__content">
+                                    <!--썸네일 영역-->
+                                    <div class="phonics__thumbnail">
+                                        <ul class="phonics__thumbnail__items">
+                                            <!--
+											  Guide
+
+											  EX)
+											  let select = default, active
+											  <li class="phonics__thumbnail__item ${select}">
+
+											  List)
+											  <li class="phonics__thumbnail__item default"> - 선택 전
+											  <li class="phonics__thumbnail__item active"> - 선택
+											-->
+                                            <li class="phonics__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 5)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_thumbnail01.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][5]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 6)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_thumbnail02.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][6]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 7)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_thumbnail03.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][7]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__thumbnail__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 8)">
+                                                    <span class="img"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/phonics/type1/img_thumbnail04.png" alt=""></span>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][8]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--일반 영역-->
+                                    <div class="phonics__normal">
+                                        <ul class="phonics__normal__items">
+                                            <!--
+											  Guide
+
+											  EX)
+											  let select = default, active
+											  <li class="phonics__normal__item ${select}">
+
+											  List)
+											  <li class="phonics__normal__item default"> - 선택 전
+											  <li class="phonics__normal__item active"> - 선택
+											-->
+                                            <li class="phonics__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 9)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][9]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 10)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][10]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 11)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][11]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 12)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][12]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="phonics__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('phonics', 13)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['phonics'][13]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--holiday-->
+                    <div class="holiday">
+                        <div class="holiday__area">
+                            <div class="holiday__box">
+                                <h2 class="tit"><img src="{{STATIC_URL}}/images/club_house_sing_along/popup/holiday/tit_holiday_songs01.gif" alt="holiday Songs"></h2>
+
+                                <div class="holiday__content">
+                                    <!--일반 영역-->
+                                    <div class="holiday__normal">
+                                        <ul class="holiday__normal__items">
+                                            <!--
+											  Guide
+
+											  EX)
+											  let select = default, active
+											  <li class="holiday__normal__item ${select}">
+
+											  List)
+											  <li class="holiday__normal__item default"> - 선택 전
+											  <li class="holiday__normal__item active"> - 선택
+											-->
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 0)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][0]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 1)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][1]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link">
+                                                    <p class="txt"></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="holiday__normal__items">
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 2)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][2]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 3)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][3]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 4)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][4]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="holiday__normal__items">
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 5)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][5]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link">
+                                                    <p class="txt"></p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link">
+                                                    <p class="txt"></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="holiday__normal__items">
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 6)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][6]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link" (click)="openTabContentFrame('holiday', 7)">
+                                                    <i class="icon icon-songs"></i>
+                                                    <p class="txt">{{(tabSongs!=null?tabSongs['holiday'][7]['contentTitle']:null)}}</p>
+                                                </a>
+                                            </li>
+                                            <li class="holiday__normal__item default">
+                                                <a class="btn btn-link">
+                                                    <p class="txt"></p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-close" (click)="_sndMgr.playEventSound('common', 'buttonClick');closeModalSongs();"><i class="icon icon-close"></i></button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<!--Popup area(E) - Theme-->

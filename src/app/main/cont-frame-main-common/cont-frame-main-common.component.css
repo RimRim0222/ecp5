@@ -1,0 +1,13 @@
+.container {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+}
+
+/* 컨텐츠 iframe용 CSS */
+.wrap-content{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}

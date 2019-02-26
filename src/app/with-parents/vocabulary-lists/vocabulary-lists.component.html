@@ -1,0 +1,267 @@
+<!--Header area(S) - include-->
+<header *ngIf="isShowContainer" id="header" class="header">
+    <nav id="gnb">
+        <div class="hl-group">
+            <div class="hl-group__area">
+                <div class="hl-group__box">
+                    <h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_with_parents_vl01_{{langType}}.png" alt="Vocabulary Lists"></h1>
+                    <ul class="hl-group__items">
+                        <li class="hl-group__item"><a [routerLink]="['/with-parents']" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick');"><i class="icon icon-back"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hr-group">
+            <div class="hr-group__area">
+                <div class="hr-group__box">
+                    <ul class="hr-group__items">
+                        <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'vocabularyLists'})">
+              <i class="icon icon-help"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Header area(S) - include-->
+<!--Content area(S)-->
+<section *ngIf="isShowContainer" id="container">
+    <div id="content">
+        <div class="content-wrap">
+            <div class="content-wrap__outer">
+                <!--Content real area(S)-->
+                <div class="content-wrap__inner">
+                    <div class="withParents-vocabulary-lists">
+                        <div class="withParents-vocabulary-lists__area">
+                            <div class="withParents-vocabulary-lists__box">
+                                <!--tab area-->
+                                <div class="tab">
+                                    <ul class="tab__items">
+                                        <li *ngFor="let data of activityData; let idx=index" class="tab__item {{data['cls']}}">
+                                            <button type="button" class="btn btn-tab" (click)="changeActivity(idx)"><span>{{data['title']}}</span></button></li>
+                                    </ul>
+                                </div>
+                                <!--select area-->
+                                <div class="select-box" style="width:203px;">
+                                    <div class="select-box__wrap" (mouseleave)="weekSelectorMouseLeave()">
+                                        <div class="select-box__val">
+                                            <button type="button" (click)="weekSelectorToggle(!isWeekSelectorOpen)" class="btn btn-select-open">
+                        <em class="val">{{currentWeekName}}</em>
+                      </button>
+                                        </div>
+                                        <div class="select-box__layer">
+                                            <div class="swiper-container js-scroll">
+                                                <div class="swiper-wrapper">
+                                                    <ul class="swiper-slide">
+                                                        <!--Loop area-->
+                                                        <!--
+                              <button type="button" class="btn-select default"> - 기본
+                              <button type="button" class="btn-select this-week"> - 이번주
+                              <button type="button" class="btn-select disabled" disabled="disabled"> - 활성화
+                            -->
+                                                        <li *ngFor="let week of weekSelectorStyle; let idx=index">
+                                                            <button type="button" (click)="changeWeek(idx+1)" class="btn-select {{week['cls']}}" [disabled]="week['disabled']"><span>{{week['title']}}</span></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="swiper-scrollbar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 2018.7.3 : scroll library 변경에 따른  수정(E) -->
+                                </div>
+                                <!--Lists area-->
+                                <div class="lists">
+                                    <!--
+                  let length = 1~10
+
+                  <div class="lists__items length${length}">
+
+                  List)
+                  <div class="lists__items length1"> - 카드 1장
+                  <div class="lists__items length2"> - 카드 2장
+                  <div class="lists__items length3"> - 카드 3장
+                  ...
+
+                  - List Text
+                  Ex)
+                  let length = txt-high, txt-low
+
+                  <p class="txt-info ${length]">
+
+                  List)
+                  <p class="txt-info txt-high"> - 12자 이상일경우
+                  <p class="txt-info txt-low"> - 12자 이하일경우
+                  -->
+                                    <div *ngIf="vocabData" class="lists__items length{{vocabData['vocabs'].length}}">
+                                        <!--Loop area-->
+                                        <div class="lists__item" *ngFor="let vocab of vocabData['vocabs']; let idx=index">
+                                            <button type="button" class="btn btn-item" (click)="_sndMgr.playEventSound('common', 'buttonClick'); openDetail(idx)">
+                          <figure class="img"><img src="{{ResourceURL + vocab['UPLOAD_FILE_NAME_LIST']}}" alt=""></figure>
+                          <div class="txt-box"><p class="txt-info txt-{{vocab['txtCls']}}">{{vocab['WORD_NAME']}}</p></div>
+                        </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Print area-->
+                                <div *ngIf="!_dataMgr.isMobile" class="print">
+                                    <button type="button" class="btn btn-print" (click)="_sndMgr.playEventSound('common', 'buttonClick'); openPrintPreview()"><i class="icon icon-print"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Swiper area(E)-->
+
+                </div>
+                <!--Content real area(E)-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Content area(E)-->
+
+<!--Popup area(E) - Vocabulary lists - Detail -->
+<section *ngIf="vocabData" class="modal-content" id="vocabularyCard01" style="display: none;">
+    <div class="modal-content__outer">
+        <div class="modal-content__inner">
+            <button type="button" class="modal-content__dim"></button>
+            <article class="modal__content">
+                <!--main reward-->
+                <div class="vocabulary-card">
+                    <section class="vocabulary-card__content">
+                        <swiper [config]="config" [index]="viewCardIdx" (indexChange)="setViewCard($event)">
+                            <!--Loop area-->
+                            <div class="swiper-slide" *ngFor="let vocab of vocabData['vocabs']">
+                                <div class="vocabulary-card__items">
+                                    <!--
+                                        Guide
+                                        - 리스트
+
+                                        List)
+                                        <div class="vocabulary-card__item all"> - 텍스트 & 이미지
+                                        <div class="vocabulary-card__item text"> - 텍스트
+                                        <div class="vocabulary-card__item picture"> - 이미지
+                                      -->
+                                    <div class="vocabulary-card__item {{currentCardViewMode}}" (click)="playWordSound(vocab['SOUND_PATH'])">
+                                        <div class="img">
+                                            <img src="{{ResourceURL + vocab['UPLOAD_FILE_NAME_LIST']}}" alt="">
+                                        </div>
+                                        <p class="txt txt-{{vocab['txtCls']}}">{{vocab['WORD_NAME']}}</p>
+                                    </div>
+                                    <button type="button" class="btn btn-close" (click)="closeDetail()"><i class="icon icon-close"></i></button>
+                                </div>
+                            </div>
+                        </swiper>
+                        <div class="swiper-controller">
+                            <button type="button" class="btn btn-swiper-prev swiper-button-disabled"></button>
+                            <button type="button" class="btn btn-swiper-next swiper-button-disabled"></button>
+                        </div>
+                        <div class="vocabulary-card__controller">
+                            <ul class="vocabulary-card__controller__items">
+                                <!--
+                    Guide
+                    - button
+
+                    List)
+                    <button type="button" class="btn btn-type default"> - 버튼 기본
+                    <button type="button" class="btn btn-type active"> - 버튼 활성화
+                  -->
+                                <li class="vocabulary-card__controller__item" *ngFor="let viewMode of cardViewModes; let idx=index">
+                                    <button type="button" class="btn btn-type {{viewMode['cls']}}"
+                                            (click)="setCardViewMode(idx); _sndMgr.playEventSound('common', 'buttonClick');"><span>{{viewMode['txt']}}</span></button></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!--Popup area(S) - Vocabulary lists - Print-->
+<section class="modal" id="vocabularyPrint01" style="display: none;">
+    <div class="modal__outer">
+        <div class="modal__inner">
+            <button type="button" class="modal__dim"></button>
+            <article class="modal__content">
+                <div class="vocabulary-print01">
+                    <div class="header">
+                        <h2 class="tit"><img src="{{imagePath}}/with_parents_vocabulary_lists/popup/tit_vocabulary_print01.png" alt="Print Option"></h2>
+                    </div>
+                    <div class="container">
+                        <!--<iframe id="vocabularyPrint" src="" frameborder="0" scrolling="no"></iframe>-->
+
+                        <div class="controller">
+                            <div class="controller__area">
+                                <div class="controller__box">
+                                    <!--Text-->
+                                    <div class="controller__items">
+                                        <!--With Text-->
+                                        <div class="controller__item">
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText01" (click)="setPrintCardStyle('all')" id="printOptionText01_01" checked="checked">
+                                            <label class="radio__txt" for="printOptionText01_01"><i class="icon icon-check"></i>With Text</label>
+                                          </span>
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText01" (click)="setPrintCardStyle('picture')" id="printOptionText01_02">
+                                            <label class="radio__txt" for="printOptionText01_02"><i class="icon icon-check"></i>Without Text</label>
+                                          </span>
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText01" (click)="setPrintCardStyle('text')" id="printOptionText01_03">
+                                            <label class="radio__txt" for="printOptionText01_03"><i class="icon icon-check"></i>Only Text</label>
+                                          </span>
+                                        </div>
+                                        <div class="controller__item">
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText02" id="printOptionText02_01" (click)="setPrintLayout(0)" checked="checked">
+                                            <label class="radio__txt" for="printOptionText02_01"><i class="icon icon-check"></i>2 x 1</label>
+                                          </span>
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText02" id="printOptionText02_02" (click)="setPrintLayout(1)">
+                                            <label class="radio__txt" for="printOptionText02_02"><i class="icon icon-check"></i>2 x 2</label>
+                                          </span>
+                                          <span class="radio left">
+                                            <input type="radio" name="printOptionText02" id="printOptionText02_03" (click)="setPrintLayout(2)">
+                                            <label class="radio__txt" for="printOptionText02_03"><i class="icon icon-check"></i>4 x 2</label>
+                                          </span>
+                                        </div>
+                                        <div class="controller__print">
+                                            <button type="button" class="btn btn-print" (click)="print(); _sndMgr.playEventSound('common', 'buttonClick')"><i class="icon icon-print"></i></button>
+                                            <a (click)="onClickDownloadHandler()" class="btn btn-pdf" *ngIf="isTeacher"><i class="icon icon-pdf"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--viewer area-->
+                        <div *ngIf="updatePreviewTrigger" class="preview">
+                            <div class="preview__area">
+                                <div class="preview__box">
+                                    <h2 class="tit">Preview</h2>
+                                    <div *ngFor="let page of pagedDataForPrint" class="preview__items {{currentPrintLayout}} length{{page.length}}">
+                                        <div *ngFor="let vocab of page" class="preview__item {{currentPrintCardStyle}}">
+                                            <div class="card">
+                                                <div class="img-box">
+                                                    <figure class="img">
+                                                        <img src="{{ResourceURL + vocab['UPLOAD_FILE_NAME_LIST']}}" alt="">
+                                                    </figure>
+                                                </div>
+                                                <div class="txt-box">
+                                                    <p class="txt txt-{{vocab['txtCls']}}">{{vocab['WORD_NAME']}}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button *ngIf="isShowPreviewCloseBtn" type="button" class="btn btn-close" (click)="closePrintPreview()"><i class="icon icon-close"></i></button>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>

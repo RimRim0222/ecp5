@@ -1,0 +1,2621 @@
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * Flower bud number
+ */
+@-webkit-keyframes flower-bud-number {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+@keyframes flower-bud-number {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+
+/**
+ * Flower bud number
+ */
+@-webkit-keyframes flower-this-week {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+@keyframes flower-this-week {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -300px 0;
+  }
+}
+
+/**
+ * Flower number
+ */
+@-webkit-keyframes flower-number {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1350px 0;
+  }
+}
+@keyframes flower-number {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1350px 0;
+  }
+}
+
+/**
+ * monster
+ */
+@-webkit-keyframes week-tree-monster-common {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -330px 0;
+  }
+}
+@keyframes week-tree-monster-common {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -330px 0;
+  }
+}
+
+@-webkit-keyframes flowerDance {
+  0% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+  100% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+}
+
+@keyframes flowerDance {
+  0% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+  100% {
+    transform: rotate(0deg) skewY(0deg);
+  }
+}
+
+@-webkit-keyframes profileBounce {
+  0% {
+    top: -122px;
+  }
+  60% {
+    top: -114px;
+  }
+  100% {
+    top: -122px;
+  }
+}
+
+@keyframes profileBounce {
+  0% {
+    top: -122px;
+  }
+  60% {
+    top: -114px;
+  }
+  100% {
+    top: -122px;
+  }
+}
+
+.content-wrap__inner .month__item .icon-flower.ing.complete span:before, .content-wrap__inner .month__item .icon-flower.complete:not(.ing) span:before {
+  content: "";
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  z-index: 1;
+}
+
+.content-wrap__inner .month__item .num1.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num1.icon-flower.complete:not(.ing) span:before {
+  margin-left: -11px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 40px;
+}
+
+.content-wrap__inner .month__item .num2.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num2.icon-flower.complete:not(.ing) span:before {
+  margin-left: -16.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -22px 0px;
+  width: 33px;
+  height: 40px;
+}
+
+.content-wrap__inner .month__item .num3.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num3.icon-flower.complete:not(.ing) span:before {
+  margin-left: -15.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -55px 0px;
+  width: 31px;
+  height: 41px;
+}
+
+.content-wrap__inner .month__item .num4.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num4.icon-flower.complete:not(.ing) span:before {
+  margin-left: -14.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -86px 0px;
+  width: 29px;
+  height: 38px;
+}
+
+.content-wrap__inner .month__item .num5.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num5.icon-flower.complete:not(.ing) span:before {
+  margin-left: -13.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -115px 0px;
+  width: 27px;
+  height: 39px;
+}
+
+.content-wrap__inner .month__item .num6.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num6.icon-flower.complete:not(.ing) span:before {
+  margin-left: -14.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -142px 0px;
+  width: 29px;
+  height: 42px;
+}
+
+.content-wrap__inner .month__item .num7.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num7.icon-flower.complete:not(.ing) span:before {
+  margin-left: -15px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -171px 0px;
+  width: 30px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num8.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num8.icon-flower.complete:not(.ing) span:before {
+  margin-left: -14px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -201px 0px;
+  width: 28px;
+  height: 40px;
+}
+
+.content-wrap__inner .month__item .num9.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num9.icon-flower.complete:not(.ing) span:before {
+  margin-left: -14.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -229px 0px;
+  width: 29px;
+  height: 42px;
+}
+
+.content-wrap__inner .month__item .num10.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num10.icon-flower.complete:not(.ing) span:before {
+  margin-left: -26px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -258px 0px;
+  width: 52px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num11.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num11.icon-flower.complete:not(.ing) span:before {
+  margin-left: -21.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -310px 0px;
+  width: 43px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num12.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num12.icon-flower.complete:not(.ing) span:before {
+  margin-left: -25.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -353px 0px;
+  width: 51px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num13.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num13.icon-flower.complete:not(.ing) span:before {
+  margin-left: -25px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -404px 0px;
+  width: 50px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num14.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num14.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -454px 0px;
+  width: 49px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num15.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num15.icon-flower.complete:not(.ing) span:before {
+  margin-left: -23.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -503px 0px;
+  width: 47px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num16.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num16.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -550px 0px;
+  width: 48px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num17.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num17.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -598px 0px;
+  width: 49px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num18.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num18.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -647px 0px;
+  width: 48px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num19.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num19.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -695px 0px;
+  width: 48px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num20.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num20.icon-flower.complete:not(.ing) span:before {
+  margin-left: -29.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -743px 0px;
+  width: 59px;
+  height: 38px;
+}
+
+.content-wrap__inner .month__item .num21.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num21.icon-flower.complete:not(.ing) span:before {
+  margin-left: -24.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -802px 0px;
+  width: 49px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num22.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num22.icon-flower.complete:not(.ing) span:before {
+  margin-left: -29px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -851px 0px;
+  width: 58px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num23.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num23.icon-flower.complete:not(.ing) span:before {
+  margin-left: -28px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -909px 0px;
+  width: 56px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num24.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num24.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -965px 0px;
+  width: 55px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num25.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num25.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1020px 0px;
+  width: 54px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num26.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num26.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1074px 0px;
+  width: 54px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num27.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num27.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1128px 0px;
+  width: 55px;
+  height: 36px;
+}
+
+.content-wrap__inner .month__item .num28.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num28.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1183px 0px;
+  width: 54px;
+  height: 37px;
+}
+
+.content-wrap__inner .month__item .num29.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num29.icon-flower.complete:not(.ing) span:before {
+  margin-left: -27px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1237px 0px;
+  width: 54px;
+  height: 38px;
+}
+
+.content-wrap__inner .month__item .num30.icon-flower.ing.complete span:before, .content-wrap__inner .month__item .num30.icon-flower.complete:not(.ing) span:before {
+  margin-left: -28.5px;
+  background-image: url(/assets/images/sprite/flower_number.png?4103573393924);
+  background-position: -1291px 0px;
+  width: 57px;
+  height: 38px;
+}
+
+#container.season1 .month__item .icon-flower.ing.incomplete span, #container.season2 .month__item .icon-flower.ing.incomplete span, #container.season1 .month__item .icon-flower.incomplete:not(.ing) span, #container.season2 .month__item .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month1 .icon-flower.ing.incomplete span, #container.season3 .month__item.month2 .icon-flower.ing.incomplete span, #container.season3 .month__item.month3 .icon-flower.ing.incomplete span, #container.season4 .month__item.month1 .icon-flower.ing.incomplete span, #container.season4 .month__item.month2 .icon-flower.ing.incomplete span, #container.season4 .month__item.month3 .icon-flower.ing.incomplete span, #container.season3 .month__item.month1 .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month2 .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month3 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month1 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month2 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month3 .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month4 .icon-flower.ing.incomplete span, #container.season3 .month__item.month5 .icon-flower.ing.incomplete span, #container.season3 .month__item.month6 .icon-flower.ing.incomplete span, #container.season4 .month__item.month4 .icon-flower.ing.incomplete span, #container.season4 .month__item.month5 .icon-flower.ing.incomplete span, #container.season4 .month__item.month6 .icon-flower.ing.incomplete span, #container.season3 .month__item.month4 .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month5 .icon-flower.incomplete:not(.ing) span, #container.season3 .month__item.month6 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month4 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month5 .icon-flower.incomplete:not(.ing) span, #container.season4 .month__item.month6 .icon-flower.incomplete:not(.ing) span {
+  text-align: center;
+}
+
+#container.season1 .month__item .icon-flower.ing.incomplete span:before, #container.season2 .month__item .icon-flower.ing.incomplete span:before, #container.season1 .month__item .icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .icon-flower.incomplete:not(.ing) span:before {
+  content: "";
+  margin-top: 80px;
+  display: inline-block;
+}
+
+#container.season1 .month__item .num1.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num1.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num1.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num1.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num1.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num1.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num1.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num2.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num2.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num2.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num2.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num2.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num2.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num2.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -22px 0px;
+  width: 34px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num3.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num3.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num3.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num3.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num3.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num3.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num3.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -56px 0px;
+  width: 32px;
+  height: 41px;
+}
+
+#container.season1 .month__item .num4.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num4.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num4.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num4.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num4.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num4.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num4.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -88px 0px;
+  width: 30px;
+  height: 38px;
+}
+
+#container.season1 .month__item .num5.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num5.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num5.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num5.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num5.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num5.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num5.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -118px 0px;
+  width: 28px;
+  height: 39px;
+}
+
+#container.season1 .month__item .num6.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num6.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num6.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num6.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num6.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num6.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num6.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -146px 0px;
+  width: 30px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num7.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num7.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num7.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num7.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num7.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num7.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num7.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -176px 0px;
+  width: 30px;
+  height: 37px;
+}
+
+#container.season1 .month__item .num8.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num8.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num8.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num8.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num8.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num8.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num8.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -206px 0px;
+  width: 28px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num9.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num9.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num9.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num9.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num9.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num9.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num9.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -234px 0px;
+  width: 30px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num10.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num10.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num10.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num10.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num10.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num10.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num10.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -264px 0px;
+  width: 51px;
+  height: 37px;
+}
+
+#container.season1 .month__item .num11.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num11.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num11.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num11.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num11.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num11.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num11.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -315px 0px;
+  width: 43px;
+  height: 36px;
+}
+
+#container.season1 .month__item .num12.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num12.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num12.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num12.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num12.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num12.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num12.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -358px 0px;
+  width: 51px;
+  height: 37px;
+}
+
+#container.season1 .month__item .num13.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num13.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num13.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num13.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num13.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num13.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num13.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -409px 0px;
+  width: 50px;
+  height: 37px;
+}
+
+#container.season1 .month__item .num14.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num14.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num14.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num14.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num14.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num14.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num14.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -459px 0px;
+  width: 49px;
+  height: 36px;
+}
+
+#container.season1 .month__item .num15.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num15.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num15.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num15.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num15.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num15.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num15.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -508px 0px;
+  width: 47px;
+  height: 36px;
+}
+
+#container.season1 .month__item .num16.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num16.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num16.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num16.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num16.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num16.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num16.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -555px 0px;
+  width: 54px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num17.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num17.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num17.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num17.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num17.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num17.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num17.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -609px 0px;
+  width: 49px;
+  height: 36px;
+}
+
+#container.season1 .month__item .num18.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num18.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num18.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num18.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num18.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num18.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num18.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -658px 0px;
+  width: 54px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num19.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num19.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num19.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num19.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num19.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num19.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num19.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -712px 0px;
+  width: 53px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num20.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num20.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num20.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num20.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num20.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num20.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num20.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -765px 0px;
+  width: 65px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num21.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num21.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num21.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num21.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num21.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num21.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num21.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -830px 0px;
+  width: 54px;
+  height: 41px;
+}
+
+#container.season1 .month__item .num22.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num22.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num22.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num22.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num22.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num22.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num22.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -884px 0px;
+  width: 65px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num23.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num23.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num23.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num23.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num23.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num23.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num23.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -949px 0px;
+  width: 63px;
+  height: 41px;
+}
+
+#container.season1 .month__item .num24.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num24.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num24.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num24.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num24.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num24.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num24.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1012px 0px;
+  width: 61px;
+  height: 40px;
+}
+
+#container.season1 .month__item .num25.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num25.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num25.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num25.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num25.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num25.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num25.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1073px 0px;
+  width: 60px;
+  height: 41px;
+}
+
+#container.season1 .month__item .num26.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num26.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num26.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num26.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num26.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num26.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num26.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1133px 0px;
+  width: 60px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num27.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num27.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num27.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num27.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num27.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num27.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num27.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1193px 0px;
+  width: 55px;
+  height: 36px;
+}
+
+#container.season1 .month__item .num28.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num28.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num28.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num28.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num28.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num28.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num28.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1248px 0px;
+  width: 60px;
+  height: 41px;
+}
+
+#container.season1 .month__item .num29.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num29.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num29.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num29.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num29.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num29.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num29.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1308px 0px;
+  width: 61px;
+  height: 42px;
+}
+
+#container.season1 .month__item .num30.icon-flower.ing.incomplete span:before, #container.season2 .month__item .num30.icon-flower.ing.incomplete span:before, #container.season1 .month__item .num30.icon-flower.incomplete:not(.ing) span:before, #container.season2 .month__item .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month1 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month2 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month3 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month1 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month2 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month3 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month1 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month2 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month3 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month1 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month2 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month3 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month4 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month5 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month6 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month4 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month5 .num30.icon-flower.ing.incomplete span:before, #container.season4 .month__item.month6 .num30.icon-flower.ing.incomplete span:before, #container.season3 .month__item.month4 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month5 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season3 .month__item.month6 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month4 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month5 .num30.icon-flower.incomplete:not(.ing) span:before, #container.season4 .month__item.month6 .num30.icon-flower.incomplete:not(.ing) span:before {
+  background-image: url(/assets/images/sprite/flower_bud_number.png?4103573393924);
+  background-position: -1369px 0px;
+  width: 63px;
+  height: 42px;
+}
+
+#container.season1 .month__item.month1 .month__monster.passby, #container.season1 .month__item.month2 .month__monster.passby, #container.season1 .month__item.month3 .month__monster.passby, #container.season2 .month__item.month1 .month__monster.passby, #container.season2 .month__item.month2 .month__monster.passby, #container.season2 .month__item.month3 .month__monster.passby {
+  background-image: url("/assets/images/week_tree/bg_monster_frame01.png");
+}
+
+#container.season1 .month__item.month4 .month__monster.passby, #container.season1 .month__item.month5 .month__monster.passby, #container.season1 .month__item.month6 .month__monster.passby, #container.season2 .month__item.month4 .month__monster.passby, #container.season2 .month__item.month5 .month__monster.passby, #container.season2 .month__item.month6 .month__monster.passby {
+  background-image: url("/assets/images/week_tree/bg_monster_frame02.png");
+}
+
+#container.season1 .month__item .icon.disabled.icon-num1, #container.season2 .month__item .icon.disabled.icon-num1 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: 0px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num2, #container.season2 .month__item .icon.disabled.icon-num2 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -111px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num3, #container.season2 .month__item .icon.disabled.icon-num3 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -222px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num4, #container.season2 .month__item .icon.disabled.icon-num4 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -333px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num5, #container.season2 .month__item .icon.disabled.icon-num5 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -444px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num6, #container.season2 .month__item .icon.disabled.icon-num6 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -555px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num7, #container.season2 .month__item .icon.disabled.icon-num7 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -666px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num8, #container.season2 .month__item .icon.disabled.icon-num8 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -777px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num9, #container.season2 .month__item .icon.disabled.icon-num9 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -888px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num10, #container.season2 .month__item .icon.disabled.icon-num10 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -999px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num11, #container.season2 .month__item .icon.disabled.icon-num11 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1110px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num12, #container.season2 .month__item .icon.disabled.icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num13, #container.season2 .month__item .icon.disabled.icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num14, #container.season2 .month__item .icon.disabled.icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num15, #container.season2 .month__item .icon.disabled.icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num16, #container.season2 .month__item .icon.disabled.icon-num16 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1665px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num17, #container.season2 .month__item .icon.disabled.icon-num17 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1776px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num18, #container.season2 .month__item .icon.disabled.icon-num18 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1887px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num19, #container.season2 .month__item .icon.disabled.icon-num19 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -1998px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num20, #container.season2 .month__item .icon.disabled.icon-num20 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2109px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num21, #container.season2 .month__item .icon.disabled.icon-num21 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2220px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num22, #container.season2 .month__item .icon.disabled.icon-num22 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2331px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num23, #container.season2 .month__item .icon.disabled.icon-num23 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2442px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num24, #container.season2 .month__item .icon.disabled.icon-num24 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2553px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num25, #container.season2 .month__item .icon.disabled.icon-num25 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2664px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num26, #container.season2 .month__item .icon.disabled.icon-num26 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2775px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num27, #container.season2 .month__item .icon.disabled.icon-num27 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2886px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num28, #container.season2 .month__item .icon.disabled.icon-num28 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -2997px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num29, #container.season2 .month__item .icon.disabled.icon-num29 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -3108px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon.disabled.icon-num30, #container.season2 .month__item .icon.disabled.icon-num30 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number_disable.png?4103573393923);
+  background-position: -3219px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-flower.ing.incomplete, #container.season2 .month__item .icon-flower.ing.incomplete {
+  background-image: url("/assets/images/sprite/flower_bud.png");
+}
+
+#container.season1 .month__item .icon-flower.ing.complete, #container.season2 .month__item .icon-flower.ing.complete {
+  background-image: url("/assets/images/sprite/flower_this_week.png");
+}
+
+#container.season1 .month__item .icon-flower.ing.complete.motion, #container.season2 .month__item .icon-flower.ing.complete.motion {
+  background-image: url("/assets/images/sprite/flower.png");
+}
+
+#container.season1 .month__item .icon-flower:not(.ing).incomplete, #container.season2 .month__item .icon-flower:not(.ing).incomplete {
+  background-image: url("/assets/images/week_tree/icon_flower_bud01.png");
+}
+
+#container.season1 .month__item .icon-flower:not(.ing).complete, #container.season2 .month__item .icon-flower:not(.ing).complete {
+  background-image: url("/assets/images/week_tree/icon_flower01.png");
+}
+
+#container.season1 .month__item .icon-flower:not(.ing).complete.motion, #container.season2 .month__item .icon-flower:not(.ing).complete.motion {
+  background-image: url("/assets/images/sprite/flower.png");
+}
+
+#container.season1 .month__item .icon-num1, #container.season2 .month__item .icon-num1 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: 0px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num2, #container.season2 .month__item .icon-num2 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -111px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num3, #container.season2 .month__item .icon-num3 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -222px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num4, #container.season2 .month__item .icon-num4 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -333px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num5, #container.season2 .month__item .icon-num5 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -444px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num6, #container.season2 .month__item .icon-num6 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -555px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num7, #container.season2 .month__item .icon-num7 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -666px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num8, #container.season2 .month__item .icon-num8 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -777px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num9, #container.season2 .month__item .icon-num9 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -888px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num10, #container.season2 .month__item .icon-num10 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -999px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num11, #container.season2 .month__item .icon-num11 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1110px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num12, #container.season2 .month__item .icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num13, #container.season2 .month__item .icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num14, #container.season2 .month__item .icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num15, #container.season2 .month__item .icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num16, #container.season2 .month__item .icon-num16 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1665px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num17, #container.season2 .month__item .icon-num17 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1776px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num18, #container.season2 .month__item .icon-num18 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1887px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num19, #container.season2 .month__item .icon-num19 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -1998px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num20, #container.season2 .month__item .icon-num20 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2109px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num21, #container.season2 .month__item .icon-num21 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2220px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num22, #container.season2 .month__item .icon-num22 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2331px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num23, #container.season2 .month__item .icon-num23 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2442px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num24, #container.season2 .month__item .icon-num24 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2553px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num25, #container.season2 .month__item .icon-num25 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2664px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num26, #container.season2 .month__item .icon-num26 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2775px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num27, #container.season2 .month__item .icon-num27 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2886px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num28, #container.season2 .month__item .icon-num28 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -2997px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num29, #container.season2 .month__item .icon-num29 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -3108px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season1 .month__item .icon-num30, #container.season2 .month__item .icon-num30 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number.png?4103573393926);
+  background-position: -3219px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .month__monster.passby, #container.season3 .month__item.month2 .month__monster.passby, #container.season3 .month__item.month3 .month__monster.passby, #container.season4 .month__item.month1 .month__monster.passby, #container.season4 .month__item.month2 .month__monster.passby, #container.season4 .month__item.month3 .month__monster.passby {
+  background-image: url("/assets/images/week_tree/bg_monster_frame03.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower.ing.incomplete, #container.season3 .month__item.month2 .icon-flower.ing.incomplete, #container.season3 .month__item.month3 .icon-flower.ing.incomplete, #container.season4 .month__item.month1 .icon-flower.ing.incomplete, #container.season4 .month__item.month2 .icon-flower.ing.incomplete, #container.season4 .month__item.month3 .icon-flower.ing.incomplete {
+  background-image: url("/assets/images/sprite/flower_bud2.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower.ing.complete, #container.season3 .month__item.month2 .icon-flower.ing.complete, #container.season3 .month__item.month3 .icon-flower.ing.complete, #container.season4 .month__item.month1 .icon-flower.ing.complete, #container.season4 .month__item.month2 .icon-flower.ing.complete, #container.season4 .month__item.month3 .icon-flower.ing.complete {
+  background-image: url("/assets/images/sprite/flower2_this_week.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower.ing.complete.motion, #container.season3 .month__item.month2 .icon-flower.ing.complete.motion, #container.season3 .month__item.month3 .icon-flower.ing.complete.motion, #container.season4 .month__item.month1 .icon-flower.ing.complete.motion, #container.season4 .month__item.month2 .icon-flower.ing.complete.motion, #container.season4 .month__item.month3 .icon-flower.ing.complete.motion {
+  background-image: url("/assets/images/sprite/flower2.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower:not(.ing).incomplete, #container.season3 .month__item.month2 .icon-flower:not(.ing).incomplete, #container.season3 .month__item.month3 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month1 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month2 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month3 .icon-flower:not(.ing).incomplete {
+  background-image: url("/assets/images/week_tree/icon_flower_bud02.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower:not(.ing).complete, #container.season3 .month__item.month2 .icon-flower:not(.ing).complete, #container.season3 .month__item.month3 .icon-flower:not(.ing).complete, #container.season4 .month__item.month1 .icon-flower:not(.ing).complete, #container.season4 .month__item.month2 .icon-flower:not(.ing).complete, #container.season4 .month__item.month3 .icon-flower:not(.ing).complete {
+  background-image: url("/assets/images/week_tree/icon_flower02.png");
+}
+
+#container.season3 .month__item.month1 .icon-flower:not(.ing).complete.motion, #container.season3 .month__item.month2 .icon-flower:not(.ing).complete.motion, #container.season3 .month__item.month3 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month1 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month2 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month3 .icon-flower:not(.ing).complete.motion {
+  background-image: url("/assets/images/sprite/flower2.png");
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num1, #container.season3 .month__item.month2 .icon.disabled.icon-num1, #container.season3 .month__item.month3 .icon.disabled.icon-num1, #container.season4 .month__item.month1 .icon.disabled.icon-num1, #container.season4 .month__item.month2 .icon.disabled.icon-num1, #container.season4 .month__item.month3 .icon.disabled.icon-num1 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: 0px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num2, #container.season3 .month__item.month2 .icon.disabled.icon-num2, #container.season3 .month__item.month3 .icon.disabled.icon-num2, #container.season4 .month__item.month1 .icon.disabled.icon-num2, #container.season4 .month__item.month2 .icon.disabled.icon-num2, #container.season4 .month__item.month3 .icon.disabled.icon-num2 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -111px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num3, #container.season3 .month__item.month2 .icon.disabled.icon-num3, #container.season3 .month__item.month3 .icon.disabled.icon-num3, #container.season4 .month__item.month1 .icon.disabled.icon-num3, #container.season4 .month__item.month2 .icon.disabled.icon-num3, #container.season4 .month__item.month3 .icon.disabled.icon-num3 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -222px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num4, #container.season3 .month__item.month2 .icon.disabled.icon-num4, #container.season3 .month__item.month3 .icon.disabled.icon-num4, #container.season4 .month__item.month1 .icon.disabled.icon-num4, #container.season4 .month__item.month2 .icon.disabled.icon-num4, #container.season4 .month__item.month3 .icon.disabled.icon-num4 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -333px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num5, #container.season3 .month__item.month2 .icon.disabled.icon-num5, #container.season3 .month__item.month3 .icon.disabled.icon-num5, #container.season4 .month__item.month1 .icon.disabled.icon-num5, #container.season4 .month__item.month2 .icon.disabled.icon-num5, #container.season4 .month__item.month3 .icon.disabled.icon-num5 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -444px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num6, #container.season3 .month__item.month2 .icon.disabled.icon-num6, #container.season3 .month__item.month3 .icon.disabled.icon-num6, #container.season4 .month__item.month1 .icon.disabled.icon-num6, #container.season4 .month__item.month2 .icon.disabled.icon-num6, #container.season4 .month__item.month3 .icon.disabled.icon-num6 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -555px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num7, #container.season3 .month__item.month2 .icon.disabled.icon-num7, #container.season3 .month__item.month3 .icon.disabled.icon-num7, #container.season4 .month__item.month1 .icon.disabled.icon-num7, #container.season4 .month__item.month2 .icon.disabled.icon-num7, #container.season4 .month__item.month3 .icon.disabled.icon-num7 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -666px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num8, #container.season3 .month__item.month2 .icon.disabled.icon-num8, #container.season3 .month__item.month3 .icon.disabled.icon-num8, #container.season4 .month__item.month1 .icon.disabled.icon-num8, #container.season4 .month__item.month2 .icon.disabled.icon-num8, #container.season4 .month__item.month3 .icon.disabled.icon-num8 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -777px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num9, #container.season3 .month__item.month2 .icon.disabled.icon-num9, #container.season3 .month__item.month3 .icon.disabled.icon-num9, #container.season4 .month__item.month1 .icon.disabled.icon-num9, #container.season4 .month__item.month2 .icon.disabled.icon-num9, #container.season4 .month__item.month3 .icon.disabled.icon-num9 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -888px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num10, #container.season3 .month__item.month2 .icon.disabled.icon-num10, #container.season3 .month__item.month3 .icon.disabled.icon-num10, #container.season4 .month__item.month1 .icon.disabled.icon-num10, #container.season4 .month__item.month2 .icon.disabled.icon-num10, #container.season4 .month__item.month3 .icon.disabled.icon-num10 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -999px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num11, #container.season3 .month__item.month2 .icon.disabled.icon-num11, #container.season3 .month__item.month3 .icon.disabled.icon-num11, #container.season4 .month__item.month1 .icon.disabled.icon-num11, #container.season4 .month__item.month2 .icon.disabled.icon-num11, #container.season4 .month__item.month3 .icon.disabled.icon-num11 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -1110px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num12, #container.season3 .month__item.month2 .icon.disabled.icon-num12, #container.season3 .month__item.month3 .icon.disabled.icon-num12, #container.season4 .month__item.month1 .icon.disabled.icon-num12, #container.season4 .month__item.month2 .icon.disabled.icon-num12, #container.season4 .month__item.month3 .icon.disabled.icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num13, #container.season3 .month__item.month2 .icon.disabled.icon-num13, #container.season3 .month__item.month3 .icon.disabled.icon-num13, #container.season4 .month__item.month1 .icon.disabled.icon-num13, #container.season4 .month__item.month2 .icon.disabled.icon-num13, #container.season4 .month__item.month3 .icon.disabled.icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num14, #container.season3 .month__item.month2 .icon.disabled.icon-num14, #container.season3 .month__item.month3 .icon.disabled.icon-num14, #container.season4 .month__item.month1 .icon.disabled.icon-num14, #container.season4 .month__item.month2 .icon.disabled.icon-num14, #container.season4 .month__item.month3 .icon.disabled.icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon.disabled.icon-num15, #container.season3 .month__item.month2 .icon.disabled.icon-num15, #container.season3 .month__item.month3 .icon.disabled.icon-num15, #container.season4 .month__item.month1 .icon.disabled.icon-num15, #container.season4 .month__item.month2 .icon.disabled.icon-num15, #container.season4 .month__item.month3 .icon.disabled.icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2_disable.png?4103586875361);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num1, #container.season3 .month__item.month2 .icon-num1, #container.season3 .month__item.month3 .icon-num1, #container.season4 .month__item.month1 .icon-num1, #container.season4 .month__item.month2 .icon-num1, #container.season4 .month__item.month3 .icon-num1 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: 0px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num2, #container.season3 .month__item.month2 .icon-num2, #container.season3 .month__item.month3 .icon-num2, #container.season4 .month__item.month1 .icon-num2, #container.season4 .month__item.month2 .icon-num2, #container.season4 .month__item.month3 .icon-num2 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -111px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num3, #container.season3 .month__item.month2 .icon-num3, #container.season3 .month__item.month3 .icon-num3, #container.season4 .month__item.month1 .icon-num3, #container.season4 .month__item.month2 .icon-num3, #container.season4 .month__item.month3 .icon-num3 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -222px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num4, #container.season3 .month__item.month2 .icon-num4, #container.season3 .month__item.month3 .icon-num4, #container.season4 .month__item.month1 .icon-num4, #container.season4 .month__item.month2 .icon-num4, #container.season4 .month__item.month3 .icon-num4 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -333px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num5, #container.season3 .month__item.month2 .icon-num5, #container.season3 .month__item.month3 .icon-num5, #container.season4 .month__item.month1 .icon-num5, #container.season4 .month__item.month2 .icon-num5, #container.season4 .month__item.month3 .icon-num5 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -444px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num6, #container.season3 .month__item.month2 .icon-num6, #container.season3 .month__item.month3 .icon-num6, #container.season4 .month__item.month1 .icon-num6, #container.season4 .month__item.month2 .icon-num6, #container.season4 .month__item.month3 .icon-num6 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -555px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num7, #container.season3 .month__item.month2 .icon-num7, #container.season3 .month__item.month3 .icon-num7, #container.season4 .month__item.month1 .icon-num7, #container.season4 .month__item.month2 .icon-num7, #container.season4 .month__item.month3 .icon-num7 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -666px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num8, #container.season3 .month__item.month2 .icon-num8, #container.season3 .month__item.month3 .icon-num8, #container.season4 .month__item.month1 .icon-num8, #container.season4 .month__item.month2 .icon-num8, #container.season4 .month__item.month3 .icon-num8 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -777px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num9, #container.season3 .month__item.month2 .icon-num9, #container.season3 .month__item.month3 .icon-num9, #container.season4 .month__item.month1 .icon-num9, #container.season4 .month__item.month2 .icon-num9, #container.season4 .month__item.month3 .icon-num9 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -888px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num10, #container.season3 .month__item.month2 .icon-num10, #container.season3 .month__item.month3 .icon-num10, #container.season4 .month__item.month1 .icon-num10, #container.season4 .month__item.month2 .icon-num10, #container.season4 .month__item.month3 .icon-num10 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -999px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num11, #container.season3 .month__item.month2 .icon-num11, #container.season3 .month__item.month3 .icon-num11, #container.season4 .month__item.month1 .icon-num11, #container.season4 .month__item.month2 .icon-num11, #container.season4 .month__item.month3 .icon-num11 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -1110px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num12, #container.season3 .month__item.month2 .icon-num12, #container.season3 .month__item.month3 .icon-num12, #container.season4 .month__item.month1 .icon-num12, #container.season4 .month__item.month2 .icon-num12, #container.season4 .month__item.month3 .icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num13, #container.season3 .month__item.month2 .icon-num13, #container.season3 .month__item.month3 .icon-num13, #container.season4 .month__item.month1 .icon-num13, #container.season4 .month__item.month2 .icon-num13, #container.season4 .month__item.month3 .icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num14, #container.season3 .month__item.month2 .icon-num14, #container.season3 .month__item.month3 .icon-num14, #container.season4 .month__item.month1 .icon-num14, #container.season4 .month__item.month2 .icon-num14, #container.season4 .month__item.month3 .icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month1 .icon-num15, #container.season3 .month__item.month2 .icon-num15, #container.season3 .month__item.month3 .icon-num15, #container.season4 .month__item.month1 .icon-num15, #container.season4 .month__item.month2 .icon-num15, #container.season4 .month__item.month3 .icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number2.png?4103586586264);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .month__monster.passby, #container.season3 .month__item.month5 .month__monster.passby, #container.season3 .month__item.month6 .month__monster.passby, #container.season4 .month__item.month4 .month__monster.passby, #container.season4 .month__item.month5 .month__monster.passby, #container.season4 .month__item.month6 .month__monster.passby {
+  background-image: url("/assets/images/week_tree/bg_monster_frame04.png");
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num12, #container.season3 .month__item.month5 .icon.disabled.icon-num12, #container.season3 .month__item.month6 .icon.disabled.icon-num12, #container.season4 .month__item.month4 .icon.disabled.icon-num12, #container.season4 .month__item.month5 .icon.disabled.icon-num12, #container.season4 .month__item.month6 .icon.disabled.icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num13, #container.season3 .month__item.month5 .icon.disabled.icon-num13, #container.season3 .month__item.month6 .icon.disabled.icon-num13, #container.season4 .month__item.month4 .icon.disabled.icon-num13, #container.season4 .month__item.month5 .icon.disabled.icon-num13, #container.season4 .month__item.month6 .icon.disabled.icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num14, #container.season3 .month__item.month5 .icon.disabled.icon-num14, #container.season3 .month__item.month6 .icon.disabled.icon-num14, #container.season4 .month__item.month4 .icon.disabled.icon-num14, #container.season4 .month__item.month5 .icon.disabled.icon-num14, #container.season4 .month__item.month6 .icon.disabled.icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num15, #container.season3 .month__item.month5 .icon.disabled.icon-num15, #container.season3 .month__item.month6 .icon.disabled.icon-num15, #container.season4 .month__item.month4 .icon.disabled.icon-num15, #container.season4 .month__item.month5 .icon.disabled.icon-num15, #container.season4 .month__item.month6 .icon.disabled.icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num16, #container.season3 .month__item.month5 .icon.disabled.icon-num16, #container.season3 .month__item.month6 .icon.disabled.icon-num16, #container.season4 .month__item.month4 .icon.disabled.icon-num16, #container.season4 .month__item.month5 .icon.disabled.icon-num16, #container.season4 .month__item.month6 .icon.disabled.icon-num16 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1665px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num17, #container.season3 .month__item.month5 .icon.disabled.icon-num17, #container.season3 .month__item.month6 .icon.disabled.icon-num17, #container.season4 .month__item.month4 .icon.disabled.icon-num17, #container.season4 .month__item.month5 .icon.disabled.icon-num17, #container.season4 .month__item.month6 .icon.disabled.icon-num17 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1776px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num18, #container.season3 .month__item.month5 .icon.disabled.icon-num18, #container.season3 .month__item.month6 .icon.disabled.icon-num18, #container.season4 .month__item.month4 .icon.disabled.icon-num18, #container.season4 .month__item.month5 .icon.disabled.icon-num18, #container.season4 .month__item.month6 .icon.disabled.icon-num18 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1887px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num19, #container.season3 .month__item.month5 .icon.disabled.icon-num19, #container.season3 .month__item.month6 .icon.disabled.icon-num19, #container.season4 .month__item.month4 .icon.disabled.icon-num19, #container.season4 .month__item.month5 .icon.disabled.icon-num19, #container.season4 .month__item.month6 .icon.disabled.icon-num19 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -1998px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num20, #container.season3 .month__item.month5 .icon.disabled.icon-num20, #container.season3 .month__item.month6 .icon.disabled.icon-num20, #container.season4 .month__item.month4 .icon.disabled.icon-num20, #container.season4 .month__item.month5 .icon.disabled.icon-num20, #container.season4 .month__item.month6 .icon.disabled.icon-num20 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2109px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num21, #container.season3 .month__item.month5 .icon.disabled.icon-num21, #container.season3 .month__item.month6 .icon.disabled.icon-num21, #container.season4 .month__item.month4 .icon.disabled.icon-num21, #container.season4 .month__item.month5 .icon.disabled.icon-num21, #container.season4 .month__item.month6 .icon.disabled.icon-num21 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2220px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num22, #container.season3 .month__item.month5 .icon.disabled.icon-num22, #container.season3 .month__item.month6 .icon.disabled.icon-num22, #container.season4 .month__item.month4 .icon.disabled.icon-num22, #container.season4 .month__item.month5 .icon.disabled.icon-num22, #container.season4 .month__item.month6 .icon.disabled.icon-num22 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2331px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num23, #container.season3 .month__item.month5 .icon.disabled.icon-num23, #container.season3 .month__item.month6 .icon.disabled.icon-num23, #container.season4 .month__item.month4 .icon.disabled.icon-num23, #container.season4 .month__item.month5 .icon.disabled.icon-num23, #container.season4 .month__item.month6 .icon.disabled.icon-num23 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2442px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num24, #container.season3 .month__item.month5 .icon.disabled.icon-num24, #container.season3 .month__item.month6 .icon.disabled.icon-num24, #container.season4 .month__item.month4 .icon.disabled.icon-num24, #container.season4 .month__item.month5 .icon.disabled.icon-num24, #container.season4 .month__item.month6 .icon.disabled.icon-num24 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2553px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num25, #container.season3 .month__item.month5 .icon.disabled.icon-num25, #container.season3 .month__item.month6 .icon.disabled.icon-num25, #container.season4 .month__item.month4 .icon.disabled.icon-num25, #container.season4 .month__item.month5 .icon.disabled.icon-num25, #container.season4 .month__item.month6 .icon.disabled.icon-num25 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2664px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num26, #container.season3 .month__item.month5 .icon.disabled.icon-num26, #container.season3 .month__item.month6 .icon.disabled.icon-num26, #container.season4 .month__item.month4 .icon.disabled.icon-num26, #container.season4 .month__item.month5 .icon.disabled.icon-num26, #container.season4 .month__item.month6 .icon.disabled.icon-num26 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2775px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num27, #container.season3 .month__item.month5 .icon.disabled.icon-num27, #container.season3 .month__item.month6 .icon.disabled.icon-num27, #container.season4 .month__item.month4 .icon.disabled.icon-num27, #container.season4 .month__item.month5 .icon.disabled.icon-num27, #container.season4 .month__item.month6 .icon.disabled.icon-num27 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2886px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num28, #container.season3 .month__item.month5 .icon.disabled.icon-num28, #container.season3 .month__item.month6 .icon.disabled.icon-num28, #container.season4 .month__item.month4 .icon.disabled.icon-num28, #container.season4 .month__item.month5 .icon.disabled.icon-num28, #container.season4 .month__item.month6 .icon.disabled.icon-num28 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -2997px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num29, #container.season3 .month__item.month5 .icon.disabled.icon-num29, #container.season3 .month__item.month6 .icon.disabled.icon-num29, #container.season4 .month__item.month4 .icon.disabled.icon-num29, #container.season4 .month__item.month5 .icon.disabled.icon-num29, #container.season4 .month__item.month6 .icon.disabled.icon-num29 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -3108px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon.disabled.icon-num30, #container.season3 .month__item.month5 .icon.disabled.icon-num30, #container.season3 .month__item.month6 .icon.disabled.icon-num30, #container.season4 .month__item.month4 .icon.disabled.icon-num30, #container.season4 .month__item.month5 .icon.disabled.icon-num30, #container.season4 .month__item.month6 .icon.disabled.icon-num30 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3_disable.png?4103589284955);
+  background-position: -3219px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-flower.ing.incomplete, #container.season3 .month__item.month5 .icon-flower.ing.incomplete, #container.season3 .month__item.month6 .icon-flower.ing.incomplete, #container.season4 .month__item.month4 .icon-flower.ing.incomplete, #container.season4 .month__item.month5 .icon-flower.ing.incomplete, #container.season4 .month__item.month6 .icon-flower.ing.incomplete {
+  background-image: url("/assets/images/sprite/flower_bud3.png");
+}
+
+#container.season3 .month__item.month4 .icon-flower.ing.complete, #container.season3 .month__item.month5 .icon-flower.ing.complete, #container.season3 .month__item.month6 .icon-flower.ing.complete, #container.season4 .month__item.month4 .icon-flower.ing.complete, #container.season4 .month__item.month5 .icon-flower.ing.complete, #container.season4 .month__item.month6 .icon-flower.ing.complete {
+  background-image: url("/assets/images/sprite/flower3_this_week.png");
+}
+
+#container.season3 .month__item.month4 .icon-flower.ing.complete.motion, #container.season3 .month__item.month5 .icon-flower.ing.complete.motion, #container.season3 .month__item.month6 .icon-flower.ing.complete.motion, #container.season4 .month__item.month4 .icon-flower.ing.complete.motion, #container.season4 .month__item.month5 .icon-flower.ing.complete.motion, #container.season4 .month__item.month6 .icon-flower.ing.complete.motion {
+  background-image: url("/assets/images/sprite/flower3.png");
+}
+
+#container.season3 .month__item.month4 .icon-flower:not(.ing).incomplete, #container.season3 .month__item.month5 .icon-flower:not(.ing).incomplete, #container.season3 .month__item.month6 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month4 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month5 .icon-flower:not(.ing).incomplete, #container.season4 .month__item.month6 .icon-flower:not(.ing).incomplete {
+  background-image: url("/assets/images/week_tree/icon_flower_bud03.png");
+}
+
+#container.season3 .month__item.month4 .icon-flower:not(.ing).complete, #container.season3 .month__item.month5 .icon-flower:not(.ing).complete, #container.season3 .month__item.month6 .icon-flower:not(.ing).complete, #container.season4 .month__item.month4 .icon-flower:not(.ing).complete, #container.season4 .month__item.month5 .icon-flower:not(.ing).complete, #container.season4 .month__item.month6 .icon-flower:not(.ing).complete {
+  background-image: url("/assets/images/week_tree/icon_flower03.png");
+}
+
+#container.season3 .month__item.month4 .icon-flower:not(.ing).complete.motion, #container.season3 .month__item.month5 .icon-flower:not(.ing).complete.motion, #container.season3 .month__item.month6 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month4 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month5 .icon-flower:not(.ing).complete.motion, #container.season4 .month__item.month6 .icon-flower:not(.ing).complete.motion {
+  background-image: url("/assets/images/sprite/flower3.png");
+}
+
+#container.season3 .month__item.month4 .icon-num12, #container.season3 .month__item.month5 .icon-num12, #container.season3 .month__item.month6 .icon-num12, #container.season4 .month__item.month4 .icon-num12, #container.season4 .month__item.month5 .icon-num12, #container.season4 .month__item.month6 .icon-num12 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1221px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num13, #container.season3 .month__item.month5 .icon-num13, #container.season3 .month__item.month6 .icon-num13, #container.season4 .month__item.month4 .icon-num13, #container.season4 .month__item.month5 .icon-num13, #container.season4 .month__item.month6 .icon-num13 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1332px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num14, #container.season3 .month__item.month5 .icon-num14, #container.season3 .month__item.month6 .icon-num14, #container.season4 .month__item.month4 .icon-num14, #container.season4 .month__item.month5 .icon-num14, #container.season4 .month__item.month6 .icon-num14 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1443px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num15, #container.season3 .month__item.month5 .icon-num15, #container.season3 .month__item.month6 .icon-num15, #container.season4 .month__item.month4 .icon-num15, #container.season4 .month__item.month5 .icon-num15, #container.season4 .month__item.month6 .icon-num15 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1554px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num16, #container.season3 .month__item.month5 .icon-num16, #container.season3 .month__item.month6 .icon-num16, #container.season4 .month__item.month4 .icon-num16, #container.season4 .month__item.month5 .icon-num16, #container.season4 .month__item.month6 .icon-num16 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1665px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num17, #container.season3 .month__item.month5 .icon-num17, #container.season3 .month__item.month6 .icon-num17, #container.season4 .month__item.month4 .icon-num17, #container.season4 .month__item.month5 .icon-num17, #container.season4 .month__item.month6 .icon-num17 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1776px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num18, #container.season3 .month__item.month5 .icon-num18, #container.season3 .month__item.month6 .icon-num18, #container.season4 .month__item.month4 .icon-num18, #container.season4 .month__item.month5 .icon-num18, #container.season4 .month__item.month6 .icon-num18 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1887px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num19, #container.season3 .month__item.month5 .icon-num19, #container.season3 .month__item.month6 .icon-num19, #container.season4 .month__item.month4 .icon-num19, #container.season4 .month__item.month5 .icon-num19, #container.season4 .month__item.month6 .icon-num19 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -1998px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num20, #container.season3 .month__item.month5 .icon-num20, #container.season3 .month__item.month6 .icon-num20, #container.season4 .month__item.month4 .icon-num20, #container.season4 .month__item.month5 .icon-num20, #container.season4 .month__item.month6 .icon-num20 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2109px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num21, #container.season3 .month__item.month5 .icon-num21, #container.season3 .month__item.month6 .icon-num21, #container.season4 .month__item.month4 .icon-num21, #container.season4 .month__item.month5 .icon-num21, #container.season4 .month__item.month6 .icon-num21 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2220px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num22, #container.season3 .month__item.month5 .icon-num22, #container.season3 .month__item.month6 .icon-num22, #container.season4 .month__item.month4 .icon-num22, #container.season4 .month__item.month5 .icon-num22, #container.season4 .month__item.month6 .icon-num22 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2331px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num23, #container.season3 .month__item.month5 .icon-num23, #container.season3 .month__item.month6 .icon-num23, #container.season4 .month__item.month4 .icon-num23, #container.season4 .month__item.month5 .icon-num23, #container.season4 .month__item.month6 .icon-num23 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2442px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num24, #container.season3 .month__item.month5 .icon-num24, #container.season3 .month__item.month6 .icon-num24, #container.season4 .month__item.month4 .icon-num24, #container.season4 .month__item.month5 .icon-num24, #container.season4 .month__item.month6 .icon-num24 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2553px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num25, #container.season3 .month__item.month5 .icon-num25, #container.season3 .month__item.month6 .icon-num25, #container.season4 .month__item.month4 .icon-num25, #container.season4 .month__item.month5 .icon-num25, #container.season4 .month__item.month6 .icon-num25 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2664px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num26, #container.season3 .month__item.month5 .icon-num26, #container.season3 .month__item.month6 .icon-num26, #container.season4 .month__item.month4 .icon-num26, #container.season4 .month__item.month5 .icon-num26, #container.season4 .month__item.month6 .icon-num26 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2775px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num27, #container.season3 .month__item.month5 .icon-num27, #container.season3 .month__item.month6 .icon-num27, #container.season4 .month__item.month4 .icon-num27, #container.season4 .month__item.month5 .icon-num27, #container.season4 .month__item.month6 .icon-num27 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2886px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num28, #container.season3 .month__item.month5 .icon-num28, #container.season3 .month__item.month6 .icon-num28, #container.season4 .month__item.month4 .icon-num28, #container.season4 .month__item.month5 .icon-num28, #container.season4 .month__item.month6 .icon-num28 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -2997px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num29, #container.season3 .month__item.month5 .icon-num29, #container.season3 .month__item.month6 .icon-num29, #container.season4 .month__item.month4 .icon-num29, #container.season4 .month__item.month5 .icon-num29, #container.season4 .month__item.month6 .icon-num29 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -3108px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+#container.season3 .month__item.month4 .icon-num30, #container.season3 .month__item.month5 .icon-num30, #container.season3 .month__item.month6 .icon-num30, #container.season4 .month__item.month4 .icon-num30, #container.season4 .month__item.month5 .icon-num30, #container.season4 .month__item.month6 .icon-num30 {
+  display: block;
+  background-image: url(/assets/images/sprite/week_number3.png?4103589613637);
+  background-position: -3219px 0px;
+  width: 111px;
+  height: 58px;
+}
+
+.content-wrap__inner .movie-play .btn-intro, .content-wrap__inner .movie-play .btn-epilogue {
+  position: absolute;
+  top: 103px;
+  right: 18px;
+  z-index: 5;
+}
+
+.content-wrap__inner .movie-play .btn-intro:before, .content-wrap__inner .movie-play .btn-epilogue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105px;
+  height: 73px;
+  background: url("/assets/images/week_tree/icon_play_dim01.png") no-repeat 0 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.content-wrap__inner .movie-play .icon {
+  display: block;
+}
+
+.content-wrap__inner .movie-play .icon-intro {
+  width: 105px;
+  height: 73px;
+  background: url("/assets/images/week_tree/icon_intro_play01.png") no-repeat 0 0;
+  transition: background 0.3s;
+}
+
+.content-wrap__inner .movie-play .icon-epilogue {
+  width: 105px;
+  height: 73px;
+  background: url("/assets/images/week_tree/icon_epilogue_play01.png") no-repeat 0 0;
+  transition: background 0.3s;
+}
+
+.content-wrap__inner .icon-user {
+  position: absolute;
+  top: -122px;
+  left: 11px;
+  width: 88px;
+  height: 95px;
+  z-index: 5;
+  -webkit-animation: profileBounce .75s linear infinite;
+  animation: profileBounce .75s linear infinite;
+}
+
+.content-wrap__inner .icon-user:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/images/week_tree/icon_profile_frame01.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .icon-user img {
+  width: 64px;
+  height: 58px;
+  margin: 11px auto 0;
+}
+
+.content-wrap__inner .month__box {
+  position: relative;
+}
+
+.content-wrap__inner .month__item {
+  width: 1024px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content-wrap__inner .month__item .month__item-week {
+  width: 111px;
+  height: 58px;
+  position: absolute;
+  z-index: 4;
+}
+
+.content-wrap__inner .month__item .btn-intro {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  bottom: -42px;
+  left: 50%;
+  margin-left: -23px;
+  background: url("/assets/images/week_tree/icon_monster_play01.png") no-repeat 0 0;
+  background-size: 100%;
+  z-index: 10;
+}
+
+.content-wrap__inner .month__item .btn-week {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+}
+
+.content-wrap__inner .month__item .btn-week:disabled {
+  cursor: default;
+}
+
+.content-wrap__inner .month__item .btn-sound {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap__inner .month__item .icon {
+  display: block;
+}
+
+.content-wrap__inner .month__item .icon-flower {
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap__inner .month__item .icon-flower span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap__inner .month__item .icon-flower.default span {
+  display: none;
+}
+
+.content-wrap__inner .month__item .icon-flower.ing {
+  overflow: hidden;
+  background: no-repeat 0 0;
+}
+
+.content-wrap__inner .month__item .icon-flower.ing.incomplete {
+  -webkit-animation: flower-bud-number 0.6s steps(2) infinite forwards;
+  animation: flower-bud-number 0.6s steps(2) infinite forwards;
+}
+
+.content-wrap__inner .month__item .icon-flower.ing.complete {
+  -webkit-animation: flower-this-week 0.6s steps(2) infinite forwards;
+  animation: flower-this-week 0.6s steps(2) infinite forwards;
+}
+
+.content-wrap__inner .month__item .icon-flower.ing.complete.motion {
+  -webkit-animation: flower-number 1s steps(9) 1 forwards;
+  animation: flower-number 1s steps(9) 1 forwards;
+}
+
+.content-wrap__inner .month__item .icon-flower.incomplete {
+  background: no-repeat 0 0;
+}
+
+.content-wrap__inner .month__item .icon-flower:not(.ing).complete {
+  background: no-repeat 0 0;
+}
+
+.content-wrap__inner .month__item .icon-flower:not(.ing).complete.motion {
+  -webkit-animation: flower-number 1s steps(9) 1 forwards;
+  animation: flower-number 1s steps(9) 1 forwards;
+}
+
+.content-wrap__inner .month__item.month1.type1 .month__item-week.week1 {
+  top: 347px;
+  left: 14px;
+}
+
+.content-wrap__inner .month__item.month1.type1 .month__item-week.week2 {
+  top: 476px;
+  left: 117px;
+}
+
+.content-wrap__inner .month__item.month1.type1 .month__item-week.week3 {
+  top: 441px;
+  left: 290px;
+}
+
+.content-wrap__inner .month__item.month1.type1 .month__item-week.week4 {
+  top: 344px;
+  left: 394px;
+}
+
+.content-wrap__inner .month__item.month1.type2 .month__item-week.week1 {
+  top: 239px;
+  left: 42px;
+}
+
+.content-wrap__inner .month__item.month1.type2 .month__item-week.week2 {
+  top: 390px;
+  left: 16px;
+}
+
+.content-wrap__inner .month__item.month1.type2 .month__item-week.week3 {
+  top: 489px;
+  left: 118px;
+}
+
+.content-wrap__inner .month__item.month1.type2 .month__item-week.week4 {
+  top: 445px;
+  left: 286px;
+}
+
+.content-wrap__inner .month__item.month1.type2 .month__item-week.week5 {
+  top: 344px;
+  left: 394px;
+}
+
+.content-wrap__inner .month__item.month1 .month__monster {
+  top: 211px;
+  left: 160px;
+}
+
+.content-wrap__inner .month__item.month2.type1 .month__item-week.week1 {
+  top: 638px;
+  left: 317px;
+}
+
+.content-wrap__inner .month__item.month2.type1 .month__item-week.week2 {
+  top: 687px;
+  left: 476px;
+}
+
+.content-wrap__inner .month__item.month2.type1 .month__item-week.week3 {
+  top: 692px;
+  left: 686px;
+}
+
+.content-wrap__inner .month__item.month2.type1 .month__item-week.week4 {
+  top: 599px;
+  left: 823px;
+}
+
+.content-wrap__inner .month__item.month2.type2 .month__item-week.week1 {
+  top: 517px;
+  left: 371px;
+}
+
+.content-wrap__inner .month__item.month2.type2 .month__item-week.week2 {
+  top: 652px;
+  left: 313px;
+}
+
+.content-wrap__inner .month__item.month2.type2 .month__item-week.week3 {
+  top: 690px;
+  left: 481px;
+}
+
+.content-wrap__inner .month__item.month2.type2 .month__item-week.week4 {
+  top: 681px;
+  left: 689px;
+}
+
+.content-wrap__inner .month__item.month2.type2 .month__item-week.week5 {
+  top: 601px;
+  left: 834px;
+}
+
+.content-wrap__inner .month__item.month2 .month__monster {
+  top: 461px;
+  left: 552px;
+}
+
+.content-wrap__inner .month__item.month3.type1 .month__item-week.week1 {
+  top: 408px;
+  left: 856px;
+}
+
+.content-wrap__inner .month__item.month3.type1 .month__item-week.week2 {
+  top: 364px;
+  left: 593px;
+}
+
+.content-wrap__inner .month__item.month3.type1 .month__item-week.week3 {
+  top: 193px;
+  left: 521px;
+}
+
+.content-wrap__inner .month__item.month3.type1 .month__item-week.week4 {
+  top: 145px;
+  left: 713px;
+}
+
+.content-wrap__inner .month__item.month3.type2 .month__item-week.week1 {
+  top: 406px;
+  left: 842px;
+}
+
+.content-wrap__inner .month__item.month3.type2 .month__item-week.week2 {
+  top: 369px;
+  left: 607px;
+}
+
+.content-wrap__inner .month__item.month3.type2 .month__item-week.week3 {
+  top: 248px;
+  left: 501px;
+}
+
+.content-wrap__inner .month__item.month3.type2 .month__item-week.week4 {
+  top: 168px;
+  left: 621px;
+}
+
+.content-wrap__inner .month__item.month3.type2 .month__item-week.week5 {
+  top: 145px;
+  left: 772px;
+}
+
+.content-wrap__inner .month__item.month3 .month__monster {
+  top: 232px;
+  left: 701px;
+}
+
+.content-wrap__inner .month__item.month4.type1 .month__item-week.week1 {
+  top: 364px;
+  left: 76px;
+}
+
+.content-wrap__inner .month__item.month4.type1 .month__item-week.week2 {
+  top: 596px;
+  left: 43px;
+}
+
+.content-wrap__inner .month__item.month4.type1 .month__item-week.week3 {
+  top: 675px;
+  left: 259px;
+}
+
+.content-wrap__inner .month__item.month4.type1 .month__item-week.week4 {
+  top: 541px;
+  left: 403px;
+}
+
+.content-wrap__inner .month__item.month4.type2 .month__item-week.week1 {
+  top: 371px;
+  left: 60px;
+}
+
+.content-wrap__inner .month__item.month4.type2 .month__item-week.week2 {
+  top: 572px;
+  left: 31px;
+}
+
+.content-wrap__inner .month__item.month4.type2 .month__item-week.week3 {
+  top: 666px;
+  left: 233px;
+}
+
+.content-wrap__inner .month__item.month4.type2 .month__item-week.week4 {
+  top: 602px;
+  left: 379px;
+}
+
+.content-wrap__inner .month__item.month4.type2 .month__item-week.week5 {
+  top: 423px;
+  left: 395px;
+}
+
+.content-wrap__inner .month__item.month4 .month__monster {
+  top: 425px;
+  left: 121px;
+}
+
+.content-wrap__inner .month__item.month5.type1 .month__item-week.week1 {
+  top: 249px;
+  left: 311px;
+}
+
+.content-wrap__inner .month__item.month5.type1 .month__item-week.week2 {
+  top: 138px;
+  left: 478px;
+}
+
+.content-wrap__inner .month__item.month5.type1 .month__item-week.week3 {
+  top: 145px;
+  left: 676px;
+}
+
+.content-wrap__inner .month__item.month5.type1 .month__item-week.week4 {
+  top: 246px;
+  left: 804px;
+}
+
+.content-wrap__inner .month__item.month5.type2 .month__item-week.week1 {
+  top: 269px;
+  left: 294px;
+}
+
+.content-wrap__inner .month__item.month5.type2 .month__item-week.week2 {
+  top: 167px;
+  left: 393px;
+}
+
+.content-wrap__inner .month__item.month5.type2 .month__item-week.week3 {
+  top: 145px;
+  left: 558px;
+}
+
+.content-wrap__inner .month__item.month5.type2 .month__item-week.week4 {
+  top: 158px;
+  left: 698px;
+}
+
+.content-wrap__inner .month__item.month5.type2 .month__item-week.week5 {
+  top: 247px;
+  left: 804px;
+}
+
+.content-wrap__inner .month__item.month5 .month__monster {
+  top: 226px;
+  left: 465px;
+}
+
+.content-wrap__inner .month__item.month6.type1 .month__item-week.week1 {
+  top: 419px;
+  left: 645px;
+}
+
+.content-wrap__inner .month__item.month6.type1 .month__item-week.week2 {
+  top: 558px;
+  left: 559px;
+}
+
+.content-wrap__inner .month__item.month6.type1 .month__item-week.week3 {
+  top: 686px;
+  left: 667px;
+}
+
+.content-wrap__inner .month__item.month6.type1 .month__item-week.week4 {
+  top: 648px;
+  left: 875px;
+}
+
+.content-wrap__inner .month__item.month6.type2 .month__item-week.week1 {
+  top: 390px;
+  left: 714px;
+}
+
+.content-wrap__inner .month__item.month6.type2 .month__item-week.week2 {
+  top: 452px;
+  left: 595px;
+}
+
+.content-wrap__inner .month__item.month6.type2 .month__item-week.week3 {
+  top: 620px;
+  left: 571px;
+}
+
+.content-wrap__inner .month__item.month6.type2 .month__item-week.week4 {
+  top: 692px;
+  left: 694px;
+}
+
+.content-wrap__inner .month__item.month6.type2 .month__item-week.week5 {
+  top: 635px;
+  left: 869px;
+}
+
+.content-wrap__inner .month__item.month6 .month__monster {
+  top: 447px;
+  left: 730px;
+}
+
+.content-wrap__inner .month__monster {
+  position: absolute;
+  top: 288px;
+  left: 163px;
+  width: 165px;
+  height: 125px;
+  z-index: 3;
+}
+
+.content-wrap__inner .month__monster:not(.passby) {
+  -webkit-animation: week-tree-monster-common 0.8s steps(2) infinite forwards;
+  animation: week-tree-monster-common 0.8s steps(2) infinite forwards;
+}
+
+.content-wrap__inner .month__monster.disabled .btn-sound {
+  display: none;
+}
+
+.content-wrap__inner .month__monster.disabled .btn-intro {
+  display: none;
+}
+
+.content-wrap__inner .month__monster.passby {
+  background: no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.passby .btn-sound {
+  display: none;
+}
+
+.content-wrap__inner .month__monster.passby .btn-intro {
+  width: 55px;
+  height: 55px;
+  bottom: 27px;
+}
+
+.content-wrap__inner .month__monster.monster1.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster1.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster1.complete {
+  background: url("/assets/images/sprite/week_tree_monster1_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster2.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster2.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster2.complete {
+  background: url("/assets/images/sprite/week_tree_monster2_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster3.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster3.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster3.complete {
+  background: url("/assets/images/sprite/week_tree_monster3_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster4.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster4.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster4.complete {
+  background: url("/assets/images/sprite/week_tree_monster4_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster5.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster5.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster5.complete {
+  background: url("/assets/images/sprite/week_tree_monster5_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster6.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster6.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster6.complete {
+  background: url("/assets/images/sprite/week_tree_monster6_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster7.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster7.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster7.complete {
+  background: url("/assets/images/sprite/week_tree_monster7_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster8.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster8.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster8.complete {
+  background: url("/assets/images/sprite/week_tree_monster8_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster9.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster9.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster9.complete {
+  background: url("/assets/images/sprite/week_tree_monster9_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster10.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster10.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster10.complete {
+  background: url("/assets/images/sprite/week_tree_monster10_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster11.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster11.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster11.complete {
+  background: url("/assets/images/sprite/week_tree_monster11_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster12.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster12.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster12.complete {
+  background: url("/assets/images/sprite/week_tree_monster12_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster13.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster13.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster13.complete {
+  background: url("/assets/images/sprite/week_tree_monster13_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster14.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster14.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster14.complete {
+  background: url("/assets/images/sprite/week_tree_monster14_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster15.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster15.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster15.complete {
+  background: url("/assets/images/sprite/week_tree_monster15_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster16.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster16.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster16.complete {
+  background: url("/assets/images/sprite/week_tree_monster16_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster17.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster17.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster17.complete {
+  background: url("/assets/images/sprite/week_tree_monster17_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster18.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster18.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster18.complete {
+  background: url("/assets/images/sprite/week_tree_monster18_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster19.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster19.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster19.complete {
+  background: url("/assets/images/sprite/week_tree_monster19_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster20.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster20.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster20.complete {
+  background: url("/assets/images/sprite/week_tree_monster20_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster21.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster21.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster21.complete {
+  background: url("/assets/images/sprite/week_tree_monster21_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster22.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster22.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster22.complete {
+  background: url("/assets/images/sprite/week_tree_monster22_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster23.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster23.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster23.complete {
+  background: url("/assets/images/sprite/week_tree_monster23_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster24.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster24.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster24.complete {
+  background: url("/assets/images/sprite/week_tree_monster24_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster25.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster25.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster25.complete {
+  background: url("/assets/images/sprite/week_tree_monster25_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster26.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster26.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster26.complete {
+  background: url("/assets/images/sprite/week_tree_monster26_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster27.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster27.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster27.complete {
+  background: url("/assets/images/sprite/week_tree_monster27_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster28.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster28.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster28.complete {
+  background: url("/assets/images/sprite/week_tree_monster28_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster29.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster29.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster29.complete {
+  background: url("/assets/images/sprite/week_tree_monster29_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster30.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster30.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster30.complete {
+  background: url("/assets/images/sprite/week_tree_monster30_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster31.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster31.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster31.complete {
+  background: url("/assets/images/sprite/week_tree_monster31_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster32.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster32.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster32.complete {
+  background: url("/assets/images/sprite/week_tree_monster32_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster33.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster33.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster33.complete {
+  background: url("/assets/images/sprite/week_tree_monster33_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster34.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster34.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster34.complete {
+  background: url("/assets/images/sprite/week_tree_monster34_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster35.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster35.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster35.complete {
+  background: url("/assets/images/sprite/week_tree_monster35_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster36.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster36.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster36.complete {
+  background: url("/assets/images/sprite/week_tree_monster36_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster37.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster37.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster37.complete {
+  background: url("/assets/images/sprite/week_tree_monster37_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster38.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster38.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster38.complete {
+  background: url("/assets/images/sprite/week_tree_monster38_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster39.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster39.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster39.complete {
+  background: url("/assets/images/sprite/week_tree_monster39_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster40.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster40.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster40.complete {
+  background: url("/assets/images/sprite/week_tree_monster40_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster41.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster41.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster41.complete {
+  background: url("/assets/images/sprite/week_tree_monster41_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster42.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster42.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster42.complete {
+  background: url("/assets/images/sprite/week_tree_monster42_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster43.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster43.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster43.complete {
+  background: url("/assets/images/sprite/week_tree_monster43_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster44.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster44.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster44.complete {
+  background: url("/assets/images/sprite/week_tree_monster44_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster45.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster45.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster45.complete {
+  background: url("/assets/images/sprite/week_tree_monster45_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster46.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster46.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster46.complete {
+  background: url("/assets/images/sprite/week_tree_monster46_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster47.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster47.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster47.complete {
+  background: url("/assets/images/sprite/week_tree_monster47_complete.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster48.incomplete {
+  background: url("/assets/images/sprite/week_tree_monster48.png") no-repeat 0 0;
+}
+
+.content-wrap__inner .month__monster.monster48.complete {
+  background: url("/assets/images/sprite/week_tree_monster48_complete.png") no-repeat 0 0;
+}
+
+.monster-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 768px;
+  z-index: 100;
+}
+
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+/*# sourceMappingURL=../map/week_tree.css.map */

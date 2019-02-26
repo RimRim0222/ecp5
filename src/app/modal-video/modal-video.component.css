@@ -1,0 +1,52 @@
+.modal-video-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  text-align: center;
+}
+
+.skip-video {
+  display: none;
+  position: absolute;
+  bottom: 13px;
+  right: 18px;
+  z-index: 1;
+}
+.skip-video button {
+}
+
+.modal-video-outer {
+  position: relative;
+  display: inline-block;
+  top: 0;
+  width: 1024px;
+  height: 768px;
+}
+
+.centerVertically {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-video-outer .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 52px;
+  height: 50px;
+}
+
+.modal-video-outer .icon-close {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 52px;
+  height: 50px;
+  z-index: 1000;
+  background: url("/assets/images/flashcard/popup/icon_close01.png") no-repeat 0 0;
+}

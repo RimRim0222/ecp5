@@ -1,0 +1,170 @@
+<!--Header area(S) - include-->
+<header id="header" class="header">
+  <nav id="gnb">
+    <div class="hl-group">
+      <div class="hl-group__area">
+        <div class="hl-group__box">
+          <h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_with_parents_pr01_{{langType}}.png" alt="Progress"></h1>
+          <ul class="hl-group__items">
+            <li class="hl-group__item"><a [routerLink]="['/with-parents']" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick');"><i class="icon icon-back"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hr-group">
+      <div class="hr-group__area">
+        <div class="hr-group__box">
+          <ul class="hr-group__items">
+            <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'progress'})">
+              <i class="icon icon-help"></i></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<!--Header area(S) - include-->
+<!--Content area(S)-->
+<section id="container">
+  <div id="content">
+    <div class="content-wrap">
+      <div class="content-wrap__outer">
+        <!--Content real area(S)-->
+        <div class="content-wrap__inner">
+          <div class="withParents-progress">
+            <div class="swiper-controller">
+              <!--
+                List)
+                <button type="button" class="btn btn-swiper-prev-month"> - 이전 달 이동
+                  <button type="button" class="btn btn-swiper-prev-week"> - 이전 주 이동
+                  <button type="button" class="btn btn-swiper-next-week"> - 다음 주 이동
+                  <button type="button" class="btn btn-swiper-next-month"> - 다음 달 이동
+                <button type="button" class="btn btn-swiper-prev-month active"> - 이전 달 이동(click)
+                  <button type="button" class="btn btn-swiper-prev-week active"> - 이전 주 이동(click)
+                  <button type="button" class="btn btn-swiper-next-week active"> - 다음 주 이동(click)
+                  <button type="button" class="btn btn-swiper-next-month active"> - 다음 달 이동(click)
+              -->
+              <button type="button" class="btn btn-swiper-prev-month" (click)="_sndMgr.playEventSound('common', 'buttonClick'); slidePrev(5)"></button>
+              <button type="button" class="btn btn-swiper-prev-week" (click)="_sndMgr.playEventSound('common', 'buttonClick'); slidePrev(1)"></button>
+              <h3 class="month">{{monthName}}</h3>
+              <button type="button" class="btn btn-swiper-next-week" (click)="_sndMgr.playEventSound('common', 'buttonClick'); slideNext(1)"></button>
+              <button type="button" class="btn btn-swiper-next-month" (click)="_sndMgr.playEventSound('common', 'buttonClick'); slideNext(5)"></button>
+            </div>
+
+            <div class="withParents-progress__area js-scroll">
+                <div class="withParents-progress__box">
+
+                  <div class="data-table">
+                    <div class="fixed-area">
+                      <div class="fixed-box">
+                        <div class="phonics">
+                          <table>
+                            <colgroup>
+                              <col span="3" style="width:33.3%"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                              <th scope="row" rowspan="3" class="th-tit01"><span>Phonics</span></th>
+                              <th scope="row" rowspan="2" class="th-tit02"><span>Chant it!</span></th>
+                              <th scope="row" class="th-tit03"><span>Chant</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" class="th-tit03"><span>Flashcard</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" colspan="2" class="th-tit02"><span>Play it!</span></th>
+                            </tr>
+                            </thead>
+                          </table>
+                        </div>
+                        <div class="read-aloud">
+                          <table>
+                            <colgroup>
+                              <col span="3" style="width:33.3%"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                              <th scope="row" rowspan="3" class="th-tit01"><span>Read<br>Aloud</span></th>
+                              <th scope="row" rowspan="2" class="th-tit02"><span>Read it!</span></th>
+                              <th scope="row" class="th-tit03"><span>e-Book</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" class="th-tit03"><span>Flashcard</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" colspan="2" class="th-tit02"><span>Check it!</span></th>
+                            </tr>
+                            </thead>
+                          </table>
+                        </div>
+                        <div class="meet-greet">
+                          <table>
+                            <colgroup>
+                              <col span="3" style="width:33.3%"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                              <th scope="row" rowspan="3" class="th-tit01"><span>Meet<br>&<br>Greet</span></th>
+                              <th scope="row" rowspan="2" class="th-tit02"><span>Say it</span>!</th>
+                              <th scope="row" class="th-tit03"><span>Listen & Repeat</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" class="th-tit03"><span>Chant</span></th>
+                            </tr>
+                            <tr>
+                              <th socpe="row" colspan="2" class="th-tit02"><span>Find it</span>!</th>
+                            </tr>
+                            </thead>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <swiper [config]="config" [index]="scrollWeekIdx" (indexChange)="slideChangeHandler($event)">
+                      <div class="swiper-slide" *ngFor="let weekData of progressData; let idx = index">
+                        <div class="activity {{weekHeaderStyle[idx]['headerCls']}}">
+                          <h3 class="tit">{{weekHeaderStyle[idx]['title']}}</h3>
+                          <!--
+                              <a href="#" class="btn btn-activity default">Go!</a> - 기본
+                              <a href="#" class="btn btn-activity complete">Well done!</a> - 완료
+                              <a href="#" class="btn btn-activity disabled">Ready!</a> - 미오픈
+                              <a href="#" class="btn btn-activity vacation">No e-POLY!</a> - 방학
+                          -->
+                          <div class="activity-lists phonics">
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['PP1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['PP1']['week'], weekData['PP1']['actCode'], weekData['PP1']['btnCls'])" [disabled]="weekData['PP1']['disabled']">{{weekData['PP1']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['PF1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['PF1']['week'], weekData['PF1']['actCode'], weekData['PF1']['btnCls'])" [disabled]="weekData['PF1']['disabled']">{{weekData['PF1']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['PP2']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['PP2']['week'], weekData['PP2']['actCode'], weekData['PP2']['btnCls'])" [disabled]="weekData['PP2']['disabled']">{{weekData['PP2']['text']}}</button></div>
+                          </div>
+                          <div class="activity-lists read-aloud">
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['RV1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['RV1']['week'], weekData['RV1']['actCode'], weekData['RV1']['btnCls'])" [disabled]="weekData['RV1']['disabled']">{{weekData['RV1']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['RF1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['RF1']['week'], weekData['RF1']['actCode'], weekData['RF1']['btnCls'])" [disabled]="weekData['RF1']['disabled']">{{weekData['RF1']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['RP1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['RP1']['week'], weekData['RP1']['actCode'], weekData['RP1']['btnCls'])" [disabled]="weekData['RP1']['disabled']">{{weekData['RP1']['text']}}</button></div>
+                          </div>
+                          <div class="activity-lists meet-greet">
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['MP1']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['MP1']['week'], weekData['MP1']['actCode'], weekData['MP1']['btnCls'], 'listen')" [disabled]="weekData['MP1']['disabled']">{{weekData['MP1']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['MP11']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['MP11']['week'], weekData['MP11']['actCode'], weekData['MP11']['btnCls'], 'chant')" [disabled]="weekData['MP11']['disabled']">{{weekData['MP11']['text']}}</button></div>
+                            <div class="activity-list"><button class="btn btn-activity {{weekData['MP2']['btnCls']}}"
+                                (click)="this._sndMgr.playEventSound('common', 'buttonClick'); openContent(weekData['MP2']['week'], weekData['MP2']['actCode'], weekData['MP2']['btnCls'])" [disabled]="weekData['MP2']['disabled']">{{weekData['MP2']['text']}}</button></div>
+                          </div>
+                        </div>
+                      </div>
+                    </swiper>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Content area(E)-->

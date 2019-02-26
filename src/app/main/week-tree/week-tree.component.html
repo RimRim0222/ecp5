@@ -1,0 +1,85 @@
+<!--Header area(S)-->
+<header id="header" class="header">
+  <nav id="gnb">
+    <div class="hl-group">
+      <div class="hl-group__area">
+        <div class="hl-group__box">
+          <ul class="hl-group__items">
+            <li class="hl-group__item"><button type="button" [routerLink]="['/main']" class="btn" (click)='_sndMgr.playEventSound("common", "buttonClick")'><i class="icon icon-home"></i></button></li>
+          </ul>
+          <h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_play_it01.png" alt="Week Tree"></h1>
+        </div>
+      </div>
+    </div>
+    <app-main-header [type]="'weekTree'"></app-main-header>
+  </nav>
+</header>
+<!--Header area(E)-->
+<!--Content area(S)-->
+<section id="container" [ngClass]="getSeasonStyle()">
+  <div id="content">
+    <div class="content-wrap">
+      <div class="content-wrap__outer">
+          <!--Content real area(S)-->
+        <div class="content-wrap__inner">
+          <div class="week-tree">
+            <div class="week-tree__area">
+              <div class="week-tree__box">
+                <div class="movie-play">
+                  <button type="button" class="btn {{movieBtnStyle}}" (click)="playPrologEpilogVideo()">
+                    <i class="icon {{movieIconStyle}}"></i></button>
+                </div>
+                <i class="icon icon-user"><img src="{{_dataMgr.characterPath}}" alt=""></i>
+                <!--user 이미지-->
+
+                <div class="swiper">
+                  <!--Swiper area(S)-->
+                  <swiper [index]="isSeason2" [config]="config" (indexChange)="_sndMgr.playEventSound('common', 'pageMove'); changeSeason($event)">
+                    <!--Page Loop area-->
+                    <div class="swiper-slide" *ngFor="let season of weekGroupPerSeason; let seasonIdx = index">
+                      <!--Month area-->
+                      <div class="month">
+                        <div class="month__area">
+                          <div class="month__box">
+
+                            <ng-container *ngFor="let weeksOfMonth of season; let monthIdx = index">
+                              <div class="month__item month{{ monthIdx+1+(seasonIdx*3) }} {{weeksOfMonth.length == 4 ? 'type1' : 'type2'}}">
+                                  <!--기본-->
+                                <ng-container *ngFor="let week of weeksOfMonth; let weekIdx = index">
+                                  <div class="month__item-week week{{weekIdx+1}}">
+                                    <i [class]='"icon icon-num" + getWeekIconStyle(week)'></i>
+                                    <button type="button" class="btn btn-week" [disabled]='getWeekButtonStyle(week)' (click)='goSelectedWeekOfMain(week)' (dblclick)="doubleClickGoWeek()">
+                                        <i [class]='"icon icon-flower num" + getWeekFlowerStyle(week)'><span></span></i></button>
+                                  </div>
+                                </ng-container>
+
+                                <div [class]='"month__monster " + getMonthMonsterStyle(monthIdx+(seasonIdx*3))'>
+                                    <button type="button" class="btn btn-sound"></button>
+                                    <button type="button" class="btn btn-intro" (click)="playMonthVideo(monthIdx+(seasonIdx*3))"></button>
+                                </div>
+                              </div>
+                            </ng-container>
+
+                          </div>
+                        </div>
+                     </div>
+                   </div>
+
+                  </swiper>
+                    <!--Swiper area(E)-->
+                  <div class="swiper-controller">
+                      <button type="button" class="btn btn-swiper-prev"></button>
+                      <button type="button" class="btn btn-swiper-next"></button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--Content real area(E)-->
+      </div>
+    </div>
+  </div>
+</section>
+<!--Content area(E)-->

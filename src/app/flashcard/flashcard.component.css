@@ -1,0 +1,722 @@
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * oscar icon
+ */
+@-webkit-keyframes oscar-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2394px 0;
+  }
+}
+@keyframes oscar-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2394px 0;
+  }
+}
+
+/**
+ * card select icon
+ */
+@-webkit-keyframes card-select-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4552px 0;
+  }
+}
+@keyframes card-select-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4552px 0;
+  }
+}
+
+/**
+ * puzzle complete motion1 icon
+ */
+@-webkit-keyframes puzzle-complete-motion1-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9658px 0;
+  }
+}
+@keyframes puzzle-complete-motion1-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9658px 0;
+  }
+}
+
+/**
+ * puzzle complete motion2 icon
+ */
+@-webkit-keyframes puzzle-complete-motion2-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4084px 0;
+  }
+}
+@keyframes puzzle-complete-motion2-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4084px 0;
+  }
+}
+
+.main-flashcard-detail01__content .active.flashcard__item.puzzle-top-left:before, .main-flashcard-detail01__content .active.flashcard__item.puzzle-top-right:before, .main-flashcard-detail01__content .active.flashcard__item.puzzle-btm-left:before, .main-flashcard-detail01__content .active.flashcard__item.puzzle-btm-right:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 569px;
+  height: 570px;
+  margin: -285px 0 0 -285px;
+  /*-webkit-animation: card-select-icon 0.7s steps(8) 1 forwards;*/
+  /*animation: card-select-icon 0.7s steps(8) 1 forwards;*/
+  /*background: url("/assets/images/sprite/flashcard_select1.png") no-repeat 0 0;*/
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-steadfast.complete:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 878px;
+  height: 768px;
+  margin: -384px 0 0 -439px;
+  -webkit-animation: puzzle-complete-motion1-icon 1.1s steps(11) 1 forwards;
+  animation: puzzle-complete-motion1-icon 1.1s steps(11) 1 forwards;
+  background: url("/assets/images/sprite/flashcard_puzzle_complete1.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-steadfast.complete:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1021px;
+  height: 765px;
+  margin: -384px 0 0 -510px;
+  -webkit-animation: puzzle-complete-motion2-icon 1.1s steps(4) 1 forwards;
+  animation: puzzle-complete-motion2-icon 1.1s steps(4) 1 forwards;
+  background: url("/assets/images/sprite/flashcard_puzzle_complete2.png") no-repeat 0 0;
+}
+
+.main-flashcard01 {
+  position: relative;
+  width: 952px;
+  height: 675px;
+  margin: 0 auto;
+  z-index: 100;
+  overflow: hidden;
+  background: url("/assets/images/flashcard/bg_main01.png") no-repeat 0 0;
+}
+
+.main-flashcard01__header .btn {
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+
+.main-flashcard01__header .btn-box {
+  position: absolute;
+  top: 22px;
+  right: 37px;
+}
+
+.main-flashcard01__header .btn {
+  float: left;
+  margin-left: 7px;
+}
+
+.main-flashcard01__header .btn:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.main-flashcard01__header .btn-help {
+  width: 50px;
+  height: 50px;
+}
+
+.main-flashcard01__header .btn-close {
+  width: 50px;
+  height: 50px;
+}
+
+.main-flashcard01__header .icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.main-flashcard01__header .icon-help {
+  background: url("/assets/images/flashcard/icon_help01.png") no-repeat 0 0;
+}
+
+.main-flashcard01__header .icon-close {
+  background: url("/assets/images/flashcard/icon_close01.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard {
+  margin-top: 160px;
+}
+
+.main-flashcard01__content .flashcard__items {
+  width: 950px;
+  height: 451px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-flashcard01__content .flashcard__items.length1 .flashcard__item {
+  margin: 10px 22px;
+}
+
+.main-flashcard01__content .flashcard__items.length2 .flashcard__item {
+  margin: 10px 22px;
+}
+
+.main-flashcard01__content .flashcard__items.length3 .flashcard__item {
+  margin: 10px 22px;
+}
+
+.main-flashcard01__content .flashcard__items.length4 .flashcard__item {
+  margin: 10px 22px;
+}
+
+.main-flashcard01__content .flashcard__items.length5 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__items.length6 {
+  width: 586px;
+}
+
+.main-flashcard01__content .flashcard__items.length6 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__items.length7 {
+  width: 750px;
+}
+
+.main-flashcard01__content .flashcard__items.length7 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__items.length7 .flashcard__item:nth-of-type(1) {
+  margin-left: 70px;
+}
+
+.main-flashcard01__content .flashcard__items.length7 .flashcard__item:nth-of-type(3) {
+  margin-right: 70px;
+}
+
+.main-flashcard01__content .flashcard__items.length8 {
+  width: 750px;
+}
+
+.main-flashcard01__content .flashcard__items.length8 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__items.length9 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__items.length9 .flashcard__item:nth-of-type(1) {
+  margin-left: 70px;
+}
+
+.main-flashcard01__content .flashcard__items.length9 .flashcard__item:nth-of-type(4) {
+  margin-right: 70px;
+}
+
+.main-flashcard01__content .flashcard__items.length10 .flashcard__item {
+  margin: 10px 9px;
+}
+
+.main-flashcard01__content .flashcard__item {
+  position: relative;
+  width: 156px;
+  height: 216px;
+  transition: all 0.3s;
+}
+
+.main-flashcard01__content .flashcard__item.default {
+  overflow: hidden;
+  background: url("/assets/images/flashcard/bg_card_default.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard__item.default .img {
+  opacity: 0;
+}
+
+.main-flashcard01__content .flashcard__item.complete {
+  overflow: hidden;
+  background: url("/assets/images/flashcard/bg_card_complete.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard__item.complete .img {
+  opacity: 1;
+}
+
+.main-flashcard01__content .flashcard__item.active {
+  overflow: hidden;
+  background: url("/assets/images/flashcard/bg_card_default.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard__item.active img {
+  opacity: 0;
+}
+
+.main-flashcard01__content .flashcard__item.active.motion {
+  overflow: visible;
+}
+
+.main-flashcard01__content .flashcard__item.active.motion .icon-oscar {
+  pointer-events: none;
+  top: -90px;
+  left: -106px;
+  -webkit-animation: oscar-icon 0.583s steps(6) 1 forwards;
+  animation: oscar-icon 0.583s steps(6) 1 forwards;
+  background: url("/assets/images/sprite/flashcard_oscar1.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard__item.active .icon-oscar {
+  position: absolute;
+  top: -128px;
+  left: -157px;
+  width: 417px;
+  height: 343px;
+  background: url("/assets/images/flashcard/icon_card_active.png") no-repeat 0 0;
+}
+
+.main-flashcard01__content .flashcard .btn-card {
+  width: 100%;
+  height: 100%;
+}
+
+.main-flashcard01__content .flashcard .btn-card img {
+  width: 150px;
+  height: auto;
+  pointer-events: none; /* 드래그 불가용 1/8 */
+}
+
+.main-flashcard-detail01 {
+  position: relative;
+  width: 1024px;
+  height: 653px;
+  margin: 0 auto;
+}
+
+.main-flashcard-detail01__content .swiper-container {
+  width: 1024px;
+  height: 653px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-flashcard-detail01__content .swiper-container.active {
+  overflow: visible;
+}
+
+.main-flashcard-detail01__content .swiper-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.main-flashcard-detail01__content .swiper-slide {
+  position: relative;
+}
+
+.main-flashcard-detail01__content .swiper-slide-active.motion {
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.main-flashcard-detail01__content .swiper-slide-prev {
+  transform: scale(0.4);
+}
+
+.main-flashcard-detail01__content .swiper-slide-prev.motion {
+  transition: all 0.3s;
+}
+
+.main-flashcard-detail01__content .swiper-slide-next {
+  transform: scale(0.4);
+}
+
+.main-flashcard-detail01__content .swiper-slide-next.motion {
+  transition: all 0.3s;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-prev {
+  position: absolute;
+  top: 50%;
+  left: 86px;
+  width: 63px;
+  height: 115px;
+  margin-top: -67px;
+  background: url("/assets/images/flashcard/popup/icon_prev01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+  /* opacity: 0; */
+  display: none;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-next {
+  position: absolute;
+  top: 50%;
+  right: 86px;
+  width: 63px;
+  height: 115px;
+  margin-top: -67px;
+  background: url("/assets/images/flashcard/popup/icon_next01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-next.swiper-button-disabled {
+  /* opacity: 0; */
+  display: none;
+}
+
+.main-flashcard-detail01__content .flashcard {
+  margin-top: -10px;
+}
+
+.main-flashcard-detail01__content .flashcard__items {
+  position: relative;
+  height: 653px;
+  width: 708px;
+  padding: 44px 70px 44px 67px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: url("/assets/images/flashcard/popup/bg_flashcard.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01__content .flashcard__item {
+  position: relative;
+  width: 290px;
+  height: 285px;
+}
+
+.main-flashcard-detail01__content .flashcard__item .puzzle-img {
+  overflow: hidden;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.main-flashcard-detail01__content .flashcard__item .puzzle-img img {
+  max-width: 574px;
+  height: auto;
+  width: 100%;
+}
+
+.main-flashcard-detail01__content .flashcard__item .puzzle-txt {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.main-flashcard-detail01__content .flashcard__item .puzzle-txt.txt-high {
+  /*font: 700 54px/54px "Noto Sans", sans-serif;*/
+  font: 700 70px/70px "NotoSansECP", sans-serif;
+  color: #3b1e12;
+}
+
+.main-flashcard-detail01__content .flashcard__item .puzzle-txt.txt-low {
+  font: 700 70px/60px "Noto Sans", sans-serif;
+  color: #3b1e12;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-steadfast {
+  position: relative;
+  width: 100%;
+  height: 566px;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-top-left {
+  position: absolute;
+  top: 44px;
+  left: 67px;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-top-left.complete {
+  display: none;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-top-right {
+  position: absolute;
+  top: 44px;
+  right: 70px;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-top-right.complete {
+  display: none;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-btm-left {
+  position: absolute;
+  bottom: 44px;
+  left: 67px;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-btm-left.complete {
+  display: none;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-btm-right {
+  position: absolute;
+  bottom: 44px;
+  right: 70px;
+}
+
+.main-flashcard-detail01__content .flashcard__item.puzzle-btm-right.complete {
+  display: none;
+}
+
+.main-flashcard-detail01__content .flashcard .icon {
+  display: block;
+}
+
+.main-flashcard-detail01__content .flashcard .icon-oscar {
+  position: absolute;
+  top: -128px;
+  left: -157px;
+  width: 474px;
+  height: 475px;
+}
+
+.main-flashcard-detail01__content .flashcard .btn-card {
+  width: 100%;
+  height: 100%;
+}
+
+.main-flashcard-detail01 .btn {
+  overflow: visible;
+}
+
+.main-flashcard-detail01 .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+}
+
+.main-flashcard-detail01 .btn-puzzle-top-left {
+  width: 290px;
+  height: 285px;
+}
+
+.main-flashcard-detail01 .btn-puzzle-top-right {
+  width: 290px;
+  height: 285px;
+}
+
+.main-flashcard-detail01 .btn-puzzle-btm-left {
+  width: 290px;
+  height: 285px;
+}
+
+.main-flashcard-detail01 .btn-puzzle-btm-right {
+  width: 290px;
+  height: 285px;
+}
+
+.main-flashcard-detail01 .icon {
+  display: block;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.main-flashcard-detail01 .icon-oscar {
+  position: absolute;
+  top: -128px;
+  left: -157px;
+  width: 474px;
+  height: 475px;
+  -webkit-animation: oscar-icon 1s steps(9) 1 forwards;
+  animation: oscar-icon 1s steps(9) 1 forwards;
+  background: url("/assets/images/sprite/flashcard_oscar1.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01 .icon-close {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  border-radius: 5px;
+  background: url("/assets/images/flashcard/popup/icon_close01.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-top-left.type1 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type1/img_card1.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-top-left.type2 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type2/img_card1.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-top-left.type3 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type3/img_card1.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-top-right.type1 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type1/img_card2.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-top-right.type2 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type2/img_card2.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-top-right.type3 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type3/img_card2.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-btm-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-btm-left.type1 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type1/img_card3.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-btm-left.type2 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type2/img_card3.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-btm-left.type3 {
+  width: 289px;
+  height: 364px;
+  background: url("/assets/images/flashcard/popup/type3/img_card3.png") no-repeat 0 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-btm-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main-flashcard-detail01 .icon-puzzle-btm-right.type1 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type1/img_card4.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-btm-right.type2 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type2/img_card4.png") no-repeat 0 0;
+}
+.main-flashcard-detail01 .icon-puzzle-btm-right.type3 {
+  width: 368px;
+  height: 285px;
+  background: url("/assets/images/flashcard/popup/type3/img_card4.png") no-repeat 0 0;
+}
+
+/*# sourceMappingURL=../map/flashcard.css.map */
+
+.clip-test0 {
+  position: relative;
+  width: 400px;
+  height:400px;
+  clip-path: url(#polygon-clip-hexagon0);
+  -webkit-clip-path: url(#polygon-clip-hexagon0);
+  z-index: 3;
+}
+.clip-test1 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  clip-path: url(#polygon-clip-hexagon1);
+  -webkit-clip-path: url(#polygon-clip-hexagon1);
+  z-index: 2;
+}
+.clip-test2 {
+  position: relative;
+  top: -80px;
+  width: 400px;
+  height: 400px;
+  clip-path: url(#polygon-clip-hexagon2);
+  -webkit-clip-path: url(#polygon-clip-hexagon2);
+}
+.clip-test3 {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  left: -80px;
+  clip-path: url(#polygon-clip-hexagon3);
+  -webkit-clip-path: url(#polygon-clip-hexagon3);
+}

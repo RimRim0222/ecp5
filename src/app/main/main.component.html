@@ -1,0 +1,126 @@
+<router-outlet>
+  <header id="header" class="header">
+    <nav id="gnb">
+      <div class="hl-group" *ngIf="dataInitialized">
+        <div class="hl-group__area">
+          <div class="hl-group__box">
+            <strong class="demo" *ngIf="_dataMgr.isDemo"><img src="{{imagePath}}/main/img_demo01.png" alt=""></strong><!--비구매자 노출-->
+            <ul class="hl-group__items">
+              <li class="hl-group__item">
+                <button [routerLink]="['/week-tree']" class="btn" (click)="$event.stopPropagation();
+                _helper.gnbClose$.next(true); _sndMgr.playEventSound('main', 'weekTreeClick')" *ngIf="!_dataMgr.isDemo">
+                  <i class="icon icon-weekmap"></i>
+                </button></li>
+              <li class="hl-group__item">
+                <button *ngIf="!_dataMgr.isThisWeek" class="btn" (click)="$event.stopPropagation();
+                _helper.gnbClose$.next(true); _sndMgr.playEventSound('common', 'buttonClick'); changeWeek(_dataMgr.weekData.thisWeek)">
+                  <i class="icon icon-week"></i>
+                </button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <app-main-header [type]="'main'"></app-main-header>
+    </nav>
+  </header>
+  <div id="container" *ngIf="dataInitialized" [class]='"container " + getSeasonStyle() + " monster" + getMonsterBG()'>
+    <!--
+      상단에 제공되는 class monster1은 아래의 형식으로 개발해주세요
+      <section id="container" class="monster1 ~ 12">
+      몬스터 기준 1 = 3월
+    -->
+    <!--플래시 카드 테스트버튼
+    <div class="test">
+      <button type="button" id="evtSoundTestBtn" (click)="_sndMgr.playEventSound('common', 'buttonClick')">sound test</button>
+      <button type="button" (click)="_helper.openModal({type: 'pdfViewer', url: 'http://file.koreapolyschool.com/lms/portal/resources/_images/withParents/sticker/sticker_ladybug.pdf'})">iFrame PDF</button>
+      <button type="button" (click)="_helper.openContentFrame('contents', {activityCode:'TEST'})">컨텐츠API</button>
+      <button type="button" (click)="_dataMgr.setWeekMainActivity('complete')">set act Complete</button>
+      <button type="button" (click)="_dataMgr.setWeekMainActivity('incomplete')">set act incomplete</button>
+      <button type="button" (click)="_dataMgr.setWeekMainActivity('default')">set act default</button>
+    </div>-->
+    <div class="content-wrap">
+      <div class="content-wrap__outer">
+        <!--Content real area(S)-->
+        <div class="content-wrap__inner">
+          <div class="visual">
+            <div class="visual__area">
+              <!--보상 치료 어포넌스-->
+              <article class="touch-guide" style="display: none;">
+                <div class="week-mission__item"><button type="button" class="btn"><i class="icon icon-btn01 default"></i></button></div><!-- zindex 관계상 처리가 불가능함으로 별도의 element사용-->
+                <button type="button" class="btn btn-touch"></button>
+              </article>
+              <div class="visual__box" (click)="playMonsterHurtSound()">
+                <figure [class]='"monster " + getCharacterStyle(_dataMgr.weekData.viewWeek)'></figure>
+              </div>
+            </div>
+          </div>
+
+          <div [ngClass]="{'footer': true, 'unpurchase': _dataMgr.isDemo, 'purchase': !_dataMgr.isDemo}">
+            <div class="footer__area">
+              <div class="footer__box">
+                <div class="header" [ngSwitch]="_dataMgr.isThisWeek">
+                  <div class="header__box">
+
+                    <p class="header__txt">
+                      <span class="img">
+                        <img *ngSwitchCase=true src="{{imagePath}}/main/week/txt_week_this.gif" alt="Week">
+                        <img *ngSwitchCase=false src="{{imagePath}}/main/week/txt_week_num_prefix.gif" alt="Week">
+                      </span>
+                      <span *ngSwitchCase=false class="number">
+                        <i *ngFor="let digit of _helper.splitNumberDigits(_dataMgr.weekData.viewWeek)"
+                                 class="icon icon-num{{digit}}"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="content">
+                  <div class="swiper">
+                    <swiper [index]="(_dataMgr.weekData.viewWeek - _dataMgr.weekData.minValidWeek)"
+                            (indexChange)="_sndMgr.playEventSound('main', 'weekMove'); changeWeek($event + _dataMgr.weekData.minValidWeek)">
+                      <div class="week-mission swiper-slide" *ngFor="let week of _dataMgr.weekData.untilThisWeek">
+                        <div class="week-mission">
+                          <div class="week-mission__box">
+                            <ng-container *ngFor="let activity of activityInfo">
+                              <div class="week-mission__item">
+                                <button type="button" class="btn"
+                                        (click)="$event.stopPropagation(); _helper.gnbClose$.next(true); openMainContentFrame(activity['actId'])">
+                                  <i class="icon {{activity['status']}}" [ngClass]="( (activity.actId ==='PP1' || activity.actId ==='PP2' ) && week <= 13 ) ? 'icon-btn' + activity['subId'] : 'icon-btn' + activity['id'] "></i>
+                                </button>
+                              </div>
+                            </ng-container>
+                          </div>
+                        </div>
+                      </div>
+                    </swiper>
+                    <div class="swiper-controller">
+                      <button type="button" class="btn btn-swiper-prev" (click)="$event.stopPropagation(); checkNotBuyWeekAndOutOfSlide(-1)"></button>
+                      <button type="button" class="btn btn-swiper-next" (click)="$event.stopPropagation(); checkNotBuyWeekAndOutOfSlide(1)"></button>
+                    </div>
+                  </div>
+                  <!--Clubhouse(S)-->
+                  <div class="clubhouse">
+                      <div class="clubhouse__area">
+                          <div class="clubhouse__box">
+                              <div class="clubhouse__item">
+                                  <button type="button" class="btn" [routerLink]="['/clubhouse']" (click)="$event.stopPropagation(); _helper.gnbClose$.next(true); _sndMgr.playEventSound('common', 'buttonClick'); _sndMgr.playTitleSound('main', 'clubhouseTitle');">
+                                    <span><i class="icon icon-clubhouse"></i></span></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!--Clubhouse(E)-->
+                  <!--week touch guide-->
+                  <article *ngIf="isTouchGuideOpen" #touchGuide class="touch-guide">
+                    <div class="week-mission__item"><button type="button" class="btn"><i class="icon icon-btn01 default"></i></button></div><!-- zindex 관계상 처리가 불가능함으로 별도의 element사용-->
+                    <button type="button" class="btn btn-touch" (click)="touchGuideClose(); openMainContentFrame(activityInfo[0]['actId'])"></button>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</router-outlet>

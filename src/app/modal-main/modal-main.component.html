@@ -1,0 +1,286 @@
+<section class="modal depth{{depth}}" id="modalDepth{{depth}}" style="display: none;">
+    <div class="modal__outer">
+        <div class="modal__inner">
+            <button type="button" class="modal__dim"></button>
+            <article class="modal__content">
+
+                <!-- commonModal Alert -->
+              <div class="main-alert01 common-modal01" style="display: none;">
+                <!-- <h2 class="tit"><img src="{{imagePath}}/main/popup/alert/tit_vacation01.png" alt="Vacation"></h2> -->
+                <div class="txt-box">
+                  <p class="txt01" [innerHTML]="msg"></p>
+                </div>
+                <div class="btn-box">
+                  <button type="button" class="btn btn-ok" (click)="closeModal('commonModal'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                  </button>
+                  <button type="button" class="btn btn-close" (click)="closeModal('commonModal'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <i class="icon icon-close"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-alert03 common-modal02" style="display: none;">
+                <!-- <h2 class="tit"><img src="{{imagePath}}/main/popup/alert/tit_vacation01.png" alt="Vacation"></h2> -->
+                <div class="txt-box">
+                  <p class="txt01" [innerHTML]="msg"></p>
+                </div>
+                <div class="btn-box">
+                  <button type="button" class="btn btn-ok" (click)="closeModal('commonModal02'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                  </button>
+                  <button type="button" class="btn btn-close" (click)="closeModal('commonModal02'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <i class="icon icon-close"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-alert01 common-modal03" style="display: none;">
+                <h2 class="tit" [innerHTML]="title"></h2>
+                <div class="txt-box">
+                  <p class="txt01" [innerHTML]="msg"></p>
+                </div>
+                <div class="btn-box">
+                  <button type="button" class="btn btn-ok" (click)="closeModal('commonModal'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                  </button>
+                  <button type="button" class="btn btn-close" (click)="closeModal('commonModal'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                    <i class="icon icon-close"></i>
+                  </button>
+                </div>
+              </div>
+
+                <!-- noPoly Alert -->
+                <div class="main-alert01 modalNoPoly" style="display: none;">
+                  <h2 class="tit"><img src="{{imagePath}}/main/popup/alert/tit_vacation01.png" alt="Vacation"></h2>
+                  <div class="txt-box">
+                    <p class="txt01" [innerHTML]="message['contents.0009']['msg']"></p>
+                  </div>
+                  <div class="btn-box">
+                    <button type="button" class="btn btn-ok" (click)="closeModal('noPoly'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                      <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                    </button>
+                    <button type="button" class="btn btn-close" (click)="closeModal('noPoly'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                      <i class="icon icon-close"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- 비구매 주차 Popup -->
+                <div class="main-alert03 modalNotBuyWeek" style="display: none;">
+                    <div class="txt-box">
+                        <p class="txt01">더 많은 콘텐츠를 경험하고 싶으시다면,<br>e-POLY를 구매해 주세요.</p>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-ok" (click)="closeModal('notBuyWeek'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                          <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                        </button>
+                        <button type="button" class="btn btn-close" (click)="closeModal('notBuyWeek'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                          <i class="icon icon-close"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!--main reward-->
+                <div class="main-reward01" [ngStyle]="{background: 'url(' + imagePath + '/main/popup/reward/bg_reward0'+rewardType+'.png) no-repeat 0 0'}"
+                     style="display: none;">
+                  <!--touch guide-->
+                  <article class="touch-guide" style="display: none;">
+                    <button type="button" class="btn btn-touch" (click)="pickRewardIcon()"></button>
+                  </article>
+                  <span class="particle"></span>
+                  <figure class="item"><button type="button" class="btn" (click)="pickRewardIcon()">
+                    <img src="{{imagePath}}/main/popup/reward/img_item{{viewWeekGrp}}.png" alt="">
+                  </button></figure>
+                </div>
+
+                <!--팝업 => 몬스터 치료-->
+                <div class="monster-cure" style="display: none;">
+                    <div class="monster-cure__outer">
+                        <div class="monster-cure__inner">
+                            <div class="dim"></div>
+                            <!--
+                      Guide
+
+                      EX)
+                      let item = 1 ~ 6
+                      <i class="icon icon-cure-item${item}"></i>
+
+                      List)
+                      <i class="icon icon-cure-item1"></i> - week 1 ~ 4
+                      <i class="icon icon-cure-item2"></i> - week 5 ~ 8
+                      <i class="icon icon-cure-item3"></i> - week 9 ~ 12
+                      <i class="icon icon-cure-item4"></i> - week 13 ~ 16
+                      <i class="icon icon-cure-item5"></i> - week 17 ~ 20
+                      <i class="icon icon-cure-item6"></i> - week 21 ~ 24
+                    -->
+                            <div class="item"><i class="icon icon-cure-item1"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--main weekly reward -->
+                <div class="main-complete01" style="display: none;" (click)="weeklyCompleteDivClick()">
+                    <span class="particle"></span>
+                    <figure class="img"><img src="{{imagePath}}/main/popup/common/img_pepper01.png" alt=""></figure>
+                    <div class="txt-box">
+                        <p class="txt01"><img src="{{imagePath}}/main/popup/common/txt_excellent01.png" alt="Excellent!"></p>
+                        <p class="txt02"><img src="{{imagePath}}/main/popup/common/txt_tahn01.png" alt="The animal healthy now!"></p>
+                    </div>
+                </div>
+
+                <!-- Profile Setup Popup -->
+                <div class="modalProfileSetup" style="display: none;">
+                    <div class="main-profile01">
+                        <h2 class="tit"><img src="{{imagePath}}/main/popup/profile/tit_select_character01.png" alt="Select a Character"></h2>
+                        <div class="user-info">
+                            <div class="user-info-box">
+                                <!--
+                                  Guide
+
+                                  - Profile icon
+
+                                  Ex)
+                                  let character = default,yuri,oscar,pepper,leo
+                                  <figure class="user"><i class="icon icon-${character}-profile"></i></figure>
+
+                                  List)
+                                  <figure class="user"><i class="icon icon-default-profile"></i></figure></figure> - 디폴트
+                                  <figure class="user"><i class="icon icon-yuri-profile"></i></figure> - yuri
+                                  <figure class="user"><i class="icon icon-oscar-profile"></i></figure> - oscar
+                                  <figure class="user"><i class="icon icon-pepper-profile"></i></figure> - pepper
+                                  <figure class="user"><i class="icon icon-leo-profile"></i></figure> - leo
+                                  <figure class="user"><span class="img"><img src="{{imagePath}}/common/content_bg01.jpg" alt=""></span></figure> - 유저 사진이 있는경우
+                              -->
+                                <figure class="user"><i class="icon icon-{{character['selectedEle']['characterName'].toLowerCase()}}-profile" *ngIf="character['selectedEle']['characterName'] !== 'default' else profileImage"></i></figure>
+                                <!-- 유저 이미지가 있는경우-->
+                                <ng-template #profileImage><span class="img"><img src="{{(_dataMgr.sessionData != null) ? userPath + _dataMgr.sessionData['pictureUrl'] : character['selectedEle']['characterName']}}" alt=""></span></ng-template>
+                                <strong class="user-name"><span>{{(_dataMgr.sessionData != null) ?_dataMgr.sessionData['memberEngName'] : ''}}</span></strong>
+                                <div class="btn-box">
+                                    <button type="button" class="btn btn-restore" (click)="restoreCharacter()"><img src="{{imagePath}}/main/popup/profile/icon_restore01.png" alt="Restore"></button>
+                                    <button type="button" class="btn btn-save" (click)="saveCharacter()"><img src="{{imagePath}}/main/popup/profile/icon_save01.png" alt="Save"></button>
+                                </div>
+                            </div>
+                            <ul class="user-info-lists">
+                                <li class="user-info-list" *ngFor="let characterData of character['list']; let idx = index"><button type="button" class="btn btn-user" (click)="selectProfile(characterData)"><i class="icon icon-{{characterData['characterName'].toLowerCase()}}"></i></button></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-close" (click)='closeModal("profileSetup")'><i class="icon icon-close"></i></button>
+                    </div>
+                </div>
+
+                <!-- Loading Popup -->
+                <div class="modalLoading" style="display: none;">
+                    <div class="common-loading01">
+                        <figure class="img"></figure>
+                    </div>
+                </div>
+
+                <!-- 1시간 이상 게임 방지 Alert -->
+                <div class="main-alert02 modalEndPoly" style="display: none;">
+                  <div class="txt-box">
+                    <p class="txt01">게임을 너무 오래 했어요!</p>
+                    <p class="txt02">지나친 몰입을 방지 하기 위해<br>1시간 이상 진행 할 수 없어요.</p>
+                    <p class="txt03">OK 버튼을 누르시면 종료합니다.</p>
+                    <p class="txt04">12시간 이후에 다시 할 수 있어요.</p>
+                  </div>
+                  <div class="btn-box">
+                    <button type="button" class="btn btn-ok" (click)="closeModal('gameTimeLimitAlert'); _sndMgr.playEventSound('common', 'okBtnClick')">
+                      <img src="{{imagePath}}/main/popup/alert/btn_ok01.png" alt="OK">
+                    </button>
+                  </div>
+                </div>
+
+                <!-- pdfViewer Alert -->
+                <div class="modalPdfViewer sticker-print01" style="display: none;">
+                    <div class="header">
+                        <h2 class="tit"><img src="{{imagePath}}/with_parents_sticker_charts/popup/tit_sticker_chart01.png" alt=""></h2>
+                        <button type="button" class="btn btn-close" (click)='closeModal("pdfViewer")'>
+                  <i class="icon icon-close"></i>
+              </button>
+                    </div>
+                    <div class="container">
+                        <iframe [src]="urlPdf | safe: 'resourceUrl'" rameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!-- activitySheetPdfViewer Alert -->
+                <div class="modalActivitySheetPdfViewer poly-reader01" style="display: none;">
+                    <div class="header">
+                        <h2 class="tit"><img src="{{imagePath}}/club_house_reader/popup/tit_poly_reader01.png" alt=""></h2>
+                        <button type="button" class="btn btn-close" (click)='closeModal("activitySheetPdfViewer")'>
+                    <i class="icon icon-close"></i>
+                </button>
+                    </div>
+                    <div class="container">
+                        <iframe [src]="urlPdf | safe: 'resourceUrl'" rameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!-- meeGreetPdfViewer Alert -->
+                <div class="modalMeeGreetPdfViewer meet-greet01" style="display: none;">
+                    <div class="header">
+                        <h2 class="tit"><img src="{{imagePath}}/with_parents_meet_greet/popup/tit_meet_greet01.png" alt=""></h2>
+                        <button type="button" class="btn btn-close" (click)='closeModal("meetGreetPdfViewer")'>
+                  <i class="icon icon-close"></i>
+              </button>
+                    </div>
+                    <div class="container">
+                        <iframe [src]="urlPdf | safe: 'resourceUrl'" rameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <!--help common-->
+                <div class="common-help01" style="display: none;">
+                    <div class="header">
+                        <h2 class="tit" *ngIf="!help['title2']">{{help['title']}}</h2>
+                        <h2 class="tit inline" style="display: inline-block;" *ngIf="help['title2']">{{help['title']}}
+                            <i *ngIf="help['isArrow']" class="icon icon-arrow {{help['arrowCls']}}"></i>
+                        </h2>
+                        <h4 class="tit-small" *ngIf="help['title2']">{{help['title2']}}</h4>
+                        
+                        <button type="button" class="btn btn-view" *ngIf="help['guide']"><img src="{{imagePath}}/common/help/btn_view01.png" alt=""></button>
+                    </div>
+                    <div class="container">
+                        <div class="content">
+                            <div class="swiper" *ngIf="helpSwiperDisplay">
+                                <swiper [index]="0" [config]="helpConfig" (indexChange)="_sndMgr.playEventSound('common', 'pageMove')">
+                                    <div class="swiper-slide" *ngFor='let src of help["items"]'>
+                                        <span class="img"><img [src]="src" alt=""></span>
+                                    </div>
+                                </swiper>
+                                <!--swiper paging-->
+                                <div class="swiper-pagination-wrapper swiper-pagination"></div>
+                                <!--swiper controller-->
+                                <div class="swiper-controller">
+                                    <button type="button" class="btn btn-swiper-prev swiper-button-disabled"></button>
+                                    <button type="button" class="btn btn-swiper-next swiper-button-disabled"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-close" (click)='closeModal("commonHelp")'><i class="icon icon-close"></i></button>
+                </div>
+
+                <!--main close-->
+                <div class="main-close01" style="display: none;">
+                    <span class="particle"></span>
+                    <figure class="img"><img src="{{imagePath}}/main/popup/common/img_pepper04.png" alt=""></figure>
+                    <div class="txt-box">
+                        <p class="txt01"><img src="{{imagePath}}/main/popup/common/txt_dyrwtc01.png" alt="Do you really want to close?"></p>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" class="btn btn-yes" (click)="exitBrowser()">
+                          <img src="{{imagePath}}/main/popup/common/btn_yes01.png" alt="Yes"></button>
+                        <button type="button" class="btn btn-no" (click)="closeModal('mainClose')">
+                          <img src="{{imagePath}}/main/popup/common/btn_no01.png" alt="No"></button>
+                    </div>
+                </div>
+
+                <app-flashcard [modalDepth]="depth" (openEvent)="_helper.openModal($event)" (closeEvent)="closeModal($event)">
+                </app-flashcard>
+
+            </article>
+        </div>
+    </div>
+</section>

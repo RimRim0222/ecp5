@@ -1,0 +1,35 @@
+<div class="hr-group">
+  <div class="hr-group__area">
+    <div class="hr-group__box">
+      <button type="button" class="btn btn-menu" (click)="$event.stopPropagation(); _sndMgr.playEventSound('main', 'settingOpen'); gnbMenuOpen()"><span><i class="icon"></i></span></button>
+      <ul class="hr-group__items main">
+        <li class="hr-group__item main" *ngIf="!_dataMgr.isDemo">
+          <button type="button" class="btn" (click)="$event.stopPropagation(); _sndMgr.playEventSound('main', 'settingClick');
+            _helper.openModal({type: 'profileSetup'});"><i class="icon icon-profile"></i>
+          </button></li>
+                <li class="hr-group__item main" *ngIf="!_dataMgr.isDemo">
+                    <button [routerLink]="['/with-parents']" class="btn" (click)="$event.stopPropagation(); gnbMenuClose(true);
+                      _sndMgr.playEventSound('main', 'settingClick'); _sndMgr.playTitleSound('main', 'withParentsTitle');"><i class="icon icon-parent"></i>
+                    </button></li>
+                <li class="hr-group__item main">
+                    <button type="button" class="btn" (click)="$event.stopPropagation(); _sndMgr.playEventSound('common', 'buttonClick'); openHelp()"><i class="icon icon-help"></i>
+          </button></li>
+        <li class="hr-group__item main">
+          <!--
+    Guide
+
+    <i class="icon icon-bgm"></i> - bgn on
+    <i class="icon icon-bgm_mute"></i> - bgn off
+-->
+          <button type="button" class="btn btn-bgm" (click)="$event.stopPropagation(); _dataMgr.bgmToggle()">
+            <i class="icon icon-bgm{{bgmIconClass}}"></i>
+          </button>
+        </li>
+        <li class="hr-group__item main">
+          <button class="btn" (click)="$event.stopPropagation();_helper.openModal({type: 'mainClose'});_sndMgr.playEventSound('main', 'settingClick'); _sndMgr.playTitleSound('common', 'stopLearningConfirm');">
+            <i class="icon icon-logout"></i>
+          </button></li>
+      </ul>
+    </div>
+  </div>
+</div>

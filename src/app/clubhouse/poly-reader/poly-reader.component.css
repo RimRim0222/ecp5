@@ -1,0 +1,860 @@
+@charset "UTF-8";
+
+/**
+ * Font style setting
+ */
+
+
+/**
+ * FONT SIZE
+ */
+
+
+/* Point color setting */
+
+
+/* Background - color setting */
+
+
+/* Border - color setting */
+
+
+/* Font - color setting */
+
+
+/**
+ * BASE SETTING
+ */
+
+
+/**
+ * Z-INDEX
+ */
+
+
+/**
+ * 이번주차 아이콘
+ */
+
+@-webkit-keyframes this-week-icon {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}
+
+@keyframes this-week-icon {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}
+
+.content-wrap .swiper {
+    padding: 160px 0 0;
+    height: 768px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.content-wrap .swiper-container {
+    height: 493px;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev {
+    position: absolute;
+    top: 325px;
+    left: 15px;
+    width: 44px;
+    height: 72px;
+    background: url("/assets/images/club_house_reader/btn_prev01.png") no-repeat 0 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 3;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next {
+    position: absolute;
+    top: 325px;
+    right: 15px;
+    width: 44px;
+    height: 72px;
+    background: url("/assets/images/club_house_reader/btn_next01.png") no-repeat 0 0;
+    opacity: 1;
+    transition: opacity 0.3s;
+    z-index: 3;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next.swiper-button-disabled {
+    opacity: 0;
+}
+
+.content-wrap .swiper-slide {
+    padding-top: 22px;
+    z-index: 1;
+}
+
+.content-wrap .clubhouse-reader__items {
+    width: 826px;
+    height: 471px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-wrap .clubhouse-reader__items.length1 .clubhouse-reader__item:nth-of-type(1) {
+    margin: 0 56px;
+}
+
+.content-wrap .clubhouse-reader__items.length1 .clubhouse-reader__item:nth-of-type(2) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length1 .clubhouse-reader__item:nth-of-type(3) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length1 .clubhouse-reader__item:nth-of-type(4) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length1 .clubhouse-reader__item:nth-of-type(5) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length2 .clubhouse-reader__item:nth-of-type(1) {
+    margin: 0 56px;
+}
+
+.content-wrap .clubhouse-reader__items.length2 .clubhouse-reader__item:nth-of-type(2) {
+    margin: 0 56px;
+}
+
+.content-wrap .clubhouse-reader__items.length2 .clubhouse-reader__item:nth-of-type(3) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length2 .clubhouse-reader__item:nth-of-type(4) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length2 .clubhouse-reader__item:nth-of-type(5) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length3 .clubhouse-reader__item:nth-of-type(1) {
+    margin-right: 68px;
+}
+
+.content-wrap .clubhouse-reader__items.length3 .clubhouse-reader__item:nth-of-type(2) {
+    margin-right: 68px;
+}
+
+.content-wrap .clubhouse-reader__items.length3 .clubhouse-reader__item:nth-of-type(3) {
+    margin-right: 40px;
+}
+
+.content-wrap .clubhouse-reader__items.length3 .clubhouse-reader__item:nth-of-type(4) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length3 .clubhouse-reader__item:nth-of-type(5) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length4 .clubhouse-reader__item:nth-of-type(1) {
+    margin: 0 56px;
+}
+
+.content-wrap .clubhouse-reader__items.length4 .clubhouse-reader__item:nth-of-type(2) {
+    margin: 0 56px;
+}
+
+.content-wrap .clubhouse-reader__items.length4 .clubhouse-reader__item:nth-of-type(3) {
+    margin: 27px 56px 0;
+}
+
+.content-wrap .clubhouse-reader__items.length4 .clubhouse-reader__item:nth-of-type(4) {
+    margin: 27px 56px 0;
+}
+
+.content-wrap .clubhouse-reader__items.length4 .clubhouse-reader__item:nth-of-type(5) {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__items.length5 .clubhouse-reader__item:nth-of-type(1) {
+    margin-right: 68px;
+}
+
+.content-wrap .clubhouse-reader__items.length5 .clubhouse-reader__item:nth-of-type(2) {
+    margin-right: 68px;
+}
+
+.content-wrap .clubhouse-reader__items.length5 .clubhouse-reader__item:nth-of-type(3) {
+    margin-right: 40px;
+}
+
+.content-wrap .clubhouse-reader__items.length5 .clubhouse-reader__item:nth-of-type(4) {
+    margin: 27px 87px 0 0;
+}
+
+.content-wrap .clubhouse-reader__items.length5 .clubhouse-reader__item:nth-of-type(5) {
+    margin: 27px 0 0;
+}
+
+.content-wrap .clubhouse-reader__item {
+    position: relative;
+    width: 215px;
+    height: 222px;
+    display: block;
+    transform: scale(1);
+    transition: transform 0.3s;
+    transform: perspective(1000px) translateZ(0px);
+}
+
+.content-wrap .clubhouse-reader__item.bg-color01 {
+    background: url("/assets/images/club_house_reader/bg_item01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.bg-color02 {
+    background: url("/assets/images/club_house_reader/bg_item02.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.bg-color03 {
+    background: url("/assets/images/club_house_reader/bg_item03.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.bg-color04 {
+    background: url("/assets/images/club_house_reader/bg_item04.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.bg-color05 {
+    background: url("/assets/images/club_house_reader/bg_item05.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.disabled .tit-week {
+    opacity: 0.4;
+}
+
+.content-wrap .clubhouse-reader__item.disabled .txt-info {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__item.disabled img {
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+}
+
+.content-wrap .clubhouse-reader__item.complete:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -24px;
+    width: 49px;
+    height: 49px;
+    background: url("/assets/images/club_house_reader/icon_complete01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.active:not(.disabled):not(.vacation) {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    transform: perspective(1000px) translateZ(50px);
+  }
+
+.content-wrap .clubhouse-reader__item.vacation {
+    background: url("/assets/images/club_house_reader/bg_item_vacation.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.vacation .tit-week {
+    color: #d4dde1;
+}
+
+.content-wrap .clubhouse-reader__item.vacation .img {
+    display: none;
+}
+
+.content-wrap .clubhouse-reader__item.this-week:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -55px;
+    width: 100px;
+    height: 260px;
+    -webkit-animation: this-week-icon 1s steps(2) infinite forwards;
+    animation: this-week-icon 1s steps(2) infinite forwards;
+    background: url("/assets/images/sprite/club_house_reader_this_week.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .tit-week,
+.content-wrap .clubhouse-reader__item.this-week .txt-info {
+    color: #fff509;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-txt-week {
+    width: 77px;
+    height: 24px;
+    background: url("/assets/images/club_house_reader/txt_week01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num1 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: 0px 0px;
+    width: 9px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num2 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -9px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num3 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -24px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num4 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -39px 0px;
+    width: 17px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num5 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -56px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num6 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -71px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num7 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -86px 0px;
+    width: 16px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num8 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -102px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num9 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -117px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num10 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -132px 0px;
+    width: 29px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num11 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -161px 0px;
+    width: 21px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num12 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -182px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num13 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -210px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num14 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -238px 0px;
+    width: 29px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num15 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -267px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num16 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -295px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num17 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -323px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num18 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -351px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num19 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -379px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num20 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -407px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num21 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -441px 0px;
+    width: 26px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num22 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -467px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num23 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -500px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num24 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -533px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num25 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -567px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num26 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -600px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num27 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -633px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num28 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -667px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num29 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -700px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item.this-week .icon-num30 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+    background-position: -733px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .tit-week {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 12px;
+    height: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font: 700 30px/30px "NSRoundECP", sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.content-wrap .clubhouse-reader__item .tit-week .number-box {
+    margin: 3px 0 0 10px;
+}
+
+.content-wrap .clubhouse-reader__item .img {
+    position: absolute;
+    top: 41px;
+    left: 18px;
+    overflow: hidden;
+    width: 178px;
+    height: 126px;
+    border-radius: 14px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-txt-week {
+    width: 77px;
+    height: 24px;
+    background: url("/assets/images/club_house_reader/txt_week01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num1 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: 0px 0px;
+    width: 9px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num2 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -9px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num3 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -24px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num4 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -39px 0px;
+    width: 17px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num5 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -56px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num6 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -71px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num7 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -86px 0px;
+    width: 16px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num8 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -102px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num9 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -117px 0px;
+    width: 15px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num10 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -132px 0px;
+    width: 29px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num11 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -161px 0px;
+    width: 21px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num12 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -182px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num13 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -210px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num14 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -238px 0px;
+    width: 29px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num15 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -267px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num16 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -295px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num17 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -323px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num18 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -351px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num19 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -379px 0px;
+    width: 28px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num20 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -407px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num21 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -441px 0px;
+    width: 26px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num22 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -467px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num23 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -500px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num24 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -533px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num25 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -567px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num26 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -600px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num27 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -633px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num28 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -667px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num29 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -700px 0px;
+    width: 33px;
+    height: 22px;
+}
+
+.content-wrap .clubhouse-reader__item .icon-num30 {
+    display: inline-block;
+    background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+    background-position: -733px 0px;
+    width: 34px;
+    height: 22px;
+}
+
+.content-wrap .txt-box {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 56px;
+    width: 178px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-wrap .txt-box .txt-info {
+    width: 170px;
+    padding-bottom: 3px;
+    font: 700 22px/26px "comic", sans-serif;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* 라인수 */
+}
+
+
+/*
+/deep/ #wrap{
+	&.club-reader {
+		@extend %swiper-pagination;
+	}
+}
+*/
+
+
+/*# sourceMappingURL=../map/club_house_reader.css.map */

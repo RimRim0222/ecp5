@@ -1,0 +1,367 @@
+@charset "UTF-8";
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * 이번주차 아이콘
+ */
+@-webkit-keyframes this-week-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -552px 0;
+  }
+}
+@keyframes this-week-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -552px 0;
+  }
+}
+
+.content-wrap .swiper {
+  padding: 148px 0 0;
+  height: 768px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content-wrap .swiper-container {
+  height: 510px;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev {
+  position: absolute;
+  top: 325px;
+  left: 15px;
+  width: 44px;
+  height: 72px;
+  background: url("/assets/images/club_photo_shoot/btn_prev01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next {
+  position: absolute;
+  top: 325px;
+  right: 15px;
+  width: 44px;
+  height: 72px;
+  background: url("/assets/images/club_photo_shoot/btn_next01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 3;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .swiper-slide {
+  padding-top: 0;
+  z-index: 1;
+}
+
+.content-wrap .clubhouse-photo-shoot__items {
+  width: 826px;
+  height: 471px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length1 .clubhouse-photo-shoot__item:nth-of-type(1) {
+  margin: 0 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length1 .clubhouse-photo-shoot__item:nth-of-type(2) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length1 .clubhouse-photo-shoot__item:nth-of-type(3) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length1 .clubhouse-photo-shoot__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length1 .clubhouse-photo-shoot__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length2 .clubhouse-photo-shoot__item:nth-of-type(1) {
+  margin: 0 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length2 .clubhouse-photo-shoot__item:nth-of-type(2) {
+  margin: 0 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length2 .clubhouse-photo-shoot__item:nth-of-type(3) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length2 .clubhouse-photo-shoot__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length2 .clubhouse-photo-shoot__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length3 .clubhouse-photo-shoot__item:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length3 .clubhouse-photo-shoot__item:nth-of-type(2) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length3 .clubhouse-photo-shoot__item:nth-of-type(3) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length3 .clubhouse-photo-shoot__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length3 .clubhouse-photo-shoot__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length4 .clubhouse-photo-shoot__item:nth-of-type(1) {
+  margin: 0 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length4 .clubhouse-photo-shoot__item:nth-of-type(2) {
+  margin: 0 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length4 .clubhouse-photo-shoot__item:nth-of-type(3) {
+  margin: 44px 40px 0 190px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length4 .clubhouse-photo-shoot__item:nth-of-type(4) {
+  margin: 44px 40px 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length4 .clubhouse-photo-shoot__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length5 .clubhouse-photo-shoot__item:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length5 .clubhouse-photo-shoot__item:nth-of-type(2) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length5 .clubhouse-photo-shoot__item:nth-of-type(3) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length5 .clubhouse-photo-shoot__item:nth-of-type(4) {
+  margin: 44px 87px 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__items.length5 .clubhouse-photo-shoot__item:nth-of-type(5) {
+  margin: 44px 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__item {
+  position: relative;
+  width: 174px;
+  height: 204px;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s;
+  transform: perspective(1000px) translateZ(0px);
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color01 {
+  background: url("/assets/images/club_photo_shoot/bg_item01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color01.complete .complete-box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 34px;
+  width: 100px;
+  height: 25px;
+  background: url("/assets/images/club_photo_shoot/bg_item01_complete.png") no-repeat 0 0;
+  z-index: -1;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color02 {
+  background: url("/assets/images/club_photo_shoot/bg_item02.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color02.complete .complete-box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 34px;
+  width: 100px;
+  height: 25px;
+  background: url("/assets/images/club_photo_shoot/bg_item02_complete.png") no-repeat 0 0;
+  z-index: -1;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color03 {
+  background: url("/assets/images/club_photo_shoot/bg_item03.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color03.complete .complete-box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 34px;
+  width: 100px;
+  height: 25px;
+  background: url("/assets/images/club_photo_shoot/bg_item03_complete.png") no-repeat 0 0;
+  z-index: -1;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color04 {
+  background: url("/assets/images/club_photo_shoot/bg_item04.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.bg-color04.complete .complete-box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 34px;
+  width: 100px;
+  height: 25px;
+  background: url("/assets/images/club_photo_shoot/bg_item04_complete.png") no-repeat 0 0;
+  z-index: -1;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.active:not(.disabled):not(.vacation) {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  transform: perspective(1000px) translateZ(50px);
+}
+
+.content-wrap .clubhouse-photo-shoot__item.disabled .tit-week {
+  opacity: 0.4;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.complete .complete-box {
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 38px;
+  text-align: center;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.this-week .btn:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -55px;
+  width: 276px;
+  height: 240px;
+  -webkit-animation: this-week-icon 1s steps(2) infinite forwards;
+  animation: this-week-icon 1s steps(2) infinite forwards;
+  background: url("/assets/images/sprite/club_house_photo_shoot_this_week.png") no-repeat 0 0;
+  z-index: 1;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.this-week .tit-week {
+  color: #fff509;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.vacation {
+  background: url("/assets/images/club_photo_shoot/bg_item_vacation.png") no-repeat 0 0 !important;
+}
+
+.content-wrap .clubhouse-photo-shoot__item.vacation .tit-week {
+  opacity: 0.6;
+}
+/*
+.content-wrap .clubhouse-photo-shoot__item .complete-box {
+   display: none; 
+}
+*/
+
+.content-wrap .clubhouse-photo-shoot__item .tit-week {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  display: flex;
+  font: 700 27px/27px "NSRoundECP", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  align-content: center;
+  justify-content: center;
+}
+
+.content-wrap .clubhouse-photo-shoot__item .tit-week img {
+  vertical-align: top;
+}
+
+.content-wrap .clubhouse-photo-shoot__item .tit-week .number-box {
+  margin: 3px 0 0 10px;
+}
+
+.content-wrap .clubhouse-photo-shoot__item .btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap .clubhouse-photo-shoot__item .img {
+  position: absolute;
+  bottom: 39px;
+  left: -5px;
+  overflow: hidden;
+  width: 185px;
+  height: 152px;
+}
+
+.content-wrap .clubhouse-photo-shoot__item .icon-star {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  background: url("/assets/images/club_photo_shoot/icon_star.png") no-repeat 0 0;
+}
+
+/*
+/deep/ #wrap{
+	&.club-photo-shoot{
+		@extend %swiper-pagination;
+	}
+}
+*/
+
+/*# sourceMappingURL=../map/club_photo_shoot.css.map */

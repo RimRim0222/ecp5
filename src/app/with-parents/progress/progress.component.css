@@ -1,0 +1,394 @@
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+.content-wrap .withParents-progress {
+  padding-top: 162px;
+}
+
+.content-wrap .withParents-progress__area {
+  position: relative;
+  left: 15px;
+  width: 998px;
+  height: 606px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.content-wrap .withParents-progress__area::-webkit-scrollbar {
+  right: 5px;
+  height: 558px !important;
+  width: 3px;
+}
+.content-wrap .withParents-progress__area::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content-wrap .withParents-progress__area::-webkit-scrollbar-thumb {
+  background: lightgrey;
+}
+
+.content-wrap .withParents-progress__box {
+  position: relative;
+  height: auto !important;
+}
+.content-wrap .withParents-progress__box .data-table {
+  position: relative;
+  padding-left: 320px;
+  width: 660px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.content-wrap .withParents-progress__box .data-table .fixed-area {
+  overflow: hidden;
+  border-radius: 10px 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content-wrap .withParents-progress__box .data-table .fixed-area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(152, 198, 255, 0.5);
+}
+
+.content-wrap .withParents-progress__box .data-table .fixed-box .phonics {
+  height: 194px;
+  margin-top: 50px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+}
+
+.content-wrap .withParents-progress__box .data-table .fixed-box .read-aloud {
+  height: 194px;
+  margin-top: 30px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+}
+
+.content-wrap .withParents-progress__box .data-table .fixed-box .meet-greet {
+  height: 194px;
+  margin-top: 30px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+}
+
+.content-wrap .withParents-progress__box .data-table table {
+  position: relative;
+  width: 320px;
+  height: 192px;
+}
+
+.content-wrap .withParents-progress__box .data-table th {
+  position: relative;
+  height: 64px;
+  font: 400 23px/25px "NotoSansECP", sans-serif;
+  color: #5d9eed;
+  text-align: center;
+  vertical-align: middle;
+  background: #f7fcf8 url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress__box .data-table th span {
+  display: inline-block;
+}
+
+.content-wrap .withParents-progress__box .data-table th span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_col01.gif") repeat-y 0 2px;
+}
+
+.content-wrap .withParents-progress__box .data-table th.th-tit01 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content-wrap .withParents-progress__box .data-table th.th-tit02 {
+  font-size: 18px;
+}
+
+.content-wrap .withParents-progress__box .data-table th.th-tit03 {
+  font-size: 18px;
+}
+
+.content-wrap .withParents-progress__box .data-table .swiper-slide {
+  width: 132px !important;
+}
+
+.content-wrap .withParents-progress__box .data-table .swiper-slide:nth-last-child(1) .activity-list:after {
+  display: none;
+}
+
+.content-wrap .withParents-progress__box .data-table .swiper-slide:nth-last-child(1) .activity-list .btn {
+  width: 132px;
+}
+
+.content-wrap .withParents-progress__box .activity {
+  width: 132px;
+}
+
+.content-wrap .withParents-progress__box .activity.this-week .tit {
+  width: 130px;
+  color: #f4e850 !important;
+  background-color: #5d9eed !important;
+  font-weight: bold;
+}
+
+.content-wrap .withParents-progress__box .activity.this-week .tit:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 50px;
+  background-color: rgba(152, 198, 255, 0.5);
+}
+
+.content-wrap .withParents-progress__box .activity.this-week .btn-activity.default {
+  color: #f4e850;
+  background-color: #5d9eed;
+}
+
+.content-wrap .withParents-progress__box .activity.this-week .btn-activity.complete {
+  color: #f4e850;
+  background-color: #69c4fd;
+}
+
+.content-wrap .withParents-progress__box .activity .tit {
+  width: 132px;
+  height: 50px;
+  font: 400 20px/50px "NotoSansECP", sans-serif;
+  color: #5d9eed;
+  background-color: rgba(152, 198, 255, 0.5);
+}
+
+.content-wrap .withParents-progress__box .activity-lists {
+  position: relative;
+  padding-bottom: 2px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+}
+
+.content-wrap .withParents-progress__box .activity-lists.read-aloud {
+  margin-top: 30px;
+}
+
+.content-wrap .withParents-progress__box .activity-lists.meet-greet {
+  margin-top: 30px;
+}
+
+.content-wrap .withParents-progress__box .activity-list {
+  height: 64px;
+  /*height: 62px;
+  margin-top: 2px;*/
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.png") repeat-x 0 0;
+}
+/*
+.content-wrap .withParents-progress__box .activity-list:nth-child(1), .content-wrap .withParents-progress__box .activity-list:nth-child(2) {
+  margin-top: 0;
+  padding-top: 2px;
+}
+
+.content-wrap .withParents-progress__box .activity-list:nth-child(1) .btn, .content-wrap .withParents-progress__box .activity-list:nth-child(2) .btn {
+  height: 64px;
+}
+*/
+.content-wrap .withParents-progress__box .activity-list:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: url("/assets/images/with_parents_progress/bl_arrow_col01.gif") repeat-y 0 2px;
+}
+
+.content-wrap .withParents-progress__box .activity .btn {
+  width: 130px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrap .withParents-progress__box .activity .btn:after {
+  content: "";
+  position: absolute;
+  /*top: -2px;*/
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  background: url("/assets/images/with_parents_progress/bl_arrow_row01.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity {
+  position: relative;
+  font: 400 21px/50px "NotoSansECP", sans-serif;
+  color: transparent;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity:before {
+  content: "";
+  position: absolute;
+  /*top: -2px;*/
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 66px;
+  border: 4px solid #1e58eb;
+  box-sizing: border-box;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity.default {
+  color: #f16587;
+  background-color: #fed7dc;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity.complete {
+  color: #fff;
+  background-color: #69c4fd;
+  font-weight: bold;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity.disabled {
+  background-color: #eaeaea;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity.vacation {
+  font-size: 19px;
+  color: #cdcbcb;
+  background-color: #f9f9f4;
+  cursor: default;
+}
+
+.content-wrap .withParents-progress__box .activity .btn-activity.review:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.content-wrap .withParents-progress .swiper-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 10px 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content-wrap .withParents-progress .swiper-controller .month {
+  width: 129px;
+  font: 700 35px/33px "NotoSansECP", sans-serif;
+  color: #5d9eed;
+  letter-spacing: 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn {
+  margin: 0 7px 0 8px;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-month {
+  width: 30px;
+  height: 33px;
+  background: url("/assets/images/with_parents_progress/icon_prev01_month.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-month.active {
+  background-image: url("/assets/images/with_parents_progress/icon_prev01_month_active.png");
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-month.hidden {
+  visibility: hidden !important;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week {
+  width: 18px;
+  height: 33px;
+  background: url("/assets/images/with_parents_progress/icon_prev01_week.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week.active {
+  background-image: url("/assets/images/with_parents_progress/icon_prev01_week_active.png");
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week.hidden {
+  visibility: hidden !important;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-month {
+  width: 30px;
+  height: 33px;
+  background: url("/assets/images/with_parents_progress/icon_next01_month.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-month.active {
+  background-image: url("/assets/images/with_parents_progress/icon_next01_month_active.png");
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-month.hidden {
+  visibility: hidden !important;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week {
+  width: 18px;
+  height: 33px;
+  background: url("/assets/images/with_parents_progress/icon_next01_week.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week.active {
+  background-image: url("/assets/images/with_parents_progress/icon_next01_week_active.png");
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week.hidden {
+  visibility: hidden !important;
+}
+
+.content-wrap .withParents-progress .swiper-scrollbar {
+  top: 0 !important;
+  right: 8px !important;
+  height: 578px !important;
+  width: 3px !important;
+  background-color: transparent !important;
+}
+
+.content-wrap .withParents-progress .swiper-scrollbar-drag {
+  background-color: #d5d5d5;
+}
+
+.content-wrap .btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=../map/with_parents_progress.css.map */

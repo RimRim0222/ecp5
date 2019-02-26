@@ -1,0 +1,49 @@
+{
+  "serviceCode": "success.0001",
+  "serviceMessage": "정상처리 되었습니다.",
+  "data": {
+    "locale": "ko",
+    "queryType": null,
+    "memberCode": "10100299",
+    "clientMemCode": "5100",
+    "memberName": "RF004",
+    "memberEngName": "RF004",
+    "clientCode": "0508003",
+    "clientName": "시범캠퍼스",
+    "classCode": "1809001",
+    "className": "ECP 5 TEST",
+    "finalCrsCode": "54",
+    "finalCrsName": "ECP-ECP 5",
+    "courseName": "ECP 5",
+    "studentSttBrn": "03",
+    "pictureUrl": "/Contents/TempUpload/8415f69b-3a15-48f3-ac60-7107dcba7bba.jpg",
+    "email": "",
+    "learningSemesterCode": "151",
+    "learningYearCode": "2019",
+    "semesterGbn": "01",
+    "buyerYn": "Y",
+    "lmsCode": "NP",
+    "salePrdId": [
+      "1088"
+    ],
+    "lcmsPrdIds": [
+      "6821",
+      "6822",
+      "6823",
+      "6825",
+      "6828"
+    ],
+    "character": {
+      "locale": "ko",
+      "queryType": null,
+      "characterSeq": "1",
+      "characterUrl": "character/2015011415913/2859961.png",
+      "characterName": "Yuri",
+      "memberCode": null,
+      "firstRegIp": null,
+      "firstRegMemCode": null,
+      "lastUpdIp": null,
+      "lastUpdMemCode": null
+    }
+  }
+}

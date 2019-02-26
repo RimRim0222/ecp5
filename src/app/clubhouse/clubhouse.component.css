@@ -1,0 +1,298 @@
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * oscar icon
+ */
+@-webkit-keyframes bird-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -546px 0;
+  }
+}
+@keyframes bird-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -546px 0;
+  }
+}
+
+@-webkit-keyframes dust-down-icon {
+  0% {
+    background-position: 0 0;
+  }
+  6% {
+    background-position: -174px 0;
+  }
+  50% {
+    background-position: -174px 0;
+  }
+  50.1% {
+    background-position: -455px 0;
+  }
+  100% {
+    background-position: -455px 0;
+  }
+}
+
+@keyframes dust-down-icon {
+  0% {
+    background-position: 0 0;
+  }
+  6% {
+    background-position: -174px 0;
+  }
+  50% {
+    background-position: -174px 0;
+  }
+  50.1% {
+    background-position: -455px 0;
+  }
+  100% {
+    background-position: -455px 0;
+  }
+}
+
+@-webkit-keyframes dust-up-icon {
+  0% {
+    background-position: 58px 0;
+  }
+  50% {
+    background-position: 58px 0;
+  }
+  50.1% {
+    background-position: 0 0;
+  }
+  56% {
+    background-position: -174px 0;
+  }
+  100% {
+    background-position: -174px 0;
+  }
+}
+
+@keyframes dust-up-icon {
+  0% {
+    background-position: 58px 0;
+  }
+  50% {
+    background-position: 58px 0;
+  }
+  50.1% {
+    background-position: 0 0;
+  }
+  56% {
+    background-position: -174px 0;
+  }
+  100% {
+    background-position: -174px 0;
+  }
+}
+
+@-webkit-keyframes swing-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -630px 0;
+  }
+}
+
+@keyframes swing-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -630px 0;
+  }
+}
+
+.content-wrap .clubhouse__item.item01 {
+  position: absolute;
+  top: 137px;
+  left: 93px;
+  width: 458px;
+  height: 275px;
+  background: url("/assets/images/club_house/img_poly_reader01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .clubhouse__item.item01.active {
+  background: url("/assets/images/club_house/img_poly_reader01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse__item.item02 {
+  position: absolute;
+  top: 118px;
+  left: 513px;
+  width: 365px;
+  height: 263px;
+  background: url("/assets/images/club_house/img_sing_along01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .clubhouse__item.item02.active {
+  background: url("/assets/images/club_house/img_sing_along01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse__item.item03 {
+  position: absolute;
+  top: 381px;
+  left: 49px;
+  width: 386px;
+  height: 313px;
+  background: url("/assets/images/club_house/img_photo_shoot01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .clubhouse__item.item03.active {
+  background: url("/assets/images/club_house/img_photo_shoot01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse__item.item04 {
+  position: absolute;
+  top: 381px;
+  left: 357px;
+  width: 342px;
+  height: 312px;
+  background: url("/assets/images/club_house/img_fun_factory01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .clubhouse__item.item04.active {
+  background: url("/assets/images/club_house/img_fun_factory01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse__item.item05 {
+  position: absolute;
+  top: 362px;
+  left: 634px;
+  width: 366px;
+  height: 316px;
+  background: url("/assets/images/club_house/img_color_magic01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .clubhouse__item.item05.active {
+  background: url("/assets/images/club_house/img_color_magic01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .icon {
+  position: absolute;
+  display: block;
+}
+
+.content-wrap .icon-bird {
+  top: 243px;
+  left: 887px;
+  width: 91px;
+  height: 90px;
+  -webkit-animation: bird-icon 1.2s steps(6) infinite forwards 1s;
+  animation: bird-icon 1.2s steps(6) infinite forwards 1s;
+  background: url("/assets/images/sprite/club_house_bird1.png") no-repeat 0 0;
+}
+
+.content-wrap .icon-swing {
+  top: 117px;
+  left: 492px;
+  width: 70px;
+  height: 115px;
+  -webkit-animation: swing-icon 1.8s steps(9) infinite forwards 1s;
+  animation: swing-icon 1.8s steps(9) infinite forwards 1s;
+  background: url("/assets/images/sprite/club_house_swing1.png") no-repeat 0 0;
+}
+
+.content-wrap .icon-dust {
+  top: 188px;
+  left: 41px;
+  width: 58px;
+  height: 124px;
+}
+
+.content-wrap .icon-dust:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 124px;
+  -webkit-animation: dust-down-icon 8s steps(3, end) infinite forwards 4s;
+  animation: dust-down-icon 8s steps(3, end) infinite forwards 4s;
+  background: url("/assets/images/sprite/club_house_dust_down1.png") no-repeat 0 0;
+}
+
+.content-wrap .icon-dust:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 124px;
+  -webkit-animation: dust-up-icon 8s steps(3, end) infinite forwards 4s;
+  animation: dust-up-icon 8s steps(3, end) infinite forwards 4s;
+  background: url("/assets/images/sprite/club_house_dust_up1.png") no-repeat 58px 0;
+}
+
+.content-wrap .btn-item01 {
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 144px;
+  width: 237px;
+  height: 238px;
+}
+
+.content-wrap .btn-item02 {
+  display: block;
+  position: absolute;
+  top: 33px;
+  left: 51px;
+  width: 237px;
+  height: 238px;
+}
+
+.content-wrap .btn-item03 {
+  display: block;
+  position: absolute;
+  top: 52px;
+  left: 78px;
+  width: 237px;
+  height: 238px;
+}
+
+.content-wrap .btn-item04 {
+  display: block;
+  position: absolute;
+  top: 68px;
+  left: 51px;
+  width: 237px;
+  height: 238px;
+}
+
+.content-wrap .btn-item05 {
+  display: block;
+  position: absolute;
+  top: 51px;
+  left: 42px;
+  width: 237px;
+  height: 238px;
+}
+
+/*# sourceMappingURL=../map/club_house.css.map */

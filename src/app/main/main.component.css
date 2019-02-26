@@ -1,0 +1,5001 @@
+@charset "UTF-8";
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * touch icon
+ */
+@-webkit-keyframes touch-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -524px 0;
+  }
+}
+@keyframes touch-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -524px 0;
+  }
+}
+
+/**
+ * loading icon
+ */
+@-webkit-keyframes loading-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1548px 0;
+  }
+}
+@keyframes loading-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1548px 0;
+  }
+}
+
+/**
+ * week 1 ~ 4 까지
+ *
+ * key 값 : week1_complete1, week1_after_leg1 ~ 6(week1 ~ week4)
+ * week: week 주차
+ * posFirst: position start 모두 0
+ * posLast: image width 값(값은 - 적용)
+ * timer: 12컷당 1초
+ * step: animation 이미지 컷수
+ * img: 이미지 파일명 해당 규칙을 지켜주어야함
+ * count: infinite || 1
+ **/
+@-webkit-keyframes week1_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+@keyframes week1_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week1_complete1 {
+  -webkit-animation: week1_complete1 1s steps(12) infinite forwards;
+  animation: week1_complete1 1s steps(12) infinite forwards;
+  background: url("/assets/images/sprite/week1_complete1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg1 {
+  -webkit-animation: week1_after_leg1 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg2 {
+  -webkit-animation: week1_after_leg2 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg2 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg3 {
+  -webkit-animation: week1_after_leg3 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg3 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg3.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg4 {
+  -webkit-animation: week1_after_leg4 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg4 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg4.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg5 {
+  -webkit-animation: week1_after_leg5 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg5 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg5.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week1_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week1_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week1_after_leg6 {
+  -webkit-animation: week1_after_leg6 0.83s steps(10) infinite forwards;
+  animation: week1_after_leg6 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week1_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week2_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week2_complete1 {
+  -webkit-animation: week2_complete1 1s steps(12) infinite forwards;
+  animation: week2_complete1 1s steps(12) infinite forwards;
+  background: url("/assets/images/sprite/week2_complete1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg1_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg1_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg1_type1 {
+  -webkit-animation: week2_after_leg1_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg1_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg1_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg2_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg2_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg2_type1 {
+  -webkit-animation: week2_after_leg2_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg2_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg2_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg3_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg3_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg3_type1 {
+  -webkit-animation: week2_after_leg3_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg3_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg3_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg4_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg4_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg4_type1 {
+  -webkit-animation: week2_after_leg4_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg4_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg4_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg5_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg5_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg5_type1 {
+  -webkit-animation: week2_after_leg5_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg5_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg5_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg6_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week2_after_leg6_type1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week2_after_leg6_type1 {
+  -webkit-animation: week2_after_leg6_type1 0.83s steps(10) infinite forwards;
+  animation: week2_after_leg6_type1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg6_type1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg1_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg1_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg1_type2 {
+  -webkit-animation: week2_after_leg1_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg1_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg1_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg2_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg2_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg2_type2 {
+  -webkit-animation: week2_after_leg2_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg2_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg2_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg3_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg3_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg3_type2 {
+  -webkit-animation: week2_after_leg3_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg3_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg3_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg4_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg4_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg4_type2 {
+  -webkit-animation: week2_after_leg4_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg4_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg4_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg5_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg5_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg5_type2 {
+  -webkit-animation: week2_after_leg5_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg5_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg5_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week2_after_leg6_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week2_after_leg6_type2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week2_after_leg6_type2 {
+  -webkit-animation: week2_after_leg6_type2 1.08s steps(13) infinite forwards;
+  animation: week2_after_leg6_type2 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week2_after_leg6_type2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week3_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+.monster.week3_complete1 {
+  -webkit-animation: week3_complete1 1.08s steps(13) infinite forwards;
+  animation: week3_complete1 1.08s steps(13) infinite forwards;
+  background: url("/assets/images/sprite/week3_complete1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg1 {
+  -webkit-animation: week3_after_leg1 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg1 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg2 {
+  -webkit-animation: week3_after_leg2 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg2 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg3 {
+  -webkit-animation: week3_after_leg3 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg3 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg3.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg4 {
+  -webkit-animation: week3_after_leg4 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg4 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg4.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg5 {
+  -webkit-animation: week3_after_leg5 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg5 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg5.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week3_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week3_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week3_after_leg6 {
+  -webkit-animation: week3_after_leg6 0.83s steps(10) infinite forwards;
+  animation: week3_after_leg6 0.83s steps(10) infinite forwards;
+  background: url("/assets/images/sprite/week3_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week4_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week4_complete1 {
+  -webkit-animation: week4_complete1 1.16s steps(14) infinite forwards;
+  animation: week4_complete1 1.16s steps(14) infinite forwards;
+  background: url("/assets/images/sprite/week4_complete1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg1 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg1 {
+  -webkit-animation: week4_after_leg1 3s steps(25) infinite forwards;
+  animation: week4_after_leg1 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg1.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg2 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg2 {
+  -webkit-animation: week4_after_leg2 3s steps(25) infinite forwards;
+  animation: week4_after_leg2 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg2.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg3 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg3 {
+  -webkit-animation: week4_after_leg3 3s steps(25) infinite forwards;
+  animation: week4_after_leg3 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg3.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg4 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg4 {
+  -webkit-animation: week4_after_leg4 3s steps(25) infinite forwards;
+  animation: week4_after_leg4 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg4.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg5 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg5 {
+  -webkit-animation: week4_after_leg5 3s steps(25) infinite forwards;
+  animation: week4_after_leg5 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg5.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week4_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week4_after_leg6 {
+  0% {
+    background-position: 0 0;
+  }
+  69.4% {
+    background-position: -14500px 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+.monster.week4_after_leg6 {
+  -webkit-animation: week4_after_leg6 3s steps(25) infinite forwards;
+  animation: week4_after_leg6 3s steps(25) infinite forwards;
+  background: url("/assets/images/sprite/week4_after_leg6.png") no-repeat 0 0;
+}
+
+/**
+ * week 5 ~ 48 까지
+ *
+ * key 값 : week5(week5 ~ week48)
+ * step: animation 이미지 컷수
+ * complete: complete 이미지 컷수
+ **/
+@-webkit-keyframes week5_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+@keyframes week5_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week5_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week5_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week5_complete1 {
+  -webkit-animation: week5_complete1 0.91667s steps(11, end) infinite;
+  animation: week5_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_complete1.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg1 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg2 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg3 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg4 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg5 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week5_after_leg6 {
+  -webkit-animation: week5_after 0.91667s steps(11, end) infinite;
+  animation: week5_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week5_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week6_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12760px 0;
+  }
+}
+
+@keyframes week6_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12760px 0;
+  }
+}
+
+@-webkit-keyframes week6_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week6_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week6_complete1 {
+  -webkit-animation: week6_complete1 0.91667s steps(11, end) infinite;
+  animation: week6_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week6_complete1.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg1 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg2 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg3 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg4 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg5 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week6_after_leg6 {
+  -webkit-animation: week6_after 1.83333s steps(22, end) infinite;
+  animation: week6_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week6_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week7_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week7_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week7_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week7_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week7_complete1 {
+  -webkit-animation: week7_complete1 0.91667s steps(11, end) infinite;
+  animation: week7_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_complete1.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg1 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg2 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg3 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg4 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg5 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week7_after_leg6 {
+  -webkit-animation: week7_after 0.91667s steps(11, end) infinite;
+  animation: week7_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week7_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week8_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week8_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@-webkit-keyframes week8_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week8_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week8_complete1 {
+  -webkit-animation: week8_complete1 0.91667s steps(11, end) infinite;
+  animation: week8_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week8_complete1.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg1 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg2 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg3 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg4 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg5 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week8_after_leg6 {
+  -webkit-animation: week8_after 2.08333s steps(25, end) infinite;
+  animation: week8_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week8_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week9_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week9_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week9_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week9_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week9_complete1 {
+  -webkit-animation: week9_complete1 0.91667s steps(11, end) infinite;
+  animation: week9_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_complete1.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg1 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg2 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg3 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg4 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg5 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week9_after_leg6 {
+  -webkit-animation: week9_after 0.91667s steps(11, end) infinite;
+  animation: week9_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week9_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week10_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week10_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@-webkit-keyframes week10_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+@keyframes week10_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+.monster.week10_complete1 {
+  -webkit-animation: week10_complete1 1.66667s steps(20, end) infinite;
+  animation: week10_complete1 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week10_complete1.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg1 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg2 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg3 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg4 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg5 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week10_after_leg6 {
+  -webkit-animation: week10_after 1.08333s steps(13, end) infinite;
+  animation: week10_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week10_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week11_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week11_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week11_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10440px 0;
+  }
+}
+
+@keyframes week11_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10440px 0;
+  }
+}
+
+.monster.week11_complete1 {
+  -webkit-animation: week11_complete1 1.5s steps(18, end) infinite;
+  animation: week11_complete1 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week11_complete1.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg1 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg2 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg3 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg4 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg5 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week11_after_leg6 {
+  -webkit-animation: week11_after 0.91667s steps(11, end) infinite;
+  animation: week11_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week11_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week12_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week12_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@-webkit-keyframes week12_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week12_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week12_complete1 {
+  -webkit-animation: week12_complete1 1.16667s steps(14, end) infinite;
+  animation: week12_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week12_complete1.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg1 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg2 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg3 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg4 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg5 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week12_after_leg6 {
+  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
+  animation: week12_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week12_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week13_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week13_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week13_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week13_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week13_complete1 {
+  -webkit-animation: week13_complete1 0.91667s steps(11, end) infinite;
+  animation: week13_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_complete1.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg1 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg2 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg3 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg4 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg5 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week13_after_leg6 {
+  -webkit-animation: week13_after 0.91667s steps(11, end) infinite;
+  animation: week13_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week13_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week14_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10440px 0;
+  }
+}
+
+@keyframes week14_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10440px 0;
+  }
+}
+
+@-webkit-keyframes week14_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week14_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week14_complete1 {
+  -webkit-animation: week14_complete1 0.91667s steps(11, end) infinite;
+  animation: week14_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week14_complete1.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg1 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg2 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg3 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg4 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg5 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week14_after_leg6 {
+  -webkit-animation: week14_after 1.5s steps(18, end) infinite;
+  animation: week14_after 1.5s steps(18, end) infinite;
+  background: url("/assets/images/sprite/week14_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week15_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week15_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@-webkit-keyframes week15_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week15_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week15_complete1 {
+  -webkit-animation: week15_complete1 0.91667s steps(11, end) infinite;
+  animation: week15_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week15_complete1.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg1 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg2 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg3 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg4 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg5 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week15_after_leg6 {
+  -webkit-animation: week15_after 0.83333s steps(10, end) infinite;
+  animation: week15_after 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week15_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week16_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week16_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week16_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8700px 0;
+  }
+}
+
+@keyframes week16_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8700px 0;
+  }
+}
+
+.monster.week16_complete1 {
+  -webkit-animation: week16_complete1 1.25s steps(15, end) infinite;
+  animation: week16_complete1 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week16_complete1.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg1 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg2 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg3 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg4 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg5 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week16_after_leg6 {
+  -webkit-animation: week16_after 0.91667s steps(11, end) infinite;
+  animation: week16_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week16_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week17_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week17_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week17_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week17_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week17_complete1 {
+  -webkit-animation: week17_complete1 0.91667s steps(11, end) infinite;
+  animation: week17_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_complete1.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg1 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg2 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg3 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg4 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg5 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week17_after_leg6 {
+  -webkit-animation: week17_after 0.91667s steps(11, end) infinite;
+  animation: week17_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week17_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week18_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12180px 0;
+  }
+}
+
+@keyframes week18_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12180px 0;
+  }
+}
+
+@-webkit-keyframes week18_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week18_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week18_complete1 {
+  -webkit-animation: week18_complete1 0.91667s steps(11, end) infinite;
+  animation: week18_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week18_complete1.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg1 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg2 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg3 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg4 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg5 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week18_after_leg6 {
+  -webkit-animation: week18_after 1.75s steps(21, end) infinite;
+  animation: week18_after 1.75s steps(21, end) infinite;
+  background: url("/assets/images/sprite/week18_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week19_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week19_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@-webkit-keyframes week19_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week19_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week19_complete1 {
+  -webkit-animation: week19_complete1 1s steps(12, end) infinite;
+  animation: week19_complete1 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_complete1.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg1 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg2 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg3 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg4 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg5 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week19_after_leg6 {
+  -webkit-animation: week19_after 1s steps(12, end) infinite;
+  animation: week19_after 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week19_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week20_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8700px 0;
+  }
+}
+
+@keyframes week20_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8700px 0;
+  }
+}
+
+@-webkit-keyframes week20_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week20_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week20_complete1 {
+  -webkit-animation: week20_complete1 1.16667s steps(14, end) infinite;
+  animation: week20_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week20_complete1.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg1 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg2 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg3 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg4 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg5 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week20_after_leg6 {
+  -webkit-animation: week20_after 1.25s steps(15, end) infinite;
+  animation: week20_after 1.25s steps(15, end) infinite;
+  background: url("/assets/images/sprite/week20_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week21_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3480px 0;
+  }
+}
+
+@keyframes week21_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -3480px 0;
+  }
+}
+
+@-webkit-keyframes week21_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week21_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week21_complete1 {
+  -webkit-animation: week21_complete1 0.91667s steps(11, end) infinite;
+  animation: week21_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week21_complete1.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg1 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg2 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg3 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg4 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg5 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week21_after_leg6 {
+  -webkit-animation: week21_after 0.5s steps(6, end) infinite;
+  animation: week21_after 0.5s steps(6, end) infinite;
+  background: url("/assets/images/sprite/week21_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week22_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9860px 0;
+  }
+}
+
+@keyframes week22_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9860px 0;
+  }
+}
+
+@-webkit-keyframes week22_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week22_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week22_complete1 {
+  -webkit-animation: week22_complete1 0.91667s steps(11, end) infinite;
+  animation: week22_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week22_complete1.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg1 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg2 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg3 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg4 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg5 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week22_after_leg6 {
+  -webkit-animation: week22_after 1.41667s steps(17, end) infinite;
+  animation: week22_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week22_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week23_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week23_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week23_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week23_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week23_complete1 {
+  -webkit-animation: week23_complete1 0.91667s steps(11, end) infinite;
+  animation: week23_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_complete1.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg1 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg2 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg3 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg4 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg5 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week23_after_leg6 {
+  -webkit-animation: week23_after 0.91667s steps(11, end) infinite;
+  animation: week23_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week23_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week24_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11020px 0;
+  }
+}
+
+@keyframes week24_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11020px 0;
+  }
+}
+
+@-webkit-keyframes week24_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week24_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week24_complete1 {
+  -webkit-animation: week24_complete1 1s steps(12, end) infinite;
+  animation: week24_complete1 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week24_complete1.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg1 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg2 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg3 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg4 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg5 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week24_after_leg6 {
+  -webkit-animation: week24_after 1.58333s steps(19, end) infinite;
+  animation: week24_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week24_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week25_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week25_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week25_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week25_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week25_complete1 {
+  -webkit-animation: week25_complete1 0.91667s steps(11, end) infinite;
+  animation: week25_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_complete1.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg1 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg2 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg3 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg4 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg5 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week25_after_leg6 {
+  -webkit-animation: week25_after 0.91667s steps(11, end) infinite;
+  animation: week25_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week25_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week26_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week26_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week26_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week26_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week26_complete1 {
+  -webkit-animation: week26_complete1 0.91667s steps(11, end) infinite;
+  animation: week26_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_complete1.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg1 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg2 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg3 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg4 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg5 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week26_after_leg6 {
+  -webkit-animation: week26_after 0.91667s steps(11, end) infinite;
+  animation: week26_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week26_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week27_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week27_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week27_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week27_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week27_complete1 {
+  -webkit-animation: week27_complete1 1s steps(12, end) infinite;
+  animation: week27_complete1 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week27_complete1.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg1 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg2 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg3 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg4 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg5 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week27_after_leg6 {
+  -webkit-animation: week27_after 0.91667s steps(11, end) infinite;
+  animation: week27_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week27_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week28_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9280px 0;
+  }
+}
+
+@keyframes week28_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9280px 0;
+  }
+}
+
+@-webkit-keyframes week28_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week28_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week28_complete1 {
+  -webkit-animation: week28_complete1 1.16667s steps(14, end) infinite;
+  animation: week28_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week28_complete1.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg1 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg2 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg3 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg4 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg5 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week28_after_leg6 {
+  -webkit-animation: week28_after 1.33333s steps(16, end) infinite;
+  animation: week28_after 1.33333s steps(16, end) infinite;
+  background: url("/assets/images/sprite/week28_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week29_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week29_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@-webkit-keyframes week29_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week29_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week29_complete1 {
+  -webkit-animation: week29_complete1 0.83333s steps(10, end) infinite;
+  animation: week29_complete1 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week29_complete1.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg1 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg2 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg3 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg4 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg5 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week29_after_leg6 {
+  -webkit-animation: week29_after 1.08333s steps(13, end) infinite;
+  animation: week29_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week29_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week30_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week30_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@-webkit-keyframes week30_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week30_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week30_complete1 {
+  -webkit-animation: week30_complete1 0.91667s steps(11, end) infinite;
+  animation: week30_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week30_complete1.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg1 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg2 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg3 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg4 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg5 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week30_after_leg6 {
+  -webkit-animation: week30_after 1.08333s steps(13, end) infinite;
+  animation: week30_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week30_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week31_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week31_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week31_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week31_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week31_complete1 {
+  -webkit-animation: week31_complete1 0.91667s steps(11, end) infinite;
+  animation: week31_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_complete1.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg1 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg2 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg3 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg4 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg5 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week31_after_leg6 {
+  -webkit-animation: week31_after 0.91667s steps(11, end) infinite;
+  animation: week31_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week31_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week32_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11020px 0;
+  }
+}
+
+@keyframes week32_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11020px 0;
+  }
+}
+
+@-webkit-keyframes week32_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week32_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week32_complete1 {
+  -webkit-animation: week32_complete1 1.16667s steps(14, end) infinite;
+  animation: week32_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week32_complete1.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg1 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg2 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg3 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg4 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg5 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week32_after_leg6 {
+  -webkit-animation: week32_after 1.58333s steps(19, end) infinite;
+  animation: week32_after 1.58333s steps(19, end) infinite;
+  background: url("/assets/images/sprite/week32_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week33_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week33_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week33_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week33_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week33_complete1 {
+  -webkit-animation: week33_complete1 0.91667s steps(11, end) infinite;
+  animation: week33_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_complete1.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg1 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg2 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg3 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg4 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg5 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week33_after_leg6 {
+  -webkit-animation: week33_after 0.91667s steps(11, end) infinite;
+  animation: week33_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week33_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week34_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12760px 0;
+  }
+}
+
+@keyframes week34_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -12760px 0;
+  }
+}
+
+@-webkit-keyframes week34_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+@keyframes week34_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5800px 0;
+  }
+}
+
+.monster.week34_complete1 {
+  -webkit-animation: week34_complete1 0.83333s steps(10, end) infinite;
+  animation: week34_complete1 0.83333s steps(10, end) infinite;
+  background: url("/assets/images/sprite/week34_complete1.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg1 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg2 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg3 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg4 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg5 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week34_after_leg6 {
+  -webkit-animation: week34_after 1.83333s steps(22, end) infinite;
+  animation: week34_after 1.83333s steps(22, end) infinite;
+  background: url("/assets/images/sprite/week34_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week35_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week35_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week35_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week35_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week35_complete1 {
+  -webkit-animation: week35_complete1 0.91667s steps(11, end) infinite;
+  animation: week35_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_complete1.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg1 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg2 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg3 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg4 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg5 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week35_after_leg6 {
+  -webkit-animation: week35_after 0.91667s steps(11, end) infinite;
+  animation: week35_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week35_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week36_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9860px 0;
+  }
+}
+
+@keyframes week36_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -9860px 0;
+  }
+}
+
+@-webkit-keyframes week36_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week36_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week36_complete1 {
+  -webkit-animation: week36_complete1 1.16667s steps(14, end) infinite;
+  animation: week36_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week36_complete1.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg1 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg2 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg3 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg4 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg5 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week36_after_leg6 {
+  -webkit-animation: week36_after 1.41667s steps(17, end) infinite;
+  animation: week36_after 1.41667s steps(17, end) infinite;
+  background: url("/assets/images/sprite/week36_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week37_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week37_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week37_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week37_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week37_complete1 {
+  -webkit-animation: week37_complete1 0.91667s steps(11, end) infinite;
+  animation: week37_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_complete1.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg1 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg2 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg3 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg4 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg5 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week37_after_leg6 {
+  -webkit-animation: week37_after 0.91667s steps(11, end) infinite;
+  animation: week37_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week37_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week38_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week38_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@-webkit-keyframes week38_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week38_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week38_complete1 {
+  -webkit-animation: week38_complete1 0.91667s steps(11, end) infinite;
+  animation: week38_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week38_complete1.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg1 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg2 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg3 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg4 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg5 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week38_after_leg6 {
+  -webkit-animation: week38_after 1.08333s steps(13, end) infinite;
+  animation: week38_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week38_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week39_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week39_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week39_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week39_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week39_complete1 {
+  -webkit-animation: week39_complete1 0.91667s steps(11, end) infinite;
+  animation: week39_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_complete1.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg1 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg2 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg3 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg4 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg5 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week39_after_leg6 {
+  -webkit-animation: week39_after 0.91667s steps(11, end) infinite;
+  animation: week39_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week39_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week40_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@keyframes week40_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -14500px 0;
+  }
+}
+
+@-webkit-keyframes week40_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+@keyframes week40_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -8120px 0;
+  }
+}
+
+.monster.week40_complete1 {
+  -webkit-animation: week40_complete1 1.16667s steps(14, end) infinite;
+  animation: week40_complete1 1.16667s steps(14, end) infinite;
+  background: url("/assets/images/sprite/week40_complete1.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg1 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg2 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg3 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg4 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg5 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week40_after_leg6 {
+  -webkit-animation: week40_after 2.08333s steps(25, end) infinite;
+  animation: week40_after 2.08333s steps(25, end) infinite;
+  background: url("/assets/images/sprite/week40_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week41_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week41_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week41_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4060px 0;
+  }
+}
+
+@keyframes week41_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -4060px 0;
+  }
+}
+
+.monster.week41_complete1 {
+  -webkit-animation: week41_complete1 0.58333s steps(7, end) infinite;
+  animation: week41_complete1 0.58333s steps(7, end) infinite;
+  background: url("/assets/images/sprite/week41_complete1.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg1 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg2 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg3 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg4 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg5 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week41_after_leg6 {
+  -webkit-animation: week41_after 0.91667s steps(11, end) infinite;
+  animation: week41_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week41_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week42_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+@keyframes week42_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+@-webkit-keyframes week42_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week42_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week42_complete1 {
+  -webkit-animation: week42_complete1 0.91667s steps(11, end) infinite;
+  animation: week42_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week42_complete1.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg1 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg2 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg3 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg4 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg5 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week42_after_leg6 {
+  -webkit-animation: week42_after 1.66667s steps(20, end) infinite;
+  animation: week42_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week42_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week43_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week43_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week43_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week43_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week43_complete1 {
+  -webkit-animation: week43_complete1 0.91667s steps(11, end) infinite;
+  animation: week43_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_complete1.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg1 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg2 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg3 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg4 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg5 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week43_after_leg6 {
+  -webkit-animation: week43_after 0.91667s steps(11, end) infinite;
+  animation: week43_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week43_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week44_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@keyframes week44_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -7540px 0;
+  }
+}
+
+@-webkit-keyframes week44_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week44_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week44_complete1 {
+  -webkit-animation: week44_complete1 0.91667s steps(11, end) infinite;
+  animation: week44_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week44_complete1.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg1 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg2 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg3 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg4 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg5 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week44_after_leg6 {
+  -webkit-animation: week44_after 1.08333s steps(13, end) infinite;
+  animation: week44_after 1.08333s steps(13, end) infinite;
+  background: url("/assets/images/sprite/week44_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week45_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week45_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@-webkit-keyframes week45_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week45_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week45_complete1 {
+  -webkit-animation: week45_complete1 0.91667s steps(11, end) infinite;
+  animation: week45_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_complete1.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg1 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg2 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg3 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg4 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg5 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week45_after_leg6 {
+  -webkit-animation: week45_after 0.91667s steps(11, end) infinite;
+  animation: week45_after 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week45_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week46_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+@keyframes week46_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -11600px 0;
+  }
+}
+
+@-webkit-keyframes week46_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+@keyframes week46_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6380px 0;
+  }
+}
+
+.monster.week46_complete1 {
+  -webkit-animation: week46_complete1 0.91667s steps(11, end) infinite;
+  animation: week46_complete1 0.91667s steps(11, end) infinite;
+  background: url("/assets/images/sprite/week46_complete1.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg1 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg2 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg3 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg4 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg5 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week46_after_leg6 {
+  -webkit-animation: week46_after 1.66667s steps(20, end) infinite;
+  animation: week46_after 1.66667s steps(20, end) infinite;
+  background: url("/assets/images/sprite/week46_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week47_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5220px 0;
+  }
+}
+
+@keyframes week47_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5220px 0;
+  }
+}
+
+@-webkit-keyframes week47_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week47_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week47_complete1 {
+  -webkit-animation: week47_complete1 1s steps(12, end) infinite;
+  animation: week47_complete1 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week47_complete1.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg1 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg2 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg3 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg4 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg5 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week47_after_leg6 {
+  -webkit-animation: week47_after 0.75s steps(9, end) infinite;
+  animation: week47_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week47_after_leg6.png") no-repeat 0 0;
+}
+
+@-webkit-keyframes week48_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5220px 0;
+  }
+}
+
+@keyframes week48_after {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -5220px 0;
+  }
+}
+
+@-webkit-keyframes week48_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+@keyframes week48_complete1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -6960px 0;
+  }
+}
+
+.monster.week48_complete1 {
+  -webkit-animation: week48_complete1 1s steps(12, end) infinite;
+  animation: week48_complete1 1s steps(12, end) infinite;
+  background: url("/assets/images/sprite/week48_complete1.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg1 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg1.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg2 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg2.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg3 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg3.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg4 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg4.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg5 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg5.png") no-repeat 0 0;
+}
+
+.monster.week48_after_leg6 {
+  -webkit-animation: week48_after 0.75s steps(9, end) infinite;
+  animation: week48_after 0.75s steps(9, end) infinite;
+  background: url("/assets/images/sprite/week48_after_leg6.png") no-repeat 0 0;
+}
+
+/**
+ * week reward icon
+ */
+@-webkit-keyframes icon_week_com {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -644px 0;
+  }
+}
+@keyframes icon_week_com {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -644px 0;
+  }
+}
+
+#container {
+  height: 768px;
+}
+
+#container.monster1 {
+  background: url("/assets/images/main/bg_monster01.png") no-repeat 0 0;
+}
+
+#container.monster2 {
+  background: url("/assets/images/main/bg_monster02.png") no-repeat 0 0;
+}
+
+#container.monster3 {
+  background: url("/assets/images/main/bg_monster03.png") no-repeat 0 0;
+}
+
+#container.monster4 {
+  background: url("/assets/images/main/bg_monster04.png") no-repeat 0 0;
+}
+
+#container.monster5 {
+  background: url("/assets/images/main/bg_monster05.png") no-repeat 0 0;
+}
+
+#container.monster6 {
+  background: url("/assets/images/main/bg_monster06.png") no-repeat 0 0;
+}
+
+#container.monster7 {
+  background: url("/assets/images/main/bg_monster07.png") no-repeat 0 0;
+}
+
+#container.monster8 {
+  background: url("/assets/images/main/bg_monster08.png") no-repeat 0 0;
+}
+
+#container.monster9 {
+  background: url("/assets/images/main/bg_monster09.png") no-repeat 0 0;
+}
+
+#container.monster10 {
+  background: url("/assets/images/main/bg_monster10.png") no-repeat 0 0;
+}
+
+#container.monster11 {
+  background: url("/assets/images/main/bg_monster11.png") no-repeat 0 0;
+}
+
+#container.monster12 {
+  background: url("/assets/images/main/bg_monster12.png") no-repeat 0 0;
+}
+
+.content-wrap .visual__area {
+  width: 580px;
+  margin: 0 auto;
+  padding-top: 63px;
+}
+
+.content-wrap .visual .monster {
+  width: 580px;
+  height: 530px;
+}
+
+.content-wrap .visual .touch-guide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.content-wrap .visual .touch-guide .btn-touch {
+  position: absolute;
+  top: -74px;
+  left: -74px;
+  width: 131px;
+  height: 148px;
+  -webkit-animation: touch-icon 0.8s steps(4) infinite forwards;
+  animation: touch-icon 0.8s steps(4) infinite forwards;
+  background: url("/assets/images/sprite/touch.png") no-repeat 0 0;
+  z-index: 2;
+}
+
+.content-wrap .footer {
+  position: absolute;
+}
+
+.content-wrap .footer.purchase {
+  bottom: 20px;
+  left: 21px;
+  width: 986px;
+  height: 175px;
+}
+
+.content-wrap .footer.unpurchase {
+  bottom: 20px;
+  left: 37px;
+  width: 970px;
+  height: 175px;
+}
+
+.content-wrap .footer.unpurchase .content .touch-guide .btn-touch {
+  margin-left: -409px;
+}
+
+.content-wrap .footer.unpurchase .content .touch-guide .week-mission__item {
+  margin-left: -425px;
+}
+
+.content-wrap .footer.unpurchase .content .swiper {
+  bottom: 5px;
+  padding: 0px 46px 0;
+  width: 822px;
+}
+
+.content-wrap .footer.unpurchase .content .swiper .week-mission__item {
+  margin-left: 26px;
+}
+
+.content-wrap .footer .header {
+  margin-left: 51px;
+}
+
+.content-wrap .footer .header__txt {
+  width: 213px;
+  height: 46px;
+  border-radius: 20px;
+  background-color: #fa6d84;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.content-wrap .footer .header__txt .number {
+  padding-top: 11px;
+  margin-left: 10px;
+}
+
+.content-wrap .footer .header__txt .number .icon {
+  float: left;
+}
+
+.content-wrap .footer .content {
+  margin-top: 10px;
+  height: 123px;
+}
+
+.content-wrap .footer .content .touch-guide {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 1024px;
+  background-color: rgba(16, 41, 54, 0.85);
+  z-index: 100;
+}
+
+.content-wrap .footer .content .touch-guide .btn-touch {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  width: 131px;
+  margin-left: -429px;
+  height: 148px;
+  -webkit-animation: touch-icon 0.8s steps(4) infinite forwards;
+  animation: touch-icon 0.8s steps(4) infinite forwards;
+  background: url("/assets/images/sprite/touch.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .touch-guide .week-mission__item {
+  position: absolute;
+  top: 631px;
+  left: 50%;
+  margin-left: -445px;
+}
+
+.content-wrap .footer .content .touch-guide .week-mission__item .btn .icon {
+  display: block;
+  width: 123px;
+  height: 123px;
+  background: no-repeat 0 0;
+  transition: background 0.3s;
+}
+
+.content-wrap .footer .content .touch-guide .week-mission__item .btn .icon.icon-btn01.default {
+  background-image: url("/assets/images/main/week/icon_week_icon01.png");
+}
+
+.content-wrap .footer .content .touch-guide .week-mission__item .btn .icon.icon-btn01.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon01_active.png");
+}
+
+.content-wrap .footer .content .swiper {
+  position: relative;
+  bottom: 5px;
+  padding: 0px 46px 0;
+  width: 865px;
+  box-sizing: border-box;
+}
+
+.content-wrap .footer .content .swiper-slide {
+  overflow: visible;
+  padding-top: 8px;
+}
+
+.content-wrap .footer .content .swiper-controller .btn-swiper-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 37px;
+  height: 62px;
+  margin-top: -24px;
+  background: url("/assets/images/main/week/btn_week_arrow_left01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.content-wrap .footer .content .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .footer .content .swiper-controller .btn-swiper-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 37px;
+  height: 62px;
+  margin-top: -24px;
+  background: url("/assets/images/main/week/btn_week_arrow_right01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.content-wrap .footer .content .swiper-controller .btn-swiper-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission__item {
+  float: left;
+  margin-left: 7px;
+}
+
+.content-wrap .footer .content .swiper .week-mission__item:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .btn {
+  overflow: visible;
+  display: block;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon {
+  position: relative;
+  display: block;
+  width: 123px;
+  height: 123px;
+  background: no-repeat 0 0;
+  transition: background 0.3s;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.default,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.default {
+  background-image: url("/assets/images/main/week/icon_week_icon01.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon01_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon01_2nd_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.complete,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.complete {
+  background-image: url("/assets/images/main/week/icon_week_icon01_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.complete:before, 
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.complete:before{
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.incomplete,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon01_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01.incomplete:before,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn01-2nd.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.default,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.default {
+  background-image: url("/assets/images/main/week/icon_week_icon02.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon02_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon02-2nd_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.complete,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.complete{
+  background-image: url("/assets/images/main/week/icon_week_icon02_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.complete:before,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.complete:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -11px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.incomplete,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon02_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02.incomplete:before,
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn02-2nd.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.default {
+  background-image: url("/assets/images/main/week/icon_week_icon03.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon03_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.complete {
+  background-image: url("/assets/images/main/week/icon_week_icon03_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.complete:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -11px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon03_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn03.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.default {
+  background-image: url("/assets/images/main/week/icon_week_icon04.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon04_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.complete {
+  background-image: url("/assets/images/main/week/icon_week_icon04_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.complete:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -11px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon04_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn04.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.default {
+  background-image: url("/assets/images/main/week/icon_week_icon05.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon05_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.complete {
+  background-image: url("/assets/images/main/week/icon_week_icon05_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.complete:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -11px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon05_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn05.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.default {
+  background-image: url("/assets/images/main/week/icon_week_icon06.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.default.active {
+  background-image: url("/assets/images/main/week/icon_week_icon06_active.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.complete {
+  background-image: url("/assets/images/main/week/icon_week_icon06_com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.complete:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -11px;
+  width: 92px;
+  height: 78px;
+  -webkit-animation: icon_week_com 0.7s steps(7) infinite forwards;
+  animation: icon_week_com 0.7s steps(7) infinite forwards;
+  background: url("/assets/images/sprite/icon_week_com.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.incomplete {
+  background-image: url("/assets/images/main/week/icon_week_icon06_n-com.png");
+}
+
+.content-wrap .footer .content .swiper .week-mission .icon.icon-btn06.incomplete:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 42px;
+  height: 42px;
+  background: url("/assets/images/main/week/icon_week_n-com01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .clubhouse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.content-wrap .footer .content .clubhouse .btn {
+  display: block;
+}
+
+.content-wrap .footer .content .clubhouse .btn .icon.icon-clubhouse {
+  display: block;
+  width: 121px;
+  height: 149px;
+  background: url("/assets/images/main/week/btn_clubhouse01.png") no-repeat 0 0;
+}
+
+.content-wrap .footer .content .clubhouse .btn .icon.icon-clubhouse:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 121px;
+  height: 149px;
+  background: url("/assets/images/main/week/btn_clubhouse01_active.png") no-repeat 0 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.number {
+  display: inline-block;
+}
+
+.number .icon {
+  display: inline-block;
+}
+
+.number .icon-num0 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: 0px 0px;
+  width: 19px;
+  height: 24px;
+}
+
+.number .icon-num1 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -19px 0px;
+  width: 13px;
+  height: 24px;
+}
+
+.number .icon-num2 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -32px 0px;
+  width: 19px;
+  height: 24px;
+}
+
+.number .icon-num3 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -51px 0px;
+  width: 18px;
+  height: 24px;
+}
+
+.number .icon-num4 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -69px 0px;
+  width: 18px;
+  height: 24px;
+}
+
+.number .icon-num5 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -87px 0px;
+  width: 17px;
+  height: 24px;
+}
+
+.number .icon-num6 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -104px 0px;
+  width: 17px;
+  height: 24px;
+}
+
+.number .icon-num7 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -121px 0px;
+  width: 16px;
+  height: 24px;
+}
+
+.number .icon-num8 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -137px 0px;
+  width: 17px;
+  height: 24px;
+}
+
+.number .icon-num9 {
+  background-image: url(/assets/images/sprite/main_week_number.png?4103573389110);
+  background-position: -154px 0px;
+  width: 17px;
+  height: 24px;
+}
+
+.monster-video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1024px;
+  height: 768px;
+  z-index: 100;
+}
+
+/*# sourceMappingURL=../map/main.css.map */

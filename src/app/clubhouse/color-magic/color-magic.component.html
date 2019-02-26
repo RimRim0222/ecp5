@@ -1,0 +1,83 @@
+<header id="header" class="header">
+    <nav id="gnb">
+        <div class="hl-group">
+            <div class="hl-group__area">
+                <div class="hl-group__box">
+                    <ul class="hl-group__items">
+                        <li class="hl-group__item"><a [routerLink]="['/clubhouse']" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick')"><i class="icon icon-back"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hr-group">
+            <div class="hr-group__area">
+                <div class="hr-group__box">
+                    <ul class="hr-group__items">
+                        <li class="hr-group__item">
+                            <!--
+                                Guide
+
+                                <i class="icon icon-bgm"></i> - bgn on
+                                <i class="icon icon-bgm_mute"></i> - bgn off
+                            -->
+                            <button type="button" class="btn btn-bgm" (click)="dataManagerService.bgmToggle('/clubhouse')">
+                                <i class="icon icon-bgm{{bgmIconClass}}"></i>
+                            </button>
+                        </li>
+                        <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'colorMagic'})"><i class="icon icon-help"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Content area(S)-->
+<section id="container">
+    <div id="content">
+        <div class="content-wrap">
+            <div class="content-wrap__outer">
+                <!--Content real area(S)-->
+                <div class="content-wrap__inner">
+                    <div class="clubhouse-sing-along">
+                        <div class="clubhouse-sing-along__area">
+                            <div class="clubhouse-sing-along__box">
+                                <!--Swiper area(S)-->
+                                <div class="swiper">
+                                    <!--Loop area-->
+                                    <swiper [index]="clubhouseService.currentPage" [config]="config" (indexChange)="_sndMgr.playEventSound('common', 'pageMove')">
+                                        <div class="swiper-slide" *ngFor="let item of clubhouseService.pageList | keyvalue">
+                                            <div class="clubhouse-color-magic__items length{{item.value.weekList.length}}">
+                                                <div *ngFor="let week of item.value.weekList; let idx = index" class="clubhouse-color-magic__item {{week.activityClass}} {{week.bgClassName}}" appHover hoverDefaultClass="default" hoverActiveClass="active">
+                                                    <button type="button" class="btn btn-item0{{idx+1}}" (click)="_sndMgr.playEventSound('common', 'buttonClick'); openContentFrame(week)">
+                                                        <div class="img-box">
+                                                            <figure class="img"><img src="{{week.filePathThumbnail}}" alt="" style="width: 115px;height: 115px;"  [style.display]="week.weekId <= dataManagerService.weekData.thisWeek ?'':'none'"></figure>
+                                                            <!-- <figure class="img"><img src="{{STATIC_URL}}/images/club_color_magic/thumbnail/test.png" alt="" width="115" height="115"></figure> -->
+                                                        </div>
+                                                        <h2 class="tit-week">{{week.weekName}}</h2>
+                                                        <div class="complete-box"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </swiper>
+                                    <!--swiper paging-->
+                                    <div class="swiper-pagination-wrapper swiper-pagination"></div>
+                                    <!--swiper controller-->
+                                    <div class="swiper-controller">
+                                        <button type="button" class="btn btn-swiper-prev"></button>
+                                        <button type="button" class="btn btn-swiper-next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Swiper area(E)-->
+
+                </div>
+                <!--Content real area(E)-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Content area(E)-->

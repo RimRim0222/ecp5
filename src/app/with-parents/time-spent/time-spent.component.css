@@ -1,0 +1,237 @@
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+.content-wrap .withParents-time-spent__box .tab__items {
+  height: 191px;
+  padding-top: 105px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item {
+  height: 79px;
+  background: no-repeat 0 0;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item:nth-last-of-type(1) {
+  margin-right: 0 !important;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item.default {
+  width: 216px;
+  background-image: url("/assets/images/with_parents_time_spent/bg_tab01_default.png");
+  margin-right: 30px;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item.active {
+  width: 224px;
+  background-image: url("/assets/images/with_parents_time_spent/bg_tab01_active.png");
+  margin-right: 22px;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item.active .btn {
+  color: #5d9eed;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item .btn {
+  width: 216px;
+  height: 60px;
+}
+
+.content-wrap .withParents-time-spent__box .tab__item .btn-tab {
+  font: 400 28px/64px "GROBOLDkps", sans-serif;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.content-wrap .withParents-time-spent__box .chart {
+  position: relative;
+  height: 508px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__v-axis {
+  position: absolute;
+  top: 28px;
+  left: 50px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__v-axis__items {
+  display: flex;
+  flex-flow: column-reverse;
+  justify-content: space-between;
+  height: 428px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__v-axis__item {
+  width: 46px;
+  height: 42px;
+  background: url("/assets/images/with_parents_time_spent/icon_star03.png") no-repeat 0 0;
+}
+
+.content-wrap .withParents-time-spent__box .chart__v-axis .num {
+  font: 700 18px/46px "NSRoundECP", sans-serif;
+  color: #5d9eed;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis {
+  position: absolute;
+  bottom: 4px;
+  left: 156px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis__items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  width: 757px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis__item {
+  width: 70px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis__item.sat .on-week, .content-wrap .withParents-time-spent__box .chart__h-axis__item.sun .on-week {
+  color: #f78faf;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis__item.sat .date-box, .content-wrap .withParents-time-spent__box .chart__h-axis__item.sun .date-box {
+  color: #f8acc3;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis .on-week {
+  font: 400 20px/1em, "NotoSansECP", sans-serif;
+  font-weight: bold;
+  color: #5d9eed;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis .on-week:first-letter {
+  text-transform: uppercase;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis .date-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  font: 400 15px/1em "NotoSansECP", sans-serif;
+  font-weight: bold;
+  color: #8dbbf3;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis .separator {
+  padding: 0 5px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__h-axis .month:first-letter {
+  text-transform: uppercase;
+}
+
+.content-wrap .withParents-time-spent__box .chart__label {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__label .txt {
+  font: 700 13px/1em "NSRoundECP", sans-serif;
+  color: #5d9eed;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph {
+  position: relative;
+  margin: 44px 0 0 102px;
+  width: 848px;
+  height: 444px;
+  background: url("/assets/images/with_parents_time_spent/bg_chart_map01.png") no-repeat 0 0;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__items {
+  overflow: hidden;
+  position: absolute;
+  bottom: 6px;
+  left: 50px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 757px;
+  height: 467px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item {
+  width: 70px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 388px;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item.sat .graph-txt, .content-wrap .withParents-time-spent__box .chart__graph__item.sun .graph-txt {
+  color: #f78faf;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item.sat .graph-box, .content-wrap .withParents-time-spent__box .chart__graph__item.sun .graph-box {
+  background-color: #f78faf;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item.sat .icon-star, .content-wrap .withParents-time-spent__box .chart__graph__item.sun .icon-star {
+  background-image: url("/assets/images/with_parents_time_spent/icon_star02.png");
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item .graph-box {
+  position: relative;
+  top: 25px;
+  width: 56px;
+  background-color: #90c1f4;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item .graph-txt {
+  position: absolute;
+  top: -44px;
+  left: 0;
+  align-self: flex-start;
+  width: 100%;
+  font: 400 17px/1em "NotoSansECP", sans-serif;
+  color: #5d9eed;
+  font-weight: bold;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item .graph-bar {
+  max-height: 436px;
+  height: 0;
+  transition: height 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph__item .graph-bar .no-data {
+  color: #9e9c9d;
+}
+
+.content-wrap .withParents-time-spent__box .chart__graph .icon-star {
+  position: absolute;
+  top: -25px;
+  left: -7px;
+  width: 70px;
+  height: 63px;
+  background: url("/assets/images/with_parents_time_spent/icon_star01.png") no-repeat 0 0;
+}
+
+.content-wrap .btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=../map/with_parents_time_spent.css.map */

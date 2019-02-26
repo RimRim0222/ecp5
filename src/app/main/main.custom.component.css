@@ -1,0 +1,16 @@
+/*테스트버튼*/
+.test {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  width: 130px;
+  height: 70px;
+  z-index: 10;
+}
+
+.content-wrap .footer .content .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+  opacity: 0.3;
+}
+.content-wrap .footer .content .swiper-controller .btn-swiper-next.swiper-button-disabled {
+  opacity: 0.3;
+}

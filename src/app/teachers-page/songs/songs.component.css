@@ -1,0 +1,600 @@
+#Songs01 .theme {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 768px;
+    background-color: #3cb4b6;
+}
+
+#Songs01 .spot-area {
+    margin: 10px 0;
+}
+
+#Songs01 .theme__box {
+    margin: 0 28px;
+}
+
+#Songs01 .theme__content {
+    display: flex;
+    margin-left: 100px;
+}
+
+#Songs01 .theme__thumbnail__items {
+    width: 488px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -12px;
+}
+
+#Songs01 .theme__thumbnail__item {
+    position: relative;
+    margin-top: 12px;
+}
+
+#Songs01 .theme__thumbnail__item:nth-of-type(even) {
+    margin-left: 12px;
+}
+
+#Songs01 .theme__thumbnail__item.active .txt {
+    color: #9ff3f5;
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_thumbnail01_active.png");
+}
+
+#Songs01 .theme__thumbnail__item.default .txt {
+    color: #0d9699;
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_thumbnail01.png");
+}
+
+#Songs01 .theme__thumbnail__item .txt {
+    position: absolute;
+    bottom: -1px;
+    left: -2px;
+    width: 244px;
+    height: 53px;
+    text-align: center;
+    font: 700 21px/53px "comic", sans-serif;
+    color: transparent;
+    background: no-repeat 0 100%;
+    transition: all 0.3s;
+}
+
+#Songs01 .theme__thumbnail__item .img {
+    position: relative;
+}
+
+#Songs01 .theme__thumbnail__item .btn-link {
+    display: block;
+    padding-bottom: 47px;
+}
+
+#Songs01 .theme__normal {
+    margin-left: 12px;
+}
+
+#Songs01 .theme__normal__items {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#Songs01 .theme__normal__item {
+    position: relative;
+    transition: all 0.3s;
+}
+
+#Songs01 .theme__normal__item.active:nth-of-type(odd) {
+    background-color: #26adaf;
+}
+
+#Songs01 .theme__normal__item.active:nth-of-type(even) {
+    background-color: #4fced1;
+}
+
+#Songs01 .theme__normal__item.active .txt {
+    color: #9ff3f5;
+}
+
+#Songs01 .theme__normal__item.active .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_song01_active.png");
+}
+
+#Songs01 .theme__normal__item.default:nth-of-type(odd) {
+    background-color: #a9edee;
+}
+
+#Songs01 .theme__normal__item.default:nth-of-type(even) {
+    background-color: #ccf9f9;
+}
+
+#Songs01 .theme__normal__item.default .txt {
+    color: #0d9699;
+}
+
+#Songs01 .theme__normal__item.default .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_song01.png");
+}
+
+#Songs01 .theme__normal__item .txt {
+    padding-left: 62px;
+    font: 700 21px/65px "comic", sans-serif;
+    color: transparent;
+    transition: all 0.3s;
+}
+
+#Songs01 .theme__normal__item .img {
+    position: relative;
+}
+
+#Songs01 .theme__normal__item .btn-link {
+    width: 268px;
+    height: 65px;
+}
+
+#Songs01 .theme__normal__item .icon-songs {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 13px;
+    width: 24px;
+    height: 28px;
+    background: no-repeat 0 100%;
+    transition: all 0.3s;
+}
+
+#Songs01 .theme .tit {
+    padding: 6px 0 2px 4px;
+}
+
+#Songs01 .theme .btn-link {
+    display: block;
+    position: relative;
+}
+
+#Songs01 .theme .btn-link.active .play {
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_spot_play01_active.png");
+    color: #66d9dc;
+}
+
+#Songs01 .theme .btn-link.active .play .icon {
+    background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_play01_active.png");
+}
+
+#Songs01 .theme .btn-link .img {
+    display: block;
+}
+
+#Songs01 .theme .btn-link .play {
+    position: absolute;
+    bottom: 4px;
+    right: 24px;
+    padding: 0 26px 0 57px;
+    height: 43px;
+    background: url("/assets/images/club_house_sing_along/popup/theme/bg_spot_play01.png") no-repeat 0 0;
+    font: 700 22px/39px "comic", sans-serif;
+    color: #0d9699;
+    transition: all 0.3s;
+}
+
+#Songs01 .theme .btn-link .play .icon {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 18px;
+    height: 20px;
+    background: url("/assets/images/club_house_sing_along/popup/theme/icon_play01.png") no-repeat 0 0;
+    transition: all 0.3s;
+}
+
+#Songs01 .phonics {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 768px;
+}
+
+#Songs01 .phonics.type01 {
+    background-color: #44ab69;
+}
+
+#Songs01 .phonics.type01 .phonics__thumbnail {
+    width: 770px;
+}
+
+#Songs01 .phonics.type01 .phonics__thumbnail__item.active .txt {
+    width: 382px;
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/type1/bg_thumbnail01_active.png");
+}
+
+#Songs01 .phonics.type01 .phonics__thumbnail__item.default .txt {
+    width: 382px;
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/type1/bg_thumbnail01.png");
+}
+
+#Songs01 .phonics.type01 .phonics__thumbnail__item .img {
+    width: 378px;
+}
+
+#Songs01 .phonics.type01 .phonics__normal {
+    display: none;
+}
+
+#Songs01 .phonics.type02 {
+    background: #44ab69 url("/assets/images/club_house_sing_along/popup/phonics/bg_phonics01.png") no-repeat 100% 590px;
+}
+
+#Songs01 .phonics.type02 .phonics__thumbnail {
+    width: 488px;
+}
+
+#Songs01 .phonics.type02 .phonics__thumbnail__item.active .txt {
+    width: 244px;
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/type2/bg_thumbnail01_active.png");
+}
+
+#Songs01 .phonics.type02 .phonics__thumbnail__item.default .txt {
+    width: 244px;
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/type2/bg_thumbnail01.png");
+}
+
+#Songs01 .phonics.type02 .phonics__thumbnail__item .img {
+    width: 238px;
+}
+
+#Songs01 .phonics.type02 .phonics__normal {
+    margin-left: 12px;
+    width: 270px;
+}
+
+#Songs01 .phonics__box {
+    margin: 0 28px;
+}
+
+#Songs01 .phonics__spot {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+#Songs01 .phonics__spot .btn-link {
+    position: relative;
+    width: 378px;
+    margin-left: 12px;
+}
+
+#Songs01 .phonics__spot .btn-link:first-child {
+    margin-left: 0;
+}
+
+#Songs01 .phonics__spot .btn-link.active .play {
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/bg_spot_play01_active.png");
+    color: #8ee9af;
+}
+
+#Songs01 .phonics__spot .btn-link.active .play .icon {
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_play01_active.png");
+}
+
+#Songs01 .phonics__spot .btn-link .img {
+    display: block;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+#Songs01 .phonics__spot .btn-link .play {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: 238px;
+    padding: 0 0 0 49px;
+    height: 43px;
+    box-sizing: border-box;
+    background: url("/assets/images/club_house_sing_along/popup/phonics/bg_spot_play01.png") no-repeat 0 0;
+    font: 700 22px/39px "comic", sans-serif;
+    color: #00792c;
+    transition: all 0.3s;
+}
+
+#Songs01 .phonics__spot .btn-link .play .icon {
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    width: 18px;
+    height: 20px;
+    background: url("/assets/images/club_house_sing_along/popup/phonics/icon_play01.png") no-repeat 0 0;
+    transition: all 0.3s;
+}
+
+#Songs01 .phonics__content {
+    display: flex;
+    margin-top: 11px;
+    margin-left: 100px;
+    height: 520px;
+}
+
+#Songs01 .phonics__thumbnail__items {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -12px;
+}
+
+#Songs01 .phonics__thumbnail__item {
+    position: relative;
+    margin-top: 12px;
+}
+
+#Songs01 .phonics__thumbnail__item:nth-of-type(even) {
+    margin-left: 12px;
+}
+
+#Songs01 .phonics__thumbnail__item.active .txt {
+    color: #8ee9af;
+}
+
+#Songs01 .phonics__thumbnail__item.default .txt {
+    color: #00792c;
+}
+
+#Songs01 .phonics__thumbnail__item .txt {
+    position: absolute;
+    bottom: -1px;
+    left: -2px;
+    height: 53px;
+    text-align: center;
+    font: 700 21px/53px "comic", sans-serif;
+    color: transparent;
+    background: no-repeat 0 100%;
+    transition: all 0.3s;
+}
+
+#Songs01 .phonics__thumbnail__item .img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+#Songs01 .phonics__thumbnail__item .img img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+#Songs01 .phonics__thumbnail__item .btn-link {
+    display: block;
+    padding-bottom: 47px;
+}
+
+#Songs01 .phonics__normal__items {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#Songs01 .phonics__normal__item {
+    position: relative;
+    transition: all 0.3s;
+}
+
+#Songs01 .phonics__normal__item.active:nth-of-type(odd) {
+    background-color: #3ba361;
+}
+
+#Songs01 .phonics__normal__item.active:nth-of-type(even) {
+    background-color: #4ebf77;
+}
+
+#Songs01 .phonics__normal__item.active .txt {
+    color: #8ee9af;
+}
+
+#Songs01 .phonics__normal__item.active .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_songs01_active.png");
+}
+
+#Songs01 .phonics__normal__item.default:nth-of-type(odd) {
+    background-color: #b5ecc4;
+}
+
+#Songs01 .phonics__normal__item.default:nth-of-type(even) {
+    background-color: #c6f3d6;
+}
+
+#Songs01 .phonics__normal__item.default .txt {
+    color: #00792c;
+}
+
+#Songs01 .phonics__normal__item.default .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_songs01.png");
+}
+
+#Songs01 .phonics__normal__item .txt {
+    padding-left: 62px;
+    font: 700 21px/65px "comic", sans-serif;
+    color: transparent;
+}
+
+#Songs01 .phonics__normal__item .img {
+    position: relative;
+}
+
+#Songs01 .phonics__normal__item .btn-link {
+    width: 270px;
+    height: 65px;
+}
+
+#Songs01 .phonics__normal__item .icon-songs {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 13px;
+    width: 24px;
+    height: 28px;
+    background: no-repeat 0 100%;
+}
+
+#Songs01 .phonics .tit {
+    padding: 10px 0 2px 8px;
+}
+
+#Songs01 .holiday {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 768px;
+    background-color: #ee9d1f;
+}
+
+#Songs01 .holiday__box {
+    margin: 0 28px;
+}
+
+#Songs01 .holiday__content {
+    display: flex;
+    margin-left: 100px;
+}
+
+#Songs01 .holiday__normal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Songs01 .holiday__normal__items {
+    position: relative;
+    overflow: hidden;
+    width: 378px;
+    padding-top: 119px;
+    margin-left: 12px;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(odd) {
+    margin-left: 0;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(n+3) {
+    margin-top: 31px;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(1) {
+    background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title01.jpg") no-repeat 0 0;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(2) {
+    background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title02.jpg") no-repeat 0 0;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(3) {
+    background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title03.jpg") no-repeat 0 0;
+}
+
+#Songs01 .holiday__normal__items:nth-of-type(4) {
+    background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title04.jpg") no-repeat 0 0;
+}
+
+#Songs01 .holiday__normal__item {
+    position: relative;
+    transition: all 0.3s;
+}
+
+#Songs01 .holiday__normal__item:nth-of-type(1) {
+    border-radius: 15px 15px 0 0;
+}
+
+#Songs01 .holiday__normal__item:nth-last-of-type(1) {
+    border-radius: 0 0 15px 15px;
+}
+
+#Songs01 .holiday__normal__item.active:nth-of-type(odd) {
+    background-color: #d8ab66;
+}
+
+#Songs01 .holiday__normal__item.active:nth-of-type(even) {
+    background-color: #c29754;
+}
+
+#Songs01 .holiday__normal__item.active .txt {
+    color: #ffeed0;
+}
+
+#Songs01 .holiday__normal__item.active .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/holiday/icon_songs01_active.png");
+}
+
+#Songs01 .holiday__normal__item.default:nth-of-type(odd) {
+    background-color: #ffeed0;
+}
+
+#Songs01 .holiday__normal__item.default:nth-of-type(even) {
+    background-color: #ffdaa1;
+}
+
+#Songs01 .holiday__normal__item.default .txt {
+    color: #b1690e;
+}
+
+#Songs01 .holiday__normal__item.default .icon-songs {
+    background-image: url("/assets/images/club_house_sing_along/popup/holiday/icon_songs01.png");
+}
+
+#Songs01 .holiday__normal__item .txt {
+    padding-left: 100px;
+    font: 700 21px/65px "comic", sans-serif;
+    color: transparent;
+    transition: all 0.3s;
+}
+
+#Songs01 .holiday__normal__item .img {
+    position: relative;
+}
+
+#Songs01 .holiday__normal__item .btn-link {
+    width: 268px;
+    height: 65px;
+}
+
+#Songs01 .holiday__normal__item .icon-songs {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 40px;
+    width: 24px;
+    height: 28px;
+    background: no-repeat 0 100%;
+    transition: all 0.3s;
+}
+
+#Songs01 .holiday .tit {
+    padding: 10px 0 14px 8px;
+}
+
+#Songs01 .holiday .btn-link {
+    display: block;
+    position: relative;
+}
+
+#Songs01 .holiday .btn-link .img {
+    display: block;
+}
+
+#Songs01 .btn-close {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    background-color: transparent;
+}
+
+#Songs01 .icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#Songs01 .icon-close {
+    display: inline-block;
+    background: url("/assets/images/club_house_sing_along/popup/icon_close01.png") no-repeat 50% 50%;
+    background-size: 34px 34px;
+}

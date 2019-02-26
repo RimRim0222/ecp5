@@ -1,0 +1,279 @@
+<!--Header area(S) - include-->
+<header id="header" class="header">
+	<nav id="gnb">
+		<!--
+			Guide
+
+			<i class="icon icon-history-back"></i> - history back
+			<i class="icon icon-weekmap"></i> - week tree
+			<i class="icon icon-week"></i> - this week
+			<i class="icon icon-profile"></i> - profile
+			<i class="icon icon-parent"></i> - parent
+			<i class="icon icon-help"></i> - help
+			<i class="icon icon-bgm"></i> - bgm
+			<i class="icon icon-bgm_mute"></i> - bgm mute
+			<i class="icon icon-logout"></i> - logout
+		-->
+		<div class="hl-group">
+			<div class="hl-group__area">
+				<div class="hl-group__box">
+					<h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_with_parents_ts01_{{langType}}.png" alt="Time Spent"></h1>
+					<ul class="hl-group__items">
+						<li class="hl-group__item"><a [routerLink]="['/with-parents']"  class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick');"><i class="icon icon-back"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hr-group">
+			<div class="hr-group__area">
+				<div class="hr-group__box">
+					<ul class="hr-group__items">
+						<li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick');_helper.openModal({type: 'commonHelp', helpPage: 'timeSpent'})"><i class="icon icon-help"></i></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<!--Header area(S) - include-->
+<!--Content area(S)-->
+<section id="container">
+	<div id="content">
+		<div class="content-wrap">
+			<div class="content-wrap__outer">
+				<!--Content real area(S)-->
+				<div class="content-wrap__inner">
+					<div class="withParents-time-spent">
+						<div class="withParents-time-spent__area">
+							<div class="withParents-time-spent__box">
+								<!--tab-->
+								<div class="tab">
+									<ul class="tab__items">
+										<!--
+											Guide
+
+											EX)
+											let select = default, active
+											<li class="tab__item ${select}">
+
+											List)
+											<li class="tab__item default"> - 비활성화
+											<li class="tab__item active"> - 활성화
+										-->
+										<li class="tab__item" [ngClass]="withParentsService.weekType === 'last'?'active':'default'"><button type="button" class="btn btn-tab" (click)="_sndMgr.playEventSound('common', 'buttonClick');onClickWeekHandler('last')"><span>Last Week</span></button></li>
+										<li class="tab__item" [ngClass]="withParentsService.weekType === 'this'?'active':'default'"><button type="button" class="btn btn-tab" (click)="_sndMgr.playEventSound('common', 'buttonClick');onClickWeekHandler('this')"><span>This Week</span></button></li>
+									</ul>
+								</div>
+								<div class="chart">
+									<!--차트 왼쪽-->
+									<div class="chart__v-axis">
+										<ul class="chart__v-axis__items">
+											<!--loop area-->
+											<li class="chart__v-axis__item"><span class="num">0</span></li>
+											<li class="chart__v-axis__item"><span class="num">10</span></li>
+											<li class="chart__v-axis__item"><span class="num">20</span></li>
+											<li class="chart__v-axis__item"><span class="num">30</span></li>
+										</ul>
+									</div>
+									<!--차트 아래쪽-->
+									<div class="chart__h-axis">
+										<ul class="chart__h-axis__items">
+											<li class="chart__h-axis__item {{item.value.title}}" *ngFor="let item of withParentsService.pageList | keyvalue">
+												<strong class="on-week">{{commonModule.capitalizeFirstLetter(item.value.title)}}</strong>
+												<div class="date-box">
+													<span class="date">{{item.value.day}}</span>
+													<span class="separator">/</span>
+													<span class="month">{{item.value.month}}</span>
+												</div>
+											</li>
+											<!--loop area-->
+											<!--
+											  Guide
+
+											  요일별 가이드
+
+											  EX)
+											  let week = mon, tue, wed, thu, fri, sat, sun
+											  <li class="chart__h-axis__item ${week}">
+
+											  List)
+											  <li class="chart__h-axis__item mon"> - 월요일
+											  <li class="chart__h-axis__item tue"> - 화요일
+											  <li class="chart__h-axis__item wed"> - 수요일
+											  <li class="chart__h-axis__item thu"> - 목요일
+											  <li class="chart__h-axis__item fri"> - 금요일
+											  <li class="chart__h-axis__item sat"> - 토요일
+											  <li class="chart__h-axis__item sun"> - 일요일
+											-->
+											<!-- <li class="chart__h-axis__item mon">
+												<strong class="on-week">Mon</strong>
+												<div class="date-box">
+													<span class="date">8</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item tue">
+												<strong class="on-week">Tue</strong>
+												<div class="date-box">
+													<span class="date">9</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item wed">
+												<strong class="on-week">Wed</strong>
+												<div class="date-box">
+													<span class="date">10</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item thu">
+												<strong class="on-week">Thu</strong>
+												<div class="date-box">
+													<span class="date">11</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item fri">
+												<strong class="on-week">Fri</strong>
+												<div class="date-box">
+													<span class="date">12</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item sat">
+												<strong class="on-week">Sat</strong>
+												<div class="date-box">
+													<span class="date">13</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li>
+											<li class="chart__h-axis__item sun">
+												<strong class="on-week">Sun</strong>
+												<div class="date-box">
+													<span class="date">14</span>
+													<span class="separator">/</span>
+													<span class="month">Mar</span>
+												</div>
+											</li> -->
+										</ul>
+									</div>
+									<!--차트 우측 상단-->
+									<div class="chart__label">
+										<span class="txt">m : minutes</span>
+									</div>
+									<!--차트 그래프-->
+									<div class="chart__graph">
+										<ul class="chart__graph__items">
+											<li class="chart__graph__item {{item.value.title}}" *ngFor="let item of withParentsService.pageList | keyvalue">
+												<div class="graph-box" [@grow]>
+													<div class="graph-bar" [style.height.px]="item.value.height">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">{{item.value.valTitle}}m</span>
+													</div>
+
+												</div>
+											</li>
+											<!--loop area-->
+											<!--
+											  Guide
+
+											  요일별 가이드
+
+											  EX)
+											  let week = mon, tue, wed, thu, fri, sat, sun
+											  <li class="chart__graph__item ${week}">
+
+											  List)
+											  <li class="chart__graph__item mon"> - 월요일
+											  <li class="chart__graph__item tue"> - 화요일
+											  <li class="chart__graph__item wed"> - 수요일
+											  <li class="chart__graph__item thu"> - 목요일
+											  <li class="chart__graph__item fri"> - 금요일
+											  <li class="chart__graph__item sat"> - 토요일
+											  <li class="chart__graph__item sun"> - 일요일
+											-->
+											<!-- <li class="chart__graph__item mon">
+												<div class="graph-box"> -->
+													<!--
+														높이값 계산 공식
+														388 * (number / 30 * 100) / 100
+
+														max height = 436
+
+														<span class="graph-txt">1m</span> - 0 이상일경우
+														<span class="graph-txt no-data">0</span> - 0 일경우
+													-->
+													<!-- <div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+
+												</div>
+											</li>
+											<li class="chart__graph__item tue">
+												<div class="graph-box">
+													<div class="graph-bar" style="height:0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li>
+											<li class="chart__graph__item wed">
+												<div class="graph-box">
+													<div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li>
+											<li class="chart__graph__item thu">
+												<div class="graph-box">
+													<div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li>
+											<li class="chart__graph__item fri">
+												<div class="graph-box">
+													<div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li>
+											<li class="chart__graph__item sat">
+												<div class="graph-box">
+													<div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li>
+											<li class="chart__graph__item sun">
+												<div class="graph-box">
+													<div class="graph-bar" style="height: 0;">
+														<i class="icon icon-star"></i>
+														<span class="graph-txt">30m</span>
+													</div>
+												</div>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Content real area(E)-->
+			</div>
+		</div>
+	</div>
+</section>
+<!--Content area(E)-->

@@ -1,0 +1,140 @@
+<!--Header area(S) - include-->
+<header id="header" class="header">
+        <nav id="gnb">
+            <!--
+                Guide
+
+                <i class="icon icon-history-back"></i> - history back
+                <i class="icon icon-weekmap"></i> - week tree
+                <i class="icon icon-week"></i> - this week
+                <i class="icon icon-profile"></i> - profile
+                <i class="icon icon-parent"></i> - parent
+                <i class="icon icon-help"></i> - help
+                <i class="icon icon-bgm"></i> - bgm
+                <i class="icon icon-bgm_mute"></i> - bgm mute
+                <i class="icon icon-logout"></i> - logout
+            -->
+            <div class="hl-group">
+                <div class="hl-group__area">
+                    <div class="hl-group__box">
+                        <h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_with_parents_mg01.png" alt="Meet & Greet"></h1>
+                        <ul class="hl-group__items">
+                            <li class="hl-group__item"><a class="btn" [routerLink]="['/with-parents']" (click)="_sndMgr.playEventSound('common', 'buttonClick');"><i class="icon icon-back"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hr-group">
+                <div class="hr-group__area">
+                    <div class="hr-group__box">
+                        <ul class="hr-group__items">
+                            <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'meetGreet'})"><i class="icon icon-help"></i></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header area(S) - include-->
+    <!--Content area(S)-->
+    <section id="container">
+        <div id="content">
+            <div class="content-wrap">
+                <div class="content-wrap__outer">
+                    <!--Content real area(S)-->
+                    <div class="content-wrap__inner">
+                        <div class="withParents-meet-greet">
+                            <div class="withParents-meet-greet__area">
+                                <div class="withParents-meet-greet__box">
+                                    <!--Swiper area(S)-->
+                                    <div class="swiper">
+                                        <swiper [index]="withParentsService.currentPage" [config]="config" (indexChange)="_sndMgr.playEventSound('common', 'pageMove')">
+                                            <div class="swiper-slide" *ngFor="let item of withParentsService.pageList | keyvalue">
+                                                <div class="data-table">
+                                                    <table>
+                                                        <colgroup>
+                                                            <col style="width:9%">
+                                                            <col>
+                                                            <col style="width:30%">
+                                                            <col style="width:15%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Week</th>
+                                                                <th scope="col">Contents View</th>
+                                                                <th scope="col">Audio Play</th>
+                                                                <th scope="col">Download</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <!--
+                                                            Guide
+
+                                                            - Meet & Greet( List )
+
+                                                            EX)
+
+                                                            List)
+                                                            <tr class="default"> - 기본
+                                                            <tr class="active "> - over
+                                                            <tr class="this-week"> - 이번주
+                                                            <tr class="disabled"> - 진행되지 않은 주
+                                                        -->
+                                                        <tr class="{{week.bgClassName}}" *ngFor="let week of item.value.weekList; let idx = index" appHover hoverDefaultClass="default" hoverActiveClass="active">
+                                                            <td class="td-week">
+                                                                <strong class="week">WEEK<span class="num">{{week.num}}</span></strong>
+                                                            </td>
+                                                            <td class="td-subject">
+                                                                <a class="btn btn-link" *ngIf="week.bgClassName !== 'disabled' && (week.bgClassName !== 'vacation')"  (click)="onClickPdfHandler(week);">{{week.title}}</a>
+                                                                <span *ngIf="week.bgClassName === 'vacation'">{{week.title}}</span>
+                                                            </td>
+                                                            <td class="td-audio">
+                                                                <!--
+                                                                    Guide
+
+                                                                    - Audio Play( Icon )
+
+                                                                    List)
+                                                                    <i class="icon icon-play"></i> - play
+                                                                    <i class="icon icon-pause"></i> - pause
+                                                                -->
+                                                                <div class="audio-controller" *ngIf="week.fileMp3.uploadFileName !='' && week.bgClassName !== 'disabled'">
+                                                                    <button type="button" class="btn btn-audio" (click)="onClickSoundHandler($event, week.fileSoundList, 0);">
+                                                                        <i class="icon icon-play"></i>
+                                                                    </button>
+                                                                </div>
+                                                                <ul class="audio-lists">
+                                                                    <li class="audio-list" *ngIf="week.fileMp3.uploadFileName !='' && week.bgClassName !== 'disabled'"><button type="button" class="btn btn-num" [ngClass]="{'active':sound.isActive}" (click)="onClickSoundHandler($event, sound, idx);" *ngFor="let sound of week.fileSoundList; let idx = index"><span>{{idx + 1}}</span></button></li>
+                                                                </ul>
+                                                            </td>
+                                                            <td class="td-download">
+                                                                <a class="btn btn-download" appHover hoverDefaultClass="default" hoverActiveClass="active" *ngIf="week.filePdf.uploadFileName !='' && week.bgClassName !== 'disabled'" (click)="onClickDownloadHandler(week, 'pdf');"><span>PDF</span></a> 
+                                                                <a class="btn btn-download" appHover hoverDefaultClass="default" hoverActiveClass="active" *ngIf="week.fileMp3.uploadFileName !='' && week.bgClassName !== 'disabled'" (click)="onClickDownloadHandler(week, 'zip');"><span>MP3</span></a>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </swiper>
+                                        <!--swiper paging-->
+                                        <div class="swiper-pagination swiper-pagination-wrapper"></div>
+                                        <!--swiper controller-->
+                                        <div class="swiper-controller">
+                                            <button type="button" class="btn btn-swiper-prev"></button>
+                                            <button type="button" class="btn btn-swiper-next"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Swiper area(E)-->
+
+                    </div>
+                    <!--Content real area(E)-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Content area(E)-->

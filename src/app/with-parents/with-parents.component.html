@@ -1,0 +1,110 @@
+<!--Header area(S) - include-->
+<header id="header" class="header">
+    <nav id="gnb">
+        <!--
+            Guide
+
+            <i class="icon icon-weekmap"></i> - week tree
+            <i class="icon icon-week"></i> - this week
+            <i class="icon icon-profile"></i> - profile
+            <i class="icon icon-parent"></i> - parent
+            <i class="icon icon-help"></i> - help
+            <i class="icon icon-bgm"></i> - bgm
+            <i class="icon icon-bgm_mute"></i> - bgm mute
+            <i class="icon icon-logout"></i> - logout
+        -->
+        <div class="hl-group">
+            <div class="hl-group__area">
+                <div class="hl-group__box">
+                    <h1 class="hl-group__tit"><img src="{{imagePath}}/common/header/hl_group/tit_with_parents01.png" alt="Week Tree"></h1>
+                    <ul class="hl-group__items">
+                        <li class="hl-group__item"><a [routerLink]="['/main']" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick')"><i class="icon icon-home"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hr-group">
+            <div class="hr-group__area">
+                <div class="hr-group__box">
+                    <ul class="hr-group__items">
+                        <li class="hr-group__item">
+                            <!--
+                                Guide
+
+                                <i class="icon icon-kor"></i> - lang(kor)
+                                <i class="icon icon-eng"></i> - lang(eng)
+                            -->
+                            <button type="button" class="btn btn-lang" (click)="_sndMgr.playEventSound('common', 'buttonClick'); switchLanguage(this._translate.translate.getDefaultLang())">
+                                <i class="icon" [ngClass]="(langType !== 'kor')?'icon-kor':'icon-eng'"></i>
+                            </button>
+                        </li>
+                        <li class="hr-group__item">
+                            <!--
+                                Guide
+
+                                <i class="icon icon-bgm"></i> - bgn on
+                                <i class="icon icon-bgm_mute"></i> - bgn off
+                            -->
+                            <button type="button" class="btn btn-bgm" (click)="dataManagerService.bgmToggle('/with-parents')">
+                                <i class="icon icon-bgm{{bgmIconClass}}"></i>
+                            </button>
+                        </li>
+                        <li class="hr-group__item"><button type="button" class="btn" (click)="_sndMgr.playEventSound('common', 'buttonClick'); _helper.openModal({type: 'commonHelp', helpPage: 'withParents'})"><i class="icon icon-help"></i></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--Header area(S) - include-->
+<!--Content area(S)-->
+<section id="container">
+    <div id="content">
+        <div class="content-wrap">
+            <div class="content-wrap__outer">
+                <!--Content real area(S)-->
+                <div class="content-wrap__inner">
+                    <!--Footer area(S)-->
+                    <div class="withparents">
+                        <div class="withparents__area">
+                            <div class="withparents__box">
+                                <!--리스트 영역-->
+                                <div class="withparents__items length{{(dataManagerService.getWeekGroupNum(dataManagerService.weekData.thisWeek) >= 2 ? '6' : '5')}}">
+                                    <!--
+                                      Guide
+
+                                      - Menu
+                                      let state = default, active
+                                      let item = mg, vl, sc, ts, pr, re
+                                      let language = kor, eng
+                                      <div class="withparents__item item0${item} ${language} ${state}">
+
+                                      List)
+                                      <div class="withparents__item kor"> - kor
+                                      <div class="withparents__item eng"> - eng
+                                      <div class="withparents__item default"> - 일반
+                                      <div class="withparents__item active"> - 활성화
+                                      <div class="withparents__item item-mg"> - meet & greet
+                                      <div class="withparents__item item-vl"> - Vocabulary Lists
+                                      <div class="withparents__item item-sc"> - Sticker Charts
+                                      <div class="withparents__item item-ts"> - Time Spent
+                                      <div class="withparents__item item-pr"> - Progress
+                                      <div class="withparents__item item-re"> - Reports
+                                    -->
+                                    <div class="withparents__item item-mg {{langType}} default" *ngIf="dataManagerService.getWeekGroupNum(dataManagerService.weekData.thisWeek) >= 2"><a class="btn" [routerLink]="['/with-parents/meet-greet']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'meetGreetTitle');"></a></div>
+                                    <div class="withparents__item item-vl {{langType}} default"><a class="btn" [routerLink]="['/with-parents/vocabulary-lists']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'vocabularyTitle');"></a></div>
+                                    <div class="withparents__item item-sc {{langType}} default"><a class="btn" [routerLink]="['/with-parents/sticker-charts']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'stickerChartsTitle');"></a></div>
+                                    <div class="withparents__item item-ts {{langType}} default"><a class="btn" [routerLink]="['/with-parents/time-spent']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'timeSpentTitle');"></a></div>
+                                    <div class="withparents__item item-pr {{langType}} default"><a class="btn" [routerLink]="['/with-parents/progress']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'progressTitle');"></a></div>
+                                    <div class="withparents__item item-re {{langType}} default"><a class="btn" [routerLink]="['/with-parents/reports']" (click)="_sndMgr.playEventSound('common', 'buttonClick');_sndMgr.playTitleSound('withParents', 'reportsTitle');"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Content real area(E)-->
+            </div>
+        </div>
+    </div>
+</section>
+<!--Content area(E)-->

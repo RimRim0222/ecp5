@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <style>body {background-color: white;}</style>
+</head>
+<body>
+    <p>Front<->컨텐츠 API Test</p>
+    <span>완료
+        <button id="openChantFlash">Chant Flashcard</button>
+        <button id="openReadFlash">Read Flashcard</button>
+        <button id="contentInit">contentInit</button>
+        <button id="closeContent">closeContent</button>
+    </span>
+    &nbsp;&nbsp;&nbsp;
+    <span>진행
+        <button id="saveActivityCompStatus">학습저장-단일</button>
+        <button id="saveActivityQuizDetail">학습저장-다중</button>
+        <button id="fullScreenY">to FullScreen</button>
+        <button id="fullScreenN">to DefaultScreen</button>
+        <button id="help">Help</button>
+    </span>
+
+    <script>
+        window.addEventListener( 'message', receiveMsgFromParent );
+        // 부모로부터 메시지 수신
+        function receiveMsgFromParent( e ) {
+            // e.data가 전달받은 메시지
+            console.log('런처로부터 받은 메시지 ', e.data);
+
+            switch (event.data['op']) {
+                case 'contents_info': {
+                    window.parent.postMessage({op: 'contentInit', from: 'course', data: 'content Init test data'}, '*');
+                    window.parent.postMessage({op: 'customOP', from: 'course', data: 'customOP test data'}, '*');
+                    break;
+                }
+                case 'notifyContentInitFinish': {
+
+                    break;
+                }
+            }
+        }
+
+        function sendMsg(op, data) {
+            var fullMsg = {op: op, from: 'course', data: data};
+            console.log('런처로 보낸 메시지 ', fullMsg);
+            window.parent.postMessage(fullMsg, '*');
+        }
+
+        $('#openChantFlash').click(function() {
+            sendMsg( 'openModal', {type: 'flashCard'} );
+        });
+        $('#openReadFlash').click(function() {
+            sendMsg( 'openModal', {type: 'flashCard2'} ); // type flashcard2는 테스트로만 사용
+        });
+        $('#openReadFlash').click(function() {
+            sendMsg( 'openModal', {type: 'flashCard2'} ); // type flashcard2는 테스트로만 사용
+        });
+        $('#help').click(function() {
+            sendMsg( 'openModal', {type: 'help' } );
+        });
+        $('#contentInit').click(function() {
+            sendMsg('contentInit', {});
+        });
+        $('#closeContent').click(function() {
+            sendMsg('closeContent', {});
+        });
+        $('#fullScreenY').click(function() {
+            sendMsg('fullScreen', {mode: 'Y'});
+        });
+        $('#fullScreenN').click(function() {
+            sendMsg('fullScreen', {mode: 'N'});
+        });
+        $('#saveActivityCompStatus').click(function() {
+            sendMsg('saveActivityCompStatus', {});
+        });
+        $('#saveActivityQuizDetail').click(function() {
+            sendMsg('saveActivityQuizDetail', {});
+        });
+    </script>
+</body>
+</html>

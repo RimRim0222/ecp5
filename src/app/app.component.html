@@ -1,0 +1,21 @@
+<div id="wrap" class="wrap {{commonModule.activityClass}} {{_dataMgr.isMobile ? 'mo' : 'pc'}}" role="main"
+ (click)="emitGnbCloseEvent()">
+    <div id="wrapDim" class="default">
+      <span class="cloud-left"></span>
+      <span class="cloud-right"></span>
+    </div>
+    <div class='wrap-outer {{outerShow}}'>
+        <div class="wrap-inner">
+          <router-outlet></router-outlet>
+          <router-outlet name="contentWrap"></router-outlet>
+        </div>
+    </div>
+
+  <app-modal-main [depth]="1"></app-modal-main>
+  <app-modal-main [depth]="2"></app-modal-main>
+  <app-modal-main [depth]="3"></app-modal-main>
+  <app-modal-video></app-modal-video>
+  <app-modal-main [depth]="5"></app-modal-main>
+</div>
+
+

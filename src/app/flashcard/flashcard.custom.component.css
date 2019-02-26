@@ -1,0 +1,59 @@
+.main-flashcard-detail01__content .swiper-slide {
+  overflow: visible !important;
+}
+
+.main-flashcard01__content .flashcard .btn-card button:disabled, button[disabled]{
+  cursor: default;
+}
+
+.main-flashcard-detail01 .btn-close {
+  position: absolute;
+  z-index: 5;
+  top: 20px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-prevFC {
+  position: absolute;
+  top: 50%;
+  left: 86px;
+  width: 63px;
+  height: 115px;
+  margin-top: -67px;
+  background: url("/assets/images/flashcard/popup/icon_prev01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-prevFC.swiper-button-disabled {
+  /* opacity: 0; */
+  display: none;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-nextFC {
+  position: absolute;
+  top: 50%;
+  right: 86px;
+  width: 63px;
+  height: 115px;
+  margin-top: -67px;
+  background: url("/assets/images/flashcard/popup/icon_next01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.main-flashcard-detail01__content .swiper-controller .btn-swiper-nextFC.swiper-button-disabled {
+  /* opacity: 0; */
+  display: none;
+}
+
+.detailTest {
+  position: relative;
+  top: -40px;
+  left: 180px;
+  z-index: 100;
+}

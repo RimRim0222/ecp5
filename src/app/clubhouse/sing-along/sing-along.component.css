@@ -1,0 +1,1783 @@
+@charset "UTF-8";
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * 음표 아이콘
+ */
+@-webkit-keyframes note-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -485px 0;
+  }
+}
+@keyframes note-icon {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -485px 0;
+  }
+}
+
+/**
+ * Font style setting
+ */
+/**
+ * FONT SIZE
+ */
+/* Point color setting */
+/* Background - color setting */
+/* Border - color setting */
+/* Font - color setting */
+/**
+ * BASE SETTING
+ */
+/**
+ * Z-INDEX
+ */
+/*theme songs*/
+.sing-along01 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 826px;
+  height: 768px;
+  margin-left: -314px;
+  z-index: 1;
+}
+
+.sing-along01 .tab {
+  position: absolute;
+  top: 96px;
+  left: -140px;
+  width: 140px;
+}
+
+.sing-along01 .tab__item {
+  text-align: right;
+}
+
+.sing-along01 .tab__item.default .btn-theme {
+  width: 66px;
+}
+
+.sing-along01 .tab__item.default .icon-theme {
+  background: url("/assets/images/club_house_sing_along/popup/icon_theme01.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item.active .btn-theme {
+  width: 140px;
+}
+
+.sing-along01 .tab__item.active .icon-theme {
+  background: url("/assets/images/club_house_sing_along/popup/icon_theme01_active.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item .btn-theme {
+  height: 67px;
+  transition: all 0.3s;
+}
+
+.sing-along01 .tab__item .icon-theme {
+  transition: all 0.3s;
+}
+
+.sing-along01 .tab__item.default .btn-phonics {
+  width: 66px;
+}
+
+.sing-along01 .tab__item.default .icon-phonics {
+  background: url("/assets/images/club_house_sing_along/popup/icon_phonics01.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item.active .btn-phonics {
+  width: 140px;
+}
+
+.sing-along01 .tab__item.active .icon-phonics {
+  background: url("/assets/images/club_house_sing_along/popup/icon_phonics01_active.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item .btn-phonics {
+  height: 67px;
+  transition: all 0.3s;
+}
+
+.sing-along01 .tab__item .icon-phonics {
+  transition: all 0.3s;
+}
+
+.sing-along01 .tab__item.default .btn-holiday {
+  width: 66px;
+}
+
+.sing-along01 .tab__item.default .icon-holiday {
+  background: url("/assets/images/club_house_sing_along/popup/icon_holiday01.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item.active .btn-holiday {
+  width: 140px;
+}
+
+.sing-along01 .tab__item.active .icon-holiday {
+  background: url("/assets/images/club_house_sing_along/popup/icon_holiday01_active.png") no-repeat 0 0;
+}
+
+.sing-along01 .tab__item .btn-holiday {
+  height: 67px;
+  transition: all 0.3s;
+}
+
+.sing-along01 .tab__item .icon-holiday {
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 768px;
+  background-color: #3cb4b6;
+  border-radius: 18px 0 0 18px;
+}
+
+.sing-along01 .theme__box {
+  margin: 0 28px;
+}
+
+.sing-along01 .theme__content {
+  display: flex;
+  margin-top: 10px;
+}
+
+.sing-along01 .theme__thumbnail__items {
+  width: 488px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -12px;
+}
+
+.sing-along01 .theme__thumbnail__item {
+  position: relative;
+  margin-top: 12px;
+}
+
+.sing-along01 .theme__thumbnail__item:nth-of-type(even) {
+  margin-left: 12px;
+}
+
+.sing-along01 .theme__thumbnail__item.active .txt {
+  color: #9ff3f5;
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_thumbnail01_active.png");
+}
+
+.sing-along01 .theme__thumbnail__item.default .txt {
+  color: #0d9699;
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_thumbnail01.png");
+}
+
+.sing-along01 .theme__thumbnail__item.default:hover .txt {
+  color: #9ff3f5;
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_thumbnail01_active.png");
+}
+
+.sing-along01 .theme__thumbnail__item .txt {
+  position: absolute;
+  bottom: -1px;
+  left: -2px;
+  width: 244px;
+  height: 53px;
+  text-align: center;
+  font: 700 21px/53px "comic", sans-serif;
+  color: transparent;
+  background: no-repeat 0 100%;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme__thumbnail__item .img {
+  position: relative;
+}
+
+.sing-along01 .theme__thumbnail__item .btn-link {
+  display: block;
+  padding-bottom: 47px;
+}
+
+.sing-along01 .theme__normal {
+  margin-left: 12px;
+}
+
+.sing-along01 .theme__normal__items {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sing-along01 .theme__normal__item {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme__normal__item.active:nth-of-type(odd) {
+  background-color: #26adaf;
+}
+
+.sing-along01 .theme__normal__item.active:nth-of-type(even) {
+  background-color: #4fced1;
+}
+
+.sing-along01 .theme__normal__item.active .txt {
+  color: #9ff3f5;
+  text-align: left;
+}
+
+.sing-along01 .theme__normal__item.active .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_song01_active.png");
+}
+
+.sing-along01 .theme__normal__item.default:nth-of-type(odd) {
+  background-color: #a9edee;
+}
+
+.sing-along01 .theme__normal__item.default:nth-of-type(even) {
+  background-color: #ccf9f9;
+}
+
+.sing-along01 .theme__normal__item.default .txt {
+  color: #0d9699;
+  text-align: left;
+}
+
+.sing-along01 .theme__normal__item.default .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_song01.png");
+}
+
+.sing-along01 .theme__normal__item.default:nth-of-type(odd):hover {
+  background: #26adaf;
+}
+
+.sing-along01 .theme__normal__item.default:nth-of-type(even):hover {
+  background: #4fced1;
+}
+
+.sing-along01 .theme__normal__item.default:hover .txt {
+  color: #9ff3f5;
+}
+
+.sing-along01 .theme__normal__item.default:hover .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_song01_active.png");
+}
+
+.sing-along01 .theme__normal__item .txt {
+  padding-left: 62px;
+  font: 700 21px/65px "comic", sans-serif;
+  color: transparent;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme__normal__item .img {
+  position: relative;
+}
+
+.sing-along01 .theme__normal__item .btn-link {
+  width: 268px;
+  height: 65px;
+}
+
+.sing-along01 .theme__normal__item .icon-songs {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  width: 24px;
+  height: 28px;
+  background: no-repeat 0 100%;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme .tit {
+  padding: 6px 0 2px 4px;
+  text-align: left;
+}
+
+.sing-along01 .theme .btn-link {
+  display: block;
+  position: relative;
+}
+
+.sing-along01 .theme .btn-link.active .play,
+.sing-along01 .theme .spot-area .btn-link .play:hover {
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/bg_spot_play01_active.png");
+  color: #66d9dc;
+}
+
+.sing-along01 .theme .btn-link.active .play .icon,
+.sing-along01 .theme .spot-area .btn-link .play:hover .icon {
+  background-image: url("/assets/images/club_house_sing_along/popup/theme/icon_play01_active.png");
+}
+
+.sing-along01 .theme .btn-link .img {
+  display: block;
+}
+
+.sing-along01 .theme .btn-link .play {
+  position: absolute;
+  bottom: 4px;
+  right: 24px;
+  padding: 0 26px 0 57px;
+  height: 43px;
+  background: url("/assets/images/club_house_sing_along/popup/theme/bg_spot_play01.png") no-repeat 0 0;
+  font: 700 22px/39px "comic", sans-serif;
+  color: #0d9699;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme .btn-link .play .icon {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 18px;
+  height: 20px;
+  background: url("/assets/images/club_house_sing_along/popup/theme/icon_play01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.sing-along01 .theme .spot-area {
+  position: relative;
+}
+
+.sing-along01 .theme .spot-area .btn-link {
+  position: absolute;
+  bottom: 4px;
+  right: 24px;
+}
+
+.sing-along01 .theme .spot-area .btn-link .play {
+  position: static;
+  display: block;
+  padding: 2px 26px 0 49px;
+}
+
+.sing-along01 .phonics {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 768px;
+  border-radius: 18px 0 0 18px;
+}
+
+.sing-along01 .phonics.type01 {
+  background-color: #44ab69;
+}
+
+.sing-along01 .phonics.type01 .phonics__thumbnail {
+  width: 770px;
+}
+
+.sing-along01 .phonics.type01 .phonics__thumbnail__item.active .txt {
+  width: 382px;
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/type1/bg_thumbnail01_active.png");
+}
+
+.sing-along01 .phonics.type01 .phonics__thumbnail__item.default .txt {
+  width: 382px;
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/type1/bg_thumbnail01.png");
+}
+
+.sing-along01 .phonics.type01 .phonics__thumbnail__item:hover .txt {
+  width: 382px;
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/type1/bg_thumbnail01_active.png");
+}
+
+.sing-along01 .phonics.type01 .phonics__thumbnail__item .img {
+  width: 378px;
+}
+
+.sing-along01 .phonics.type01 .phonics__normal {
+  display: none;
+}
+
+.sing-along01 .phonics.type02 {
+  background: #44ab69 url("/assets/images/club_house_sing_along/popup/phonics/bg_phonics01.png") no-repeat 100% 590px;
+}
+
+.sing-along01 .phonics.type02 .phonics__thumbnail {
+  width: 488px;
+}
+
+.sing-along01 .phonics.type02 .phonics__thumbnail__item.active .txt {
+  width: 244px;
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/type2/bg_thumbnail01_active.png");
+}
+
+.sing-along01 .phonics.type02 .phonics__thumbnail__item.default .txt {
+  width: 244px;
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/type2/bg_thumbnail01.png");
+}
+
+.sing-along01 .phonics.type02 .phonics__thumbnail__item .img {
+  width: 238px;
+}
+
+.sing-along01 .phonics.type02 .phonics__normal {
+  margin-left: 12px;
+  width: 270px;
+}
+
+.sing-along01 .phonics__box {
+  margin: 0 28px;
+}
+
+.sing-along01 .phonics__spot {
+  display: flex;
+  margin-top: 3px;
+}
+
+.sing-along01 .phonics__spot .btn-link {
+  position: relative;
+  width: 378px;
+  margin-left: 12px;
+}
+
+.sing-along01 .phonics__spot .btn-link:first-child {
+  margin-left: 0;
+}
+
+.sing-along01 .phonics__spot .btn-link:hover .play {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/bg_spot_play01_active.png");
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__spot .btn-link:hover .play .icon {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_play01_active.png");
+}
+
+.sing-along01 .phonics__spot .btn-link.active .play {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/bg_spot_play01_active.png");
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__spot .btn-link.active .play .icon {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_play01_active.png");
+}
+
+.sing-along01 .phonics__spot .btn-link .img {
+  display: block;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.sing-along01 .phonics__spot .btn-link .play {
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+  width: 238px;
+  padding: 0 0 0 49px;
+  height: 43px;
+  box-sizing: border-box;
+  background: url("/assets/images/club_house_sing_along/popup/phonics/bg_spot_play01.png") no-repeat 0 0;
+  font: 700 22px/39px "comic", sans-serif;
+  color: #00792c;
+  transition: all 0.3s;
+}
+
+.sing-along01 .phonics__spot .btn-link .play .icon {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 18px;
+  height: 20px;
+  background: url("/assets/images/club_house_sing_along/popup/phonics/icon_play01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.sing-along01 .phonics__content {
+  display: flex;
+  margin-top: 11px;
+  height: 520px;
+}
+
+.sing-along01 .phonics__thumbnail__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -12px;
+}
+
+.sing-along01 .phonics__thumbnail__item {
+  position: relative;
+  margin-top: 12px;
+}
+
+.sing-along01 .phonics__thumbnail__item:nth-of-type(even) {
+  margin-left: 12px;
+}
+
+.sing-along01 .phonics__thumbnail__item.active .txt {
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__thumbnail__item.default .txt {
+  color: #00792c;
+}
+
+.sing-along01 .phonics__thumbnail__item:hover .txt {
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__thumbnail__item .txt {
+  position: absolute;
+  bottom: -1px;
+  left: -2px;
+  height: 53px;
+  text-align: center;
+  font: 700 21px/53px "comic", sans-serif;
+  color: transparent;
+  background: no-repeat 0 100%;
+  transition: all 0.3s;
+}
+
+.sing-along01 .phonics__thumbnail__item .img {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.sing-along01 .phonics__thumbnail__item .img img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.sing-along01 .phonics__thumbnail__item .btn-link {
+  display: block;
+  padding-bottom: 47px;
+}
+
+.sing-along01 .phonics__normal__items {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sing-along01 .phonics__normal__item {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.sing-along01 .phonics__normal__item.active:nth-of-type(odd) {
+  background-color: #3ba361;
+}
+
+.sing-along01 .phonics__normal__item.active:nth-of-type(even) {
+  background-color: #4ebf77;
+}
+
+.sing-along01 .phonics__normal__item.active .txt {
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__normal__item.active .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_songs01_active.png");
+}
+
+.sing-along01 .phonics__normal__item.default:nth-of-type(odd) {
+  background-color: #b5ecc4;
+}
+
+.sing-along01 .phonics__normal__item.default:nth-of-type(even) {
+  background-color: #c6f3d6;
+}
+
+.sing-along01 .phonics__normal__item.default .txt {
+  color: #00792c;
+}
+
+.sing-along01 .phonics__normal__item.default .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_songs01.png");
+}
+
+.sing-along01 .phonics__normal__item.default:nth-of-type(odd):hover {
+  background-color: #3ba361;
+}
+
+.sing-along01 .phonics__normal__item.default:nth-of-type(even):hover {
+  background-color: #4ebf77;
+}
+
+.sing-along01 .phonics__normal__item.default:hover .txt {
+  color: #8ee9af;
+}
+
+.sing-along01 .phonics__normal__item.default:hover .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/phonics/icon_songs01_active.png");
+}
+
+.sing-along01 .phonics__normal__item .txt {
+  padding-left: 62px;
+  font: 700 21px/65px "comic", sans-serif;
+  color: transparent;
+  text-align: left;
+}
+
+.sing-along01 .phonics__normal__item .img {
+  position: relative;
+}
+
+.sing-along01 .phonics__normal__item .btn-link {
+  width: 270px;
+  height: 65px;
+}
+
+.sing-along01 .phonics__normal__item .icon-songs {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 13px;
+  width: 24px;
+  height: 28px;
+  background: no-repeat 0 100%;
+}
+
+.sing-along01 .phonics .tit {
+  padding: 10px 0 2px 8px;
+  text-align: left;
+}
+
+.sing-along01 .holiday {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 768px;
+  background-color: #ee9d1f;
+  border-radius: 18px 0 0 18px;
+}
+
+.sing-along01 .holiday__box {
+  margin: 0 28px;
+}
+
+.sing-along01 .holiday__content {
+  display: flex;
+}
+
+.sing-along01 .holiday__normal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sing-along01 .holiday__normal__items {
+  position: relative;
+  overflow: hidden;
+  width: 378px;
+  padding-top: 119px;
+  margin-left: 12px;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(odd) {
+  margin-left: 0;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(n+3) {
+  margin-top: 31px;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(1) {
+  background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title01.jpg") no-repeat 0 0;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(2) {
+  background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title02.jpg") no-repeat 0 0;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(3) {
+  background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title03.jpg") no-repeat 0 0;
+}
+
+.sing-along01 .holiday__normal__items:nth-of-type(4) {
+  background: url("/assets/images/club_house_sing_along/popup/holiday/bg_title04.jpg") no-repeat 0 0;
+}
+
+.sing-along01 .holiday__normal__item {
+  position: relative;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.sing-along01 .holiday__normal__item:nth-of-type(1) {
+  border-radius: 15px 15px 0 0;
+}
+
+.sing-along01 .holiday__normal__item:nth-last-of-type(1) {
+  border-radius: 0 0 15px 15px;
+}
+
+.sing-along01 .holiday__normal__item.active:nth-of-type(odd) {
+  background-color: #d8ab66;
+}
+
+.sing-along01 .holiday__normal__item.active:nth-of-type(even) {
+  background-color: #c29754;
+}
+
+.sing-along01 .holiday__normal__item.active .txt {
+  color: #ffeed0;
+}
+
+.sing-along01 .holiday__normal__item.active .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/holiday/icon_songs01_active.png");
+}
+
+.sing-along01 .holiday__normal__item.default:nth-of-type(odd) {
+  background-color: #ffeed0;
+}
+
+.sing-along01 .holiday__normal__item.default:nth-of-type(even) {
+  background-color: #ffdaa1;
+}
+
+.sing-along01 .holiday__normal__item.default .txt {
+  color: #b1690e;
+}
+
+.sing-along01 .holiday__normal__item.default .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/holiday/icon_songs01.png");
+}
+
+.sing-along01 .holiday__normal__item.default:nth-of-type(odd):hover {
+  background-color: #d8ab66;
+}
+
+.sing-along01 .holiday__normal__item.default:nth-of-type(even):hover {
+  background-color: #c29754;
+}
+
+.sing-along01 .holiday__normal__item.default:hover .txt {
+  color: #ffeed0;
+}
+
+.sing-along01 .holiday__normal__item.default:hover .icon-songs {
+  background-image: url("/assets/images/club_house_sing_along/popup/holiday/icon_songs01_active.png");
+}
+
+.sing-along01 .holiday__normal__item .txt {
+  padding-left: 100px;
+  font: 700 21px/65px "comic", sans-serif;
+  color: transparent;
+  transition: all 0.3s;
+}
+
+.sing-along01 .holiday__normal__item .img {
+  position: relative;
+}
+
+.sing-along01 .holiday__normal__item .btn-link {
+  width: 268px;
+  height: 65px;
+}
+
+.sing-along01 .holiday__normal__item .icon-songs {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 40px;
+  width: 24px;
+  height: 28px;
+  background: no-repeat 0 100%;
+  transition: all 0.3s;
+}
+
+.sing-along01 .holiday .tit {
+  padding: 10px 0 14px 8px;
+  text-align: left;
+}
+
+.sing-along01 .holiday .btn-link {
+  display: block;
+  position: relative;
+}
+
+.sing-along01 .holiday .btn-link .img {
+  display: block;
+}
+
+.sing-along01 .btn-close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  background-color: transparent;
+}
+
+.sing-along01 .icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sing-along01 .icon-close {
+  display: inline-block;
+  background: url("/assets/images/club_house_sing_along/popup/icon_close01.png") no-repeat 50% 50%;
+  background-size: 34px 34px;
+}
+
+.content-wrap .swiper {
+  padding: 160px 0 0;
+  height: 768px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.content-wrap .swiper-container {
+  width: 100%;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev {
+  position: absolute;
+  top: 325px;
+  left: 10px;
+  width: 44px;
+  height: 72px;
+  background: url("/assets/images/club_house_sing_along/btn_prev01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.content-wrap .swiper-controller .btn-swiper-prev.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next {
+  position: absolute;
+  top: 325px;
+  right: 10px;
+  width: 44px;
+  height: 72px;
+  background: url("/assets/images/club_house_sing_along/btn_next01.png") no-repeat 0 0;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.content-wrap .swiper-controller .btn-swiper-next.swiper-button-disabled {
+  opacity: 0;
+}
+
+.content-wrap .swiper-slide {
+  padding: 22px 0 14px;
+  z-index: 1;
+}
+
+.content-wrap .clubhouse-sing-along__items {
+  width: 826px;
+  height: 479px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-wrap .clubhouse-sing-along__items.length1 .clubhouse-sing-along__item:nth-of-type(1) {
+  margin: 0 56px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length1 .clubhouse-sing-along__item:nth-of-type(2) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length1 .clubhouse-sing-along__item:nth-of-type(3) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length1 .clubhouse-sing-along__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length1 .clubhouse-sing-along__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length2 .clubhouse-sing-along__item:nth-of-type(1) {
+  margin: 0 56px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length2 .clubhouse-sing-along__item:nth-of-type(2) {
+  margin: 0 56px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length2 .clubhouse-sing-along__item:nth-of-type(3) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length2 .clubhouse-sing-along__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length2 .clubhouse-sing-along__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length3 .clubhouse-sing-along__item:nth-of-type(1) {
+  margin-right: 68px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length3 .clubhouse-sing-along__item:nth-of-type(2) {
+  margin-right: 68px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length3 .clubhouse-sing-along__item:nth-of-type(3) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length3 .clubhouse-sing-along__item:nth-of-type(4) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length3 .clubhouse-sing-along__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length4 .clubhouse-sing-along__item:nth-of-type(1) {
+  margin: 0 56px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length4 .clubhouse-sing-along__item:nth-of-type(2) {
+  margin: 0 56px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length4 .clubhouse-sing-along__item:nth-of-type(3) {
+  margin: 27px 56px 0;
+}
+
+.content-wrap .clubhouse-sing-along__items.length4 .clubhouse-sing-along__item:nth-of-type(4) {
+  margin: 27px 56px 0;
+}
+
+.content-wrap .clubhouse-sing-along__items.length4 .clubhouse-sing-along__item:nth-of-type(5) {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__items.length5 .clubhouse-sing-along__item:nth-of-type(1) {
+  margin-right: 68px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length5 .clubhouse-sing-along__item:nth-of-type(2) {
+  margin-right: 68px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length5 .clubhouse-sing-along__item:nth-of-type(3) {
+  margin-right: 40px;
+}
+
+.content-wrap .clubhouse-sing-along__items.length5 .clubhouse-sing-along__item:nth-of-type(4) {
+  margin: 27px 87px 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__items.length5 .clubhouse-sing-along__item:nth-of-type(5) {
+  margin: 27px 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item {
+  position: relative;
+  width: 205px;
+  height: 226px;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s;
+  transform: perspective(1000px) translateZ(0px);
+}
+
+.content-wrap .clubhouse-sing-along__item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: scale(1);
+  transition: right 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation) {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  transform: perspective(1000px) translateZ(50px);
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation).bg-color01:before {
+  right: -42px;
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation).bg-color02:before {
+  right: -40px;
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation).bg-color03:before {
+  right: -44px;
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation).bg-color04:before {
+  right: -50px;
+}
+
+.content-wrap .clubhouse-sing-along__item.active:not(.disabled):not(.vacation).bg-color05:before {
+  right: -44px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color01:before {
+  right: -18px;
+  background-image: url(/assets/images/sprite/club_house_sing_along_bgitem1.png?4103569290471);
+  background-position: 0px 0px;
+  width: 77px;
+  height: 227px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color01 .btn {
+  background: url("/assets/images/club_house_sing_along/bg_item01_01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color02:before {
+  right: -7px;
+  background-image: url(/assets/images/sprite/club_house_sing_along_bgitem1.png?4103569290471);
+  background-position: -77px 0px;
+  width: 101px;
+  height: 227px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color02 .btn {
+  background: url("/assets/images/club_house_sing_along/bg_item02_01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color03:before {
+  right: -15px;
+  background-image: url(/assets/images/sprite/club_house_sing_along_bgitem1.png?4103569290471);
+  background-position: -178px 0px;
+  width: 96px;
+  height: 227px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color03 .btn {
+  background: url("/assets/images/club_house_sing_along/bg_item03_01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color04:before {
+  right: -12px;
+  background-image: url(/assets/images/sprite/club_house_sing_along_bgitem1.png?4103569290471);
+  background-position: -274px 0px;
+  width: 156px;
+  height: 227px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color04 .btn {
+  background: url("/assets/images/club_house_sing_along/bg_item04_01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color05:before {
+  right: -11px;
+  background-image: url(/assets/images/sprite/club_house_sing_along_bgitem1.png?4103569290471);
+  background-position: -430px 0px;
+  width: 90px;
+  height: 227px;
+}
+
+.content-wrap .clubhouse-sing-along__item.bg-color05 .btn {
+  background: url("/assets/images/club_house_sing_along/bg_item05_01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.disabled .tit-week,
+.content-wrap .clubhouse-sing-along__item.disabled .txt-info {
+  opacity: 0.4;
+}
+
+.content-wrap .clubhouse-sing-along__item.vacation:before {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__item.vacation .tit-week {
+  color: #d4dde1;
+}
+
+.content-wrap .clubhouse-sing-along__item.vacation .img {
+  display: none;
+}
+
+.content-wrap .clubhouse-sing-along__item.vacation .btn {
+  background-image: url("/assets/images/club_house_sing_along/bg_item_vacation.png");
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week:after {
+  content: "";
+  position: absolute;
+  top: -21px;
+  right: -58px;
+  width: 97px;
+  height: 117px;
+  -webkit-animation: note-icon 0.6s steps(5) infinite forwards;
+  animation: note-icon 0.6s steps(5) infinite forwards;
+  background: url("/assets/images/sprite/club_house_sing_along_note1.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week.bg-color01:before {
+  right: -42px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week.bg-color02:before {
+  right: -40px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week.bg-color03:before {
+  right: -44px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week.bg-color04:before {
+  right: -50px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week.bg-color05:before {
+  right: -44px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .tit-week {
+  color: #fff509;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .txt-info {
+  color: #fff509;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-txt-week {
+  width: 77px;
+  height: 24px;
+  background: url("/assets/images/club_house_reader/txt_week01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num1 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: 0px 0px;
+  width: 9px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num2 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -9px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num3 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -24px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num4 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -39px 0px;
+  width: 17px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num5 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -56px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num6 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -71px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num7 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -86px 0px;
+  width: 16px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num8 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -102px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num9 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -117px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num10 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -132px 0px;
+  width: 29px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num11 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -161px 0px;
+  width: 21px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num12 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -182px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num13 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -210px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num14 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -238px 0px;
+  width: 29px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num15 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -267px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num16 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -295px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num17 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -323px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num18 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -351px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num19 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -379px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num20 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -407px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num21 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -441px 0px;
+  width: 26px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num22 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -467px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num23 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -500px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num24 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -533px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num25 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -567px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num26 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -600px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num27 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -633px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num28 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -667px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num29 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -700px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item.this-week .icon-num30 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num_active.png?4103573393923);
+  background-position: -733px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap .clubhouse-sing-along__item .tit-week {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+  height: 30px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font: 700 30px/30px "NSRoundECP", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.content-wrap .clubhouse-sing-along__item .tit-week .number-box {
+  margin: 3px 0 0 10px;
+}
+
+.content-wrap .clubhouse-sing-along__item .img {
+  position: absolute;
+  top: 41px;
+  left: 12px;
+  overflow: hidden;
+  width: 178px;
+  height: 124px;
+  border-radius: 14px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-txt-week {
+  width: 77px;
+  height: 24px;
+  background: url("/assets/images/club_house_reader/txt_week01.png") no-repeat 0 0;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num1 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: 0px 0px;
+  width: 9px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num2 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -9px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num3 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -24px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num4 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -39px 0px;
+  width: 17px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num5 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -56px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num6 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -71px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num7 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -86px 0px;
+  width: 16px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num8 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -102px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num9 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -117px 0px;
+  width: 15px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num10 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -132px 0px;
+  width: 29px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num11 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -161px 0px;
+  width: 21px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num12 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -182px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num13 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -210px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num14 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -238px 0px;
+  width: 29px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num15 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -267px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num16 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -295px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num17 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -323px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num18 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -351px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num19 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -379px 0px;
+  width: 28px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num20 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -407px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num21 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -441px 0px;
+  width: 26px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num22 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -467px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num23 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -500px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num24 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -533px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num25 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -567px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num26 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -600px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num27 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -633px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num28 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -667px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num29 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -700px 0px;
+  width: 33px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .icon-num30 {
+  display: inline-block;
+  background-image: url(/assets/images/sprite/club_house_num.png?4103573393925);
+  background-position: -733px 0px;
+  width: 34px;
+  height: 22px;
+}
+
+.content-wrap .clubhouse-sing-along__item .txt-box {
+  position: absolute;
+  bottom: 2px;
+  left: 11px;
+  height: 56px;
+  width: 178px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content-wrap .clubhouse-sing-along__item .txt-info {
+  width: 170px;
+  padding-bottom: 3px;
+  font: 700 22px/26px "comic", sans-serif;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  /* 라인수 */
+}
+
+.content-wrap .function__area {
+  position: absolute;
+  top: 100px;
+  right: 23px;
+  height: 210px;
+  z-index: 3;
+}
+
+.content-wrap .function__item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.content-wrap .function__item.active .icon-theme {
+  background: url("/assets/images/club_house_sing_along/icon_theme01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .function__item .icon-theme {
+  background: url("/assets/images/club_house_sing_along/icon_theme01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .function__item.active .icon-phonics {
+  background: url("/assets/images/club_house_sing_along/icon_phonics01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .function__item .icon-phonics {
+  background: url("/assets/images/club_house_sing_along/icon_phonics01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .function__item.active .icon-holiday {
+  background: url("/assets/images/club_house_sing_along/icon_holiday01_active.png") no-repeat 0 0;
+}
+
+.content-wrap .function__item .icon-holiday {
+  background: url("/assets/images/club_house_sing_along/icon_holiday01.png") no-repeat 0 0;
+  transition: all 0.3s;
+}
+
+.content-wrap .function .icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap .function .btn {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+/deep/ #wrap {
+	&.club-sing-along {
+		@extend %swiper-pagination;
+	}
+}
+*/
+
+/*# sourceMappingURL=../map/club_house_sing_along.css.map */
