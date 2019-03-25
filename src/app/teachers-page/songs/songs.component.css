@@ -306,6 +306,22 @@
     transition: all 0.3s;
 }
 
+#Songs01 .theme .spot-area {
+    position: relative;
+}
+  
+#Songs01 .theme .spot-area .btn-link {
+    position: absolute;
+    bottom: 4px;
+    right: 124px;
+}
+  
+#Songs01 .theme .spot-area .btn-link .play {
+    position: static;
+    display: block;
+    padding: 2px 26px 0 49px;
+}
+
 #Songs01 .phonics__content {
     display: flex;
     margin-top: 11px;

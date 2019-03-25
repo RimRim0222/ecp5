@@ -140,6 +140,7 @@ export class TeachersPageComponent implements OnInit {
                     mobileYN: this.isMobile ? 'Y' : 'N',
                     teachersYN: 'Y',
                     tutorialCompleteYN: 'Y',
+                    tutoCompleteYNTyped: '',
                     runType: 'listen',
                     studyTimeLimitSec: 0,
                     studyTimeLimitMax: constant.studyTimeLimitMax,

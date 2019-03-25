@@ -29,22 +29,25 @@ export class ModalVideoComponent implements AfterViewInit {
 
     this._dataMgr.playProlog$.subscribe(([path, weekGroupIdx]) => {
       this.playProlog(path, weekGroupIdx);
-    })
+    });
     this._dataMgr.playEpilog$.subscribe(path => {
       this.play(path, 'epilog');
-    })
+    });
+
+    // 비디오 재생
     this._dataMgr.playVideoOnDemand$.subscribe(info => {
-      if (info['type'] == 'initProlog')
+      if (info['type'] == 'initProlog'){
         this.play('ECP5_prolog.mp4', 'onDemand');
-      else if (info['type'] == 'totalEpilog')
+      } else if (info['type'] == 'totalEpilog') {
         this.play('ECP5_epilog.mp4', 'totalEpilog');
-      else if (info['type'] == 'prolog')
+      } else if (info['type'] == 'prolog') {
         this.play(`prolog_${info['idx'].toString()}.mp4`, 'onDemand');
-      else if (info['type'] == 'monthlyEpilog')
+      } else if (info['type'] == 'monthlyEpilog') {
         this.play(`epilog_${info['idx'].toString()}.mp4`, 'onDemand');
-      else if (info['type'] == 'fromContent')
+      } else if (info['type'] == 'fromContent') {
         this.play(info['name'], 'onDemand', true);
-    })
+      }
+    });
 
     const subs = this._dataMgr.initDataLoaded$.subscribe(() => {
       subs.unsubscribe();

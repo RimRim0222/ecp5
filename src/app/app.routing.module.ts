@@ -63,11 +63,10 @@ const routes: Routes = [
       { path: 'songs', component: SongsComponent }
     ]
   },
-  // { path: 'teachers-page', component: TeachersPageComponent },
-  // { path: 'e-lesson', component: ELessonComponent },
-  // { path: 'flashcard', component: FlashcardComponent },
-  // { path: 'vocabulary-print', component: VocabularyListsComponent },
-  // { path: 'songs', component: SongsComponent }
+  { path: 'e-lesson', component: ELessonComponent },
+  { path: 'flashcard', component: FlashcardComponent },
+  { path: 'vocabulary-print', component: VocabularyListsComponent },
+  { path: 'songs', component: SongsComponent }
 ];
 
 const config: ExtraOptions = {

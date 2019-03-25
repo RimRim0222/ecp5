@@ -29,6 +29,7 @@ export class ModalMainComponent implements OnInit {
     // 선택된 character
     selectedEle: { characterName: 'default' }
   };
+  public profileUserPath;
 
   public helpSwiperDisplay: boolean = false;
   public help: object = {};
@@ -66,6 +67,9 @@ export class ModalMainComponent implements OnInit {
   ngOnInit() {
     this._helper.openModal$.subscribe( info => {
       const modalInfo = this._dataMgr.modalInfos[info['type']];
+      if (this._dataMgr.sessionData != null) {
+        this.profileUserPath = this.userPath + this._dataMgr.sessionData['pictureUrl'];
+      }
       // console.log('modalInfo', this._dataMgr.modalInfos[info['type']]);
 
       if (info['ignoreSendPopupClose'])
@@ -74,6 +78,7 @@ export class ModalMainComponent implements OnInit {
       //pdfViewer
       if (info['type'] === 'pdfViewer'
             || info['type'] === 'activitySheetPdfViewer'
+            || info['type'] === 'userGuidePdfViewer'
             || info['type'] === 'meetGreetPdfViewer') {
         const spd = .3;
         // viewer에서 layout 깨지는 현상으로 인해 setTimeout 추가
@@ -108,7 +113,7 @@ export class ModalMainComponent implements OnInit {
         this.modalInfo = modalInfo;
         if (info['type'] == 'mainReward1') {
           console.log("보상 모달 들어옴")
-          this.rewardType = Math.floor(Math.random()*2+1).toString();
+          this.rewardType = Math.floor(Math.random()*2+1).toString(); // 유리 or 레오 백그라운드 랜덤
           this.viewWeekGrp = this._dataMgr.getWeekGroupNum(this._dataMgr.weekData.viewWeek) + 1;
           this.rewardClickGuideTimer = setTimeout(() => {
             // 손가락 가이드 열림
@@ -132,18 +137,27 @@ export class ModalMainComponent implements OnInit {
 
     TweenMax.to(el, spd, {display: 'block', opacity : 1, ease: Power2.easeIn});
 
-    if (modalInfo['type'] == 'weeklyComplete' || modalInfo['type'] == 'mainClose') {
+    if (modalInfo['type'] == 'weeklyComplete' || modalInfo['type'] == 'mainClose' || modalInfo['type'] == 'flashcardComplete') {
       // if (modalInfo['hideTxt']) TODO
       //
       // else
       //
 
       TweenMax.to(elDiv, spd, {display: 'block', opacity : 1, ease: Power2.easeIn, onComplete: () => {
-        if (modalInfo['type'] !== 'mainClose') {
+        if (modalInfo['type'] == 'flashcardComplete') {
+          this._sndMgr.playEventSound('common', 'particleFlashcard');
+          setTimeout(() => {
+            this._sndMgr.playTitleSound('common', 'pepperExcellent');
+          }, 900);            
+        } else if (modalInfo['type'] == 'weeklyComplete') {
           this._sndMgr.playEventSound('common', 'pepperExcellent');
+          setTimeout(() => {
+            this._sndMgr.playTitleSound('common', 'animalIsHealthy');
+          }, 1500);            
         }
         this.busPopOpenEvent(elDiv);
-        if (modalInfo['type'] == 'weeklyComplete') {
+        if (modalInfo['type'] != 'mainClose') {
+        //if (modalInfo['type'] == 'weeklyComplete') {
           this.closeModal('flashCardDetail');
           this.closeTimer = setTimeout(() => {
             this.closeModal(modalInfo['type']);
@@ -175,8 +189,9 @@ export class ModalMainComponent implements OnInit {
     TweenMax.fromTo(
       $wrap.querySelector('.txt01'), 0.8, {opacity: 0, x: -100}, {opacity: 1, x: 0, ease: EASE_BOUNCE_CUSTOM} );
     // text 두번
-    TweenMax.fromTo(
-      $wrap.querySelector('.txt02'), 0.8, {opacity: 0, x: 100}, {opacity: 1, x: 0, ease: EASE_BOUNCE_CUSTOM} );
+    if ($wrap.querySelector('.txt02'))
+      TweenMax.fromTo(
+        $wrap.querySelector('.txt02'), 0.8, {opacity: 0, x: 100}, {opacity: 1, x: 0, ease: EASE_BOUNCE_CUSTOM} );
   }
 
   public weeklyCompleteDivClick() {
@@ -462,5 +477,13 @@ export class ModalMainComponent implements OnInit {
       else if (this._dataMgr.getMobileOS() == 'iOS')
         window['location'].href = "jscall://callback?function=exit";
     }, 200)
+  }
+
+  public userGuide() {
+    this._helper.openModal({type: 'userGuidePdfViewer', url: environment.resourceURL.static + '/pdf/main/ECP5_user_guide.pdf'});
+  }
+
+  public errorHandler(event) {
+    this.profileUserPath = environment.resourceURL.file + '/lms/_images/popup/profile/photo_default_profile.png';
   }
 }

@@ -26,11 +26,11 @@
             <div class="week-tree__area">
               <div class="week-tree__box">
                 <div class="movie-play">
-                  <button type="button" class="btn {{movieBtnStyle}}" (click)="playPrologEpilogVideo()">
+                  <button type="button" class="btn {{movieBtnStyle}}" (click)="playPrologEpilogVideo()" *ngIf="movieBtnStyle!=='btn-epilogue'">
                     <i class="icon {{movieIconStyle}}"></i></button>
                 </div>
-                <i class="icon icon-user"><img src="{{_dataMgr.characterPath}}" alt=""></i>
-                <!--user 이미지-->
+                <i class="icon icon-user"><img src="{{_dataMgr.characterPath}}" alt="" (error)="errorHandler($event)"></i>
+                <!--user 이미지--> 
 
                 <div class="swiper">
                   <!--Swiper area(S)-->

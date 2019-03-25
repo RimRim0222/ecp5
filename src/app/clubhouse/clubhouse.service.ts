@@ -113,8 +113,10 @@ export class ClubhouseService {
                         console.log('htmlCont : ', attachsMap[d['weekId']][0]['htmlCont']);
                         d['filePathThumbnail'] = attachsMap[d['weekId']][0]['htmlCont'];
                     } else {
-                        const img = thumbnailWeek['Image']['@attributes'];
-                        d['filePathThumbnail'] = environment.opURL + img['uploadFilePath'] + img['uploadFileName'];
+                        if ( d['vacationIncludeCode'] !== 'HW'  ) {
+                            const img = thumbnailWeek['Image']['@attributes'];
+                            d['filePathThumbnail'] = environment.opURL + img['uploadFilePath'] + img['uploadFileName'];
+                        }
                     }
                     // PDF
                     if (thumbnailWeek['PDF']) {

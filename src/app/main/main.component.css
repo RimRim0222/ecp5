@@ -1475,7 +1475,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: -14500px 0;
+    background-position: -12760px 0;
   }
 }
 
@@ -1484,7 +1484,7 @@
     background-position: 0 0;
   }
   100% {
-    background-position: -14500px 0;
+    background-position: -12760px 0;
   }
 }
 
@@ -1513,38 +1513,38 @@
 }
 
 .monster.week12_after_leg1 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg1.png") no-repeat 0 0;
 }
 
 .monster.week12_after_leg2 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg2.png") no-repeat 0 0;
 }
 
 .monster.week12_after_leg3 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg3.png") no-repeat 0 0;
 }
 
 .monster.week12_after_leg4 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg4.png") no-repeat 0 0;
 }
 
 .monster.week12_after_leg5 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg5.png") no-repeat 0 0;
 }
 
 .monster.week12_after_leg6 {
-  -webkit-animation: week12_after 2.08333s steps(25, end) infinite;
-  animation: week12_after 2.08333s steps(25, end) infinite;
+  -webkit-animation: week12_after 2.08333s steps(22, end) infinite;
+  animation: week12_after 2.08333s steps(22, end) infinite;
   background: url("/assets/images/sprite/week12_after_leg6.png") no-repeat 0 0;
 }
 

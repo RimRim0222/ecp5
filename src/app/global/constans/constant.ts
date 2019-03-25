@@ -46,7 +46,9 @@ export const constant = {
             pageMove: 'ECP5_Com_Page Move_Sound-6.mp3',
             particle1: 'ECP5_Com_Particle_Sound.mp3',
             praise: 'ECP5_CE_Page Change_Sound-2.mp3',
-            pepperExcellent: 'ECP5_Com_Compliment_GNar06.mp3'
+            pepperExcellent: 'ECP5_Com_Compliment_GNar06.mp3',
+            animalIsHealthy: 'ECP5_Com_TAHN_GNar.mp3',
+            particleFlashcard: 'ECP5_Com_Particle Sound-re-3.mp3'
         },
         main: {
             weekTreeClick: 'ECP5_MA_WeektreeClick_sound-3.mp3',
@@ -148,10 +150,10 @@ export const constant = {
             factory: {title: 'Fun Factory', count: 4},
             withParents: {title: 'With Parents', count: 4},
             meetGreet: {title: 'Meet & Greet', count: 2},
-            vocabularyLists: {title: 'Vocabulary List', count: 4},
+            vocabularyLists: {title: 'Vocabulary Lists', count: 4},
             stickerCharts: {title: 'Sticker Charts', count: 2},
             timeSpent: {title: 'Time Spent', count: 2},
-            progress: {title: 'Progress', count: 4},
+            progress: {title: 'Progress', count: 3},
             report: {title: 'Reports', count: 3},
         },
         content: {

@@ -15,14 +15,16 @@
  * Z-INDEX
  */
 .content-wrap .withParents-progress {
-  padding-top: 162px;
+  /*adding-top: 162px;*/
+  padding-top: 99px;
 }
 
 .content-wrap .withParents-progress__area {
   position: relative;
   left: 15px;
   width: 998px;
-  height: 606px;
+  /*height: 606px;*/
+  height: 668px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -47,7 +49,8 @@
   padding-left: 320px;
   width: 660px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
+  padding-bottom: 0;
 }
 
 .content-wrap .withParents-progress__box .data-table .fixed-area {
@@ -64,26 +67,30 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-color: rgba(152, 198, 255, 0.5);
+  height: 45px;
+  /*height: 50px;
+  background-color: rgba(152, 198, 255, 0.5);*/
 }
 
 .content-wrap .withParents-progress__box .data-table .fixed-box .phonics {
   height: 194px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+  margin-top: 45px;
 }
 
 .content-wrap .withParents-progress__box .data-table .fixed-box .read-aloud {
   height: 194px;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+  margin-top: 17px;
 }
 
 .content-wrap .withParents-progress__box .data-table .fixed-box .meet-greet {
   height: 194px;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   background: url("/assets/images/with_parents_progress/bl_arrow_row01.gif") repeat-x 0 100%;
+  margin-top: 17px;
 }
 
 .content-wrap .withParents-progress__box .data-table table {
@@ -174,10 +181,20 @@
 
 .content-wrap .withParents-progress__box .activity .tit {
   width: 132px;
-  height: 50px;
-  font: 400 20px/50px "NotoSansECP", sans-serif;
   color: #5d9eed;
-  background-color: rgba(152, 198, 255, 0.5);
+  /*height: 50px;
+  font: 400 20px/50px "NotoSansECP", sans-serif;
+  background-color: rgba(152, 198, 255, 0.5);*/
+  height: 45px;
+  font: 400 20px/45px "NotoSansECP", sans-serif;
+}
+
+.content-wrap .withParents-progress__box .activity:last-child .tit {
+  width: 132px;
+}
+
+.content-wrap .withParents-progress__box .activity:last-child .tit:before {
+  background: none;
 }
 
 .content-wrap .withParents-progress__box .activity-lists {
@@ -187,11 +204,13 @@
 }
 
 .content-wrap .withParents-progress__box .activity-lists.read-aloud {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  margin-top: 17px;
 }
 
 .content-wrap .withParents-progress__box .activity-lists.meet-greet {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
+  margin-top: 17px;
 }
 
 .content-wrap .withParents-progress__box .activity-list {
@@ -298,12 +317,15 @@
 
 .content-wrap .withParents-progress .swiper-controller {
   position: absolute;
-  top: 96px;
   left: 0;
+  display: flex;
+  /*top: 96px;
   width: 100%;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  justify-content: center;*/
+  width: 1000px;
+  top: 102px;
+  z-index: 20;
 }
 
 .content-wrap .withParents-progress .swiper-controller .month {
@@ -311,6 +333,7 @@
   font: 700 35px/33px "NotoSansECP", sans-serif;
   color: #5d9eed;
   letter-spacing: 0;
+  display: none;
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn {
@@ -321,6 +344,7 @@
   width: 30px;
   height: 33px;
   background: url("/assets/images/with_parents_progress/icon_prev01_month.png") repeat-x 0 0;
+  display: none;
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-month.active {
@@ -332,9 +356,15 @@
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week {
+  position: absolute;
+  left: 315px;
   width: 18px;
   height: 33px;
   background: url("/assets/images/with_parents_progress/icon_prev01_week.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week.disabled {
+  background-image: url("/assets/images/with_parents_progress/icon_prev01_week_disabled.png");
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-prev-week.active {
@@ -349,6 +379,7 @@
   width: 30px;
   height: 33px;
   background: url("/assets/images/with_parents_progress/icon_next01_month.png") repeat-x 0 0;
+  display: none;
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-next-month.active {
@@ -360,9 +391,15 @@
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week {
+  position: absolute;
+  right: -29px;
   width: 18px;
   height: 33px;
   background: url("/assets/images/with_parents_progress/icon_next01_week.png") repeat-x 0 0;
+}
+
+.content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week.disabled {
+  background: url("/assets/images/with_parents_progress/icon_next01_week_disabled.png") repeat-x 0 0;
 }
 
 .content-wrap .withParents-progress .swiper-controller .btn-swiper-next-week.active {

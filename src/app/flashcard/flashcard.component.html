@@ -17,7 +17,7 @@
           <div class="flashcard__item {{card['activeCls']}}">
             <i class="icon icon-oscar"></i>
             <button type="button" class="btn btn-card" [disabled]="isCardButtonDisabled(i)"
-                    (click)="_sndMgr.playEventSound('flashcard', 'openCard'); openDetail(i)">
+                    (click)="_sndMgr.playEventSound('flashcard', 'openCard'); openDetail(i)" name="{{i}}">
               <span class="img">
                 <img src="{{card['UPLOAD_FILE_NAME_LIST']}}" alt="">
               </span>

@@ -74,8 +74,9 @@ export class MainComponent implements OnInit, OnDestroy {
 
       lastRewardAct['activityCode'] = _.clone(actCode);
       lastRewardAct['week'] = _.clone(this._dataMgr.weekData.viewWeek);
+      console.log("openModal({type: `mainReward1`}) 실행로직")
 
-      this._sndMgr.playEventSound('main', 'rewardSound3');  //사운드 재생
+      this._sndMgr.playTitleSound('main', 'rewardSound3');  //사운드 재생
       this._helper.openModal({type: `mainReward1`});  // 엄지척/excellent 팝업 후 보상 모달 열기
       const rewardCompSub = this._dataMgr.completeRewardAction$.subscribe(res => {
         rewardCompSub.unsubscribe();

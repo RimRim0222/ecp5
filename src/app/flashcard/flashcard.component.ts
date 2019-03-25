@@ -50,6 +50,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
       this.setEventSound();
 
     this._helper.openModal$.subscribe((info: object) => {
+      console.log("info: ", info)
       const modalInfo = this._dataMgr.modalInfos[info['type']];
       if (this.modalDepth == modalInfo['depth'].toString()) {
 
@@ -101,7 +102,8 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
           });
         }
         else if (info['type'] == 'flashCardDetail') {
-          this.cardsData = info['data'];
+          //this.cardsData = info['data'];
+          this.cardsData = this._dataMgr.flashCardData['vocabs'];
           _.each(this.cardsData, card => {
             card['puzzleType'] = this._helper.generateRandom(1, 3);
             card['puzzleShow'] = ['block','block','block','block'];
@@ -118,7 +120,10 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
             this.viewCardIdx = info['cardIdx'];
             this.swiper.slideTo(info['cardIdx'], 0);
             this.addOtherZoneClickHandler();
-            document.querySelector('.btn-swiper-nextFC').classList.add('swiper-button-disabled');
+            if (!document.querySelectorAll(".flashcard__item")[info['cardIdx']].classList.contains("complete")) {
+              document.querySelector('.btn-swiper-nextFC').classList.add('swiper-button-disabled');
+            }
+              
             if (!this._dataMgr.isMobile)
               this.createCanvas();
           }, 50);
@@ -234,6 +239,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
     }, 180000);
   }
 
+  private detailOpen3MTimer = setTimeout(() => {});
   private setCardStyle() {
     let isBeforeFirstAnsY: boolean = true;
     let isNoneActive: boolean = true;
@@ -255,6 +261,11 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
     })
     if ( isNoneActive && !_.every(this.cardsData, d => { return d['activeCls'] == 'complete' }) )
       this.cardsData[0]['activeCls'] = 'active motion';
+      clearTimeout(this.detailOpen3MTimer);
+      this.detailOpen3MTimer = setTimeout(() => {
+        if (!document.querySelector("#flashCardDetail").classList.contains("active"))
+          this.openDetail(document.querySelector(".flashcard__item.active button")["name"]);
+      }, 180000);
 
     // console.log('card styles ', tmp);
   }
@@ -262,7 +273,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
   public setViewCard(cardIdx: number) {
     this._sndMgr.playEventSound('flashcard', 'otherCard');
     this.viewCardIdx = cardIdx;
-    this.afterDetailOpen3MProcess();
+    //this.afterDetailOpen3MProcess();
     this.checkAllowSlide(cardIdx);
   }
 
@@ -271,7 +282,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
 
   public flashcardDetailQuizClick(target: string) {
     console.log('click :', target);
-    this.afterDetailOpen3MProcess();
+    //this.afterDetailOpen3MProcess();
 
     const $item = document.querySelectorAll('.main-flashcard-detail01 .swiper-slide')[this.viewCardIdx]
       .querySelector('.' + target);
@@ -325,7 +336,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
 
   public openDetail(itemNo: number) {
     this.openEvent.next({type:'flashCardDetail', data:this.cardsData, cardIdx:itemNo, ignoreSendPopupClose: true});
-    this.afterDetailOpen3MProcess();
+    //this.afterDetailOpen3MProcess();
   }
 
   public playPuzzleSoundSeq(soundPath: string, isLast: boolean) {
@@ -390,7 +401,7 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
 
       if ( this.viewCardIdx == this.cardsData.length-1 ) {
         setTimeout(() => {
-          this._helper.openModal({type: `weeklyComplete`, hideTxt: true, ignoreSendPopupClose: true});
+          this._helper.openModal({type: `flashcardComplete`, hideTxt: true, ignoreSendPopupClose: true});
         }, 4500);
         this.closeDetailTimer = setTimeout(() => {
           this.closeModal('flashCardDetail');
@@ -497,9 +508,17 @@ export class FlashcardComponent implements OnInit, AfterViewInit {
         document.getElementById('flashDetailOverlayForPC').remove();
 
       this.otherZoneEl.removeEventListener('click', this.currentOtherZoneClickHandler);
-      clearTimeout(this.afterDetailOpen3MTimer);
+      //clearTimeout(this.afterDetailOpen3MTimer);
       clearTimeout(this.closeDetailTimer);
+      
+      /*if (document.querySelector("#mainFlashCard").classList.contains("active")) {
+        clearTimeout(this.detailOpen3MTimer2);
+        this.detailOpen3MTimer2 = setTimeout(() => {
+          this.openDetail(document.querySelector(".flashcard__item.active button")["name"]);
+        }, 3000);
+      }*/
     }
+    clearTimeout(this.detailOpen3MTimer);
     this.closeEvent.next(modalType);
   }
 }

@@ -59,6 +59,11 @@ export class WeekTreeComponent implements OnInit, AfterViewInit {
     setTimeout(() => {
       this.isInit = false;
     }, 1000);
+
+    // 주차별 완료 확인
+    this._dataMgr.enrollWeekList().subscribe( res => {
+      console.log('WeekList : ', res);
+    });
   }
 
   ngAfterViewInit() {
@@ -206,10 +211,10 @@ export class WeekTreeComponent implements OnInit, AfterViewInit {
           default:
             this.weekTreeProfilePos(week);
             setTimeout(() => {
-              this._dataMgr.setViewWeek(week);
               this._sndMgr.playEventSound("main", "weekTreeStartLearning");
+              this._dataMgr.setViewWeek(week);
               this.router.navigate(['/main']);
-            }, 1500)
+            }, 1500);
         }
       }
     }, 1000);
@@ -228,7 +233,7 @@ export class WeekTreeComponent implements OnInit, AfterViewInit {
     const itemRect  = document.querySelectorAll('.week-tree .month__item-week')[nextWeek - 1].getBoundingClientRect();
     const outerRect = document.getElementById('content').getBoundingClientRect();
 
-    // console.log('profilepos :', $profile, itemRect, outerRect);
+    console.log('profilepos :', $profile, itemRect, outerRect);
     TweenMax.to(
       $profile,
       1, {y: '-=20',onComplete() {
@@ -238,6 +243,8 @@ export class WeekTreeComponent implements OnInit, AfterViewInit {
           );
           //프로필 나타나는 모션
           TweenMax.fromTo($profile,0.3,{scaleY: 0},{scaleY: 1});
+          // 다른 분기에서 첫클릭시 icon-user 안나오는 오류 수정
+          $profile['style']['display'] = 'block';
         },
         onCompleteScope:this
       }
@@ -255,5 +262,9 @@ export class WeekTreeComponent implements OnInit, AfterViewInit {
     } else
       ratio = 1;
     return ratio;
+  }
+
+  public errorHandler(event) {
+    this._dataMgr.characterPath = environment.resourceURL.file + '/lms/_images/popup/profile/photo_default_profile.png';
   }
 }

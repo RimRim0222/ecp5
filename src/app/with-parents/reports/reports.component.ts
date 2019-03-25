@@ -102,4 +102,16 @@ export class ReportsComponent implements OnInit {
           {url: res['url'], activityCode: res['activityCode'], fromWithParentComp: 'with-parents/reports'});
       });
   }
+
+  // 좌/우버튼 클릭시 깜빡
+  private eventTargetRemoveClass = setTimeout(() => {}, 0);
+  public slideChangeHandler(scrollWeekIdx) {
+    this.withParentsService.currentPage = scrollWeekIdx;
+
+    const eventTarget = event.target;
+    eventTarget['classList'].add('active');
+    this.eventTargetRemoveClass = setTimeout(() => {
+      eventTarget['classList'].remove('active');
+    }, 400);
+  }
 };

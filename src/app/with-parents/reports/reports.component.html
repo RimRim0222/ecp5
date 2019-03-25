@@ -52,7 +52,7 @@
                                 <div class="reports">
                                     <div class="reports__week">
                                         <div class="swiper">
-                                            <swiper [index]="withParentsService.currentPage" [config]="config">
+                                            <swiper [index]="withParentsService.currentPage" [config]="config" (indexChange)="slideChangeHandler($event)">
                                                 <div class="swiper-slide" *ngFor="let item of withParentsService.pageList.weekData | keyvalue">
                                                     <!-- <button type="button" class="default">{{item.value.weekName}}</button> -->
                                                     <button *ngFor="let week of item.value; let idx = index" type="button" [ngClass]="{'active': withParentsService.pageList.selectedWeek == week.weekId, 'disabled': week.isDisabled}"

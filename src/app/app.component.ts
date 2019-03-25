@@ -3,7 +3,9 @@ import { Component, OnInit} from '@angular/core';
 import {SoundManagerService} from './services/sound-manager.service';
 import {DataManagerService} from './services/data-manager.service';
 import {HelperService} from "./services/helper.service";
+import { Router, NavigationEnd } from '@angular/router';
 declare var TweenMax: any;
+declare let ga: any;
 
 @Component({
   selector: 'app-root',
@@ -17,7 +19,14 @@ export class AppComponent implements OnInit {
   public isMobile: string;
 
   constructor(private _sndMgr: SoundManagerService, public _dataMgr: DataManagerService,
-              public _helper: HelperService, public commonModule: CommonModule) { }
+              public _helper: HelperService, public commonModule: CommonModule, public router: Router) {
+      this.router.events.subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          ga('set', 'page', event.urlAfterRedirects);
+          ga('send', 'pageview');
+        }
+      });
+  }
 
   ngOnInit() {
       const URLParam = new URLSearchParams(window.location.search);

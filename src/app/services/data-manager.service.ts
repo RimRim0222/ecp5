@@ -75,7 +75,9 @@ export class DataManagerService {
     weeklyComplete:  {type: 'weeklyComplete', elClass: 'main-complete01', depth: 5},
     monsterCure:     {type: 'monsterCure', elClass: 'monster-cure', depth: 1},
     mainClose:       {type: 'mainClose', elClass: 'main-close01', depth: 1},
-    gameTimeLimitAlert: {type: 'gameTimeLimitAlert', elClass: 'modalEndPoly', depth: 1}
+    gameTimeLimitAlert: {type: 'gameTimeLimitAlert', elClass: 'modalEndPoly', depth: 1},
+    userGuidePdfViewer: {type: 'userGuidePdfViewer', elClass: 'modalUserGuidePdfViewer', depth: 5},
+    flashcardComplete: {type: 'flashcardComplete', elClass: 'flashcard-complete01', depth: 5}
   };
 
   constructor( private http: HttpClient, private router: Router, private _location: Location,
@@ -248,11 +250,13 @@ export class DataManagerService {
           console.log('this.activityList : ', this.activityList[this.weekData.viewWeek][this.currentContentComponent['activityCode']]);
           // activity 완료 여부
           const activityListViewWeetData = this.getActivityListViewWeetData();
-          const activityCompleteYN = activityListViewWeetData != null ? this.getActivityListViewWeetData()['completeYn'] : '';
+          const activityCompleteYN = activityListViewWeetData != null ? activityListViewWeetData['completeYn'] : '';
           this.registStudyEnd();
-          if (this.currentContentComponent.isRecvSaveCompleted) {
+          if (this.currentContentComponent.isRecvSaveCompleted
+                && activityCompleteYN !== 'Y') {
             this.readyToRewardActivityCode$.next(this.currentContentComponent.activityCode);
-          } else if (this.currentContentComponent.didIncompleteSaving && activityCompleteYN !== 'Y') {
+          } else if (this.currentContentComponent.didIncompleteSaving
+                      && activityCompleteYN !== 'Y') {
             this.activityList[this.weekData.viewWeek][this.currentContentComponent['activityCode']]['completeYn'] = 'N';
             this.updateMainActStatus$.next();
           }
@@ -561,13 +565,20 @@ export class DataManagerService {
               activityCode: activityCode,
               learningGbn: activityCode,
             };
-            if (activityCode === 'MP1') {
-                params['runType'] = 'listen';
-            }
+            // if (activityCode === 'MP1') {
+            //     params['runType'] = 'listen';
+            // }
             this.mainContentsData['param'] = params;
             this.mainContentsData['answerList'] = questionListResult;
             this.mainContentsData['contentInfoSrc'] = activityContentsData;
             this.mainContentsData['isReview'] = false;
+
+            // console.log('completeYn', actData['completeYn']);
+            if (this.activityList[this.weekData.viewWeek][activityCode]['completeYn'] === '') {
+              this.activityList[this.weekData.viewWeek][activityCode]['completeYn'] = 'N';
+              this.activityList[this.weekData.viewWeek][activityCode]['status'] = 'incomplete';
+              this.updateMainActStatus$.next();
+            }
 
             contentsDataLoaded$.next({
               url: activityContentsData['EXECUTE_FILE_PATH'],

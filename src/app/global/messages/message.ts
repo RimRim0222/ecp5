@@ -45,7 +45,7 @@ export const message = {
     'contents.0006': { msg : 'This is the first chapter.<br/>You cannot move to<br/>another lesson just yet.', title: '', event: 'modal' },
     'contents.0007': { msg : 'This is the first chapter.<br/>You cannot move to<br/>another lesson just yet.', title: '', event: 'modal' },
     'contents.0008': { msg : 'This is the first chapter.<br/>You cannot move to<br/>another lesson just yet.', title: '', event: 'modal' },
-    'contents.0009': { msg : 'This week is vacation week.<br/>There is no e-POLY', title: '', event: 'modal' },
+    'contents.0009': { msg : 'There is no e-POLY this week.', title: '', event: 'modal' },
     'contents.0010': { msg : 'This week is<br/>unavailable at this time.', title: '', event: 'modal' },
     'contents.0011': { msg : 'This is the first chapter.<br/>You cannot move to<br/>another lesson just yet.', title: '', event: 'modal' },
     'contents.0012': { msg : 'This is the first chapter.<br/>You cannot move to<br/>another lesson just yet.', title: '', event: 'modal' },

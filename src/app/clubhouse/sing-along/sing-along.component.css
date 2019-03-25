@@ -1695,7 +1695,7 @@
   bottom: 2px;
   left: 11px;
   height: 56px;
-  width: 178px;
+  width: 180px;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -1704,7 +1704,7 @@
 }
 
 .content-wrap .clubhouse-sing-along__item .txt-info {
-  width: 170px;
+  width: 100%;
   padding-bottom: 3px;
   font: 700 22px/26px "comic", sans-serif;
   color: #fff;

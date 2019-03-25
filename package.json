@@ -42,6 +42,7 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
+    "@types/google.analytics": "0.0.39",
     "@types/greensock": "^1.15.32",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",

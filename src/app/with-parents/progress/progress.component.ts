@@ -71,17 +71,17 @@ export class ProgressComponent implements OnInit {
     console.log('weekHeaderStyle :', this.weekHeaderStyle);
 
     /* 첫주/막주 < <<    >> > 버튼 삭제 */
-    let btnPrevMonth = document.querySelector(".btn-swiper-prev-month");
+    //let btnPrevMonth = document.querySelector(".btn-swiper-prev-month");
     let btnPrevWeek = document.querySelector(".btn-swiper-prev-week");
-    let btnNextMonth = document.querySelector(".btn-swiper-next-month");
+    //let btnNextMonth = document.querySelector(".btn-swiper-next-month");
     let btnNextWeek = document.querySelector(".btn-swiper-next-week");
 
     if (this.scrollWeekIdx == 0) {
-      btnPrevMonth.classList.add("hidden");
-      btnPrevWeek.classList.add("hidden");
+      //btnPrevMonth.classList.add("hidden");
+      btnPrevWeek.classList.add("disabled");
     } else if (this.scrollWeekIdx >= this._dataMgr.weekData.allWeek.length-5) {
-      btnNextMonth.classList.add("hidden");
-      btnNextWeek.classList.add("hidden");
+      //btnNextMonth.classList.add("hidden");
+      btnNextWeek.classList.add("disabled");
     }
     /* //첫주 막주 < <<    >> > 버튼 삭제 */
 
@@ -220,21 +220,21 @@ export class ProgressComponent implements OnInit {
       eventTarget['classList'].remove('active');
     }, 400);
 
-    const btnPrevMonth = document.querySelector('.btn-swiper-prev-month');
+    //const btnPrevMonth = document.querySelector('.btn-swiper-prev-month');
     const btnPrevWeek = document.querySelector('.btn-swiper-prev-week');
-    const btnNextMonth = document.querySelector('.btn-swiper-next-month');
+    //const btnNextMonth = document.querySelector('.btn-swiper-next-month');
     const btnNextWeek = document.querySelector('.btn-swiper-next-week');
     if (scrollWeekIdx === 0) {
-      btnPrevMonth.classList.add('hidden');
-      btnPrevWeek.classList.add('hidden');
+      //btnPrevMonth.classList.add('disabled');
+      btnPrevWeek.classList.add('disabled');
     } else if (scrollWeekIdx >= this._dataMgr.weekData.allWeek.length - 5) {
-      btnNextMonth.classList.add('hidden');
-      btnNextWeek.classList.add('hidden');
+      //btnNextMonth.classList.add('disabled');
+      btnNextWeek.classList.add('disabled');
     } else {
-      btnNextMonth.classList.remove('hidden');
-      btnNextWeek.classList.remove('hidden');
-      btnPrevMonth.classList.remove('hidden');
-      btnPrevWeek.classList.remove('hidden');
+      //btnNextMonth.classList.remove('disabled');
+      btnNextWeek.classList.remove('disabled');
+      //btnPrevMonth.classList.remove('disabled');
+      btnPrevWeek.classList.remove('disabled');
     }
     this.monthName = this._dataMgr.weekData.monthNames[scrollWeekIdx + 1];
   }

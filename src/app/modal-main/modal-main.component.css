@@ -287,6 +287,91 @@
   margin-left: 0;
 }
 
+.flashcard-complete01 {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+
+.flashcard-complete01 .touch-guide {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flashcard-complete01 .touch-guide .btn-touch {
+  position: absolute;
+  top: 250px;
+  left: 310px;
+  width: 131px;
+  height: 148px;
+  -webkit-animation: touch-icon 0.8s steps(4) infinite forwards;
+  animation: touch-icon 0.8s steps(4) infinite forwards;
+  background: url("/assets/images/sprite/touch.png") no-repeat 0 0;
+  z-index: 2;
+}
+
+.flashcard-complete01 .particle, .main-activities01_01 .particle, .main-activities01_02 .particle, .main-activities02 .particle, .main-activities03 .particle, .main-close01 .particle {
+  position: absolute;
+  top: 0;
+  left: 157px;
+  width: 691px;
+  height: 484px;
+  background: url("/assets/images/main/popup/common/img_particle01.png") no-repeat 0 -10px;
+  z-index: -1;
+  transform: scale(0);
+}
+
+.flashcard-complete01 {
+  position: relative;
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+
+.flashcard-complete01 .img {
+  position: absolute;
+  top: 59px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+}
+
+.flashcard-complete01 .txt-box {
+  padding-top: 370px;
+  height: 300px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flashcard-complete01 .txt-box .txt01 {
+  opacity: 0;
+}
+
+.flashcard-complete01 .txt-box .txt02 {
+  opacity: 0;
+  padding-top: 24px;
+}
+
+.flashcard-complete01 .btn-box {
+  margin-top: 28px;
+}
+
+.flashcard-complete01 .btn-box .btn {
+  margin-left: 37px;
+}
+
+.flashcard-complete01 .btn-box .btn:nth-of-type(1) {
+  margin-left: 0;
+}
+
 .main-activities01_01 {
   position: relative;
   width: 1024px;
@@ -551,10 +636,10 @@
 
 .main-alert02 .txt-box {
   position: absolute;
-  top: 340px;
+  top: 287px;
   left: 0;
   width: 100%;
-  height: 128px;
+  /*height: 128px;*/
   display: flex;
   padding: 0 20px;
   align-items: center;
@@ -1439,7 +1524,7 @@
   background: url("/assets/images/with_parents_vocabulary_lists/popup/icon_close02.png") no-repeat 50% 50%;
 }
 
-.meet-greet01 {
+.meet-greet01, .user-guide01 {
   overflow: hidden;
   position: relative;
   width: 974px;
@@ -1454,11 +1539,11 @@
   background-color: #4acfbd;
 }
 
-.meet-greet01 .header .tit {
+.meet-greet01 .header .tit, .user-guide01 .header .tit{
   padding: 7px 27px;
 }
 
-.meet-greet01 .header .btn-close {
+.meet-greet01 .header .btn-close, .user-guide01 .header .btn-close {
   position: absolute;
   top: 11px;
   right: 13px;
@@ -1469,25 +1554,35 @@
   border-radius: 7px;
 }
 
-.meet-greet01 .header .icon {
+.meet-greet01 .header .icon, .user-guide01 .header .icon {
   display: inline-block;
   vertical-align: top;
 }
 
-.meet-greet01 .header .icon-close {
+.meet-greet01 .header .icon-close, .user-guide01 .header .icon-close {
   width: 44px;
   height: 44px;
   background: url("/assets/images/with_parents_sticker_charts/popup/icon_close01.png") no-repeat 54% 56%;
 }
 
-.meet-greet01 .pdf-viewer {
+.meet-greet01 .pdf-viewer, .user-guide01 .pdf-viewer{
   height: 646px;
 }
 
-.meet-greet01 iframe {
+.meet-greet01 iframe, .user-guide01 iframe{
   width: 100%;
   height: 665px;
   position: relative;
+}
+
+.user-guide01 .header {
+  height: 72px;
+  background-color: #f38a35;
+}
+
+.user-guide01 .header .btn-close:hover {
+  background: #f89e54;
+  border-radius: 7px;
 }
 
 .poly-reader01 {

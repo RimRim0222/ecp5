@@ -82,8 +82,8 @@
                 </div>
 
                 <!--main reward-->
-                <div class="main-reward01" [ngStyle]="{background: 'url(' + imagePath + '/main/popup/reward/bg_reward0'+rewardType+'.png) no-repeat 0 0'}"
-                     style="display: none;">
+                <div class="main-reward01" [ngStyle]="{background: 'url(' + imagePath + '/main/popup/reward/bg_reward01.png) no-repeat 0 0'}" style="display: none;">
+                <!--<div class="main-reward01" [ngStyle]="{background: 'url(' + imagePath + '/main/popup/reward/bg_reward0'+rewardType+'.png) no-repeat 0 0'}" style="display: none;">-->
                   <!--touch guide-->
                   <article class="touch-guide" style="display: none;">
                     <button type="button" class="btn btn-touch" (click)="pickRewardIcon()"></button>
@@ -114,7 +114,7 @@
                       <i class="icon icon-cure-item5"></i> - week 17 ~ 20
                       <i class="icon icon-cure-item6"></i> - week 21 ~ 24
                     -->
-                            <div class="item"><i class="icon icon-cure-item1"></i></div>
+                            <div class="item"><i class="icon icon-cure-item{{viewWeekGrp}}"></i></div>
                         </div>
                     </div>
                 </div>
@@ -127,6 +127,15 @@
                         <p class="txt01"><img src="{{imagePath}}/main/popup/common/txt_excellent01.png" alt="Excellent!"></p>
                         <p class="txt02"><img src="{{imagePath}}/main/popup/common/txt_tahn01.png" alt="The animal healthy now!"></p>
                     </div>
+                </div>
+
+                <!-- flashcard complete -->
+                <div class="flashcard-complete01" style="display: none;">
+                  <span class="particle"></span>
+                  <figure class="img"><img src="{{imagePath}}/main/popup/common/img_pepper01.png" alt=""></figure>
+                  <div class="txt-box">
+                      <p class="txt01"><img src="{{imagePath}}/main/popup/common/txt_excellent01.png" alt="Excellent!"></p>
+                  </div>
                 </div>
 
                 <!-- Profile Setup Popup -->
@@ -154,8 +163,8 @@
                               -->
                                 <figure class="user"><i class="icon icon-{{character['selectedEle']['characterName'].toLowerCase()}}-profile" *ngIf="character['selectedEle']['characterName'] !== 'default' else profileImage"></i></figure>
                                 <!-- 유저 이미지가 있는경우-->
-                                <ng-template #profileImage><span class="img"><img src="{{(_dataMgr.sessionData != null) ? userPath + _dataMgr.sessionData['pictureUrl'] : character['selectedEle']['characterName']}}" alt=""></span></ng-template>
-                                <strong class="user-name"><span>{{(_dataMgr.sessionData != null) ?_dataMgr.sessionData['memberEngName'] : ''}}</span></strong>
+                                <ng-template #profileImage><span class="img"><img src="{{(_dataMgr.sessionData != null) ? profileUserPath : character['selectedEle']['characterName']}}" alt="" (error)="errorHandler($event)"></span></ng-template>
+                                <strong class="user-name"><span>{{(_dataMgr.sessionData != null) ?_dataMgr.sessionData['memberEngName'] : ''}}</span></strong> 
                                 <div class="btn-box">
                                     <button type="button" class="btn btn-restore" (click)="restoreCharacter()"><img src="{{imagePath}}/main/popup/profile/icon_restore01.png" alt="Restore"></button>
                                     <button type="button" class="btn btn-save" (click)="saveCharacter()"><img src="{{imagePath}}/main/popup/profile/icon_save01.png" alt="Save"></button>
@@ -230,6 +239,19 @@
                     </div>
                 </div>
 
+                <!-- userGuidePdfViewer Alert -->
+                <div class="modalUserGuidePdfViewer user-guide01" style="display: none;">
+                  <div class="header">
+                      <h2 class="tit"><img src="{{imagePath}}/main/popup/tit_user_guide01.jpg" alt=""></h2> 
+                      <button type="button" class="btn btn-close" (click)='closeModal("userGuidePdfViewer")'>
+                         <i class="icon icon-close"></i>
+                      </button>
+                  </div>
+                  <div class="container">
+                      <iframe [src]="urlPdf | safe: 'resourceUrl'" rameborder="0"></iframe>
+                  </div>
+              </div>
+
                 <!--help common-->
                 <div class="common-help01" style="display: none;">
                     <div class="header">
@@ -239,7 +261,7 @@
                         </h2>
                         <h4 class="tit-small" *ngIf="help['title2']">{{help['title2']}}</h4>
                         
-                        <button type="button" class="btn btn-view" *ngIf="help['guide']"><img src="{{imagePath}}/common/help/btn_view01.png" alt=""></button>
+                        <button type="button" class="btn btn-view" *ngIf="help['guide'] && !_dataMgr.isMobile" (click)="userGuide()"><img src="{{imagePath}}/common/help/btn_view01.png" alt=""></button>
                     </div>
                     <div class="container">
                         <div class="content">
